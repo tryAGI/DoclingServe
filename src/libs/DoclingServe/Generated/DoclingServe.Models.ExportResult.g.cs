@@ -1,0 +1,88 @@
+
+#nullable enable
+
+namespace DoclingServe
+{
+    /// <summary>
+    /// Container of all exported content.
+    /// </summary>
+    public sealed partial class ExportResult
+    {
+        /// <summary>
+        /// Default Value: ExportResult
+        /// </summary>
+        [global::System.Text.Json.Serialization.JsonPropertyName("kind")]
+        public string? Kind { get; set; }
+
+        /// <summary>
+        /// 
+        /// </summary>
+        [global::System.Text.Json.Serialization.JsonPropertyName("content")]
+        [global::System.Text.Json.Serialization.JsonRequired]
+        public required global::DoclingServe.ExportDocumentResponse Content { get; set; }
+
+        /// <summary>
+        /// 
+        /// </summary>
+        [global::System.Text.Json.Serialization.JsonPropertyName("status")]
+        [global::System.Text.Json.Serialization.JsonConverter(typeof(global::DoclingServe.JsonConverters.ConversionStatusJsonConverter))]
+        [global::System.Text.Json.Serialization.JsonRequired]
+        public required global::DoclingServe.ConversionStatus Status { get; set; }
+
+        /// <summary>
+        /// Default Value: []
+        /// </summary>
+        [global::System.Text.Json.Serialization.JsonPropertyName("errors")]
+        public global::System.Collections.Generic.IList<global::DoclingServe.ErrorItem>? Errors { get; set; }
+
+        /// <summary>
+        /// Default Value: {}
+        /// </summary>
+        [global::System.Text.Json.Serialization.JsonPropertyName("timings")]
+        public global::System.Collections.Generic.Dictionary<string, global::DoclingServe.ProfilingItem>? Timings { get; set; }
+
+        /// <summary>
+        /// Additional properties that are not explicitly defined in the schema
+        /// </summary>
+        [global::System.Text.Json.Serialization.JsonExtensionData]
+        public global::System.Collections.Generic.IDictionary<string, object> AdditionalProperties { get; set; } = new global::System.Collections.Generic.Dictionary<string, object>();
+
+        /// <summary>
+        /// Initializes a new instance of the <see cref="ExportResult" /> class.
+        /// </summary>
+        /// <param name="kind">
+        /// Default Value: ExportResult
+        /// </param>
+        /// <param name="content"></param>
+        /// <param name="status"></param>
+        /// <param name="errors">
+        /// Default Value: []
+        /// </param>
+        /// <param name="timings">
+        /// Default Value: {}
+        /// </param>
+#if NET7_0_OR_GREATER
+        [global::System.Diagnostics.CodeAnalysis.SetsRequiredMembers]
+#endif
+        public ExportResult(
+            global::DoclingServe.ExportDocumentResponse content,
+            global::DoclingServe.ConversionStatus status,
+            string? kind,
+            global::System.Collections.Generic.IList<global::DoclingServe.ErrorItem>? errors,
+            global::System.Collections.Generic.Dictionary<string, global::DoclingServe.ProfilingItem>? timings)
+        {
+            this.Content = content ?? throw new global::System.ArgumentNullException(nameof(content));
+            this.Status = status;
+            this.Kind = kind;
+            this.Errors = errors;
+            this.Timings = timings;
+        }
+
+        /// <summary>
+        /// Initializes a new instance of the <see cref="ExportResult" /> class.
+        /// </summary>
+        public ExportResult()
+        {
+        }
+    }
+}

@@ -1,0 +1,65 @@
+
+#nullable enable
+
+namespace DoclingServe
+{
+    /// <summary>
+    /// PageItem.
+    /// </summary>
+    public sealed partial class PageItem
+    {
+        /// <summary>
+        /// Size.
+        /// </summary>
+        [global::System.Text.Json.Serialization.JsonPropertyName("size")]
+        [global::System.Text.Json.Serialization.JsonRequired]
+        public required global::DoclingServe.Size Size { get; set; }
+
+        /// <summary>
+        /// 
+        /// </summary>
+        [global::System.Text.Json.Serialization.JsonPropertyName("image")]
+        public global::DoclingServe.ImageRef? Image { get; set; }
+
+        /// <summary>
+        /// 
+        /// </summary>
+        [global::System.Text.Json.Serialization.JsonPropertyName("page_no")]
+        [global::System.Text.Json.Serialization.JsonRequired]
+        public required int PageNo { get; set; }
+
+        /// <summary>
+        /// Additional properties that are not explicitly defined in the schema
+        /// </summary>
+        [global::System.Text.Json.Serialization.JsonExtensionData]
+        public global::System.Collections.Generic.IDictionary<string, object> AdditionalProperties { get; set; } = new global::System.Collections.Generic.Dictionary<string, object>();
+
+        /// <summary>
+        /// Initializes a new instance of the <see cref="PageItem" /> class.
+        /// </summary>
+        /// <param name="size">
+        /// Size.
+        /// </param>
+        /// <param name="image"></param>
+        /// <param name="pageNo"></param>
+#if NET7_0_OR_GREATER
+        [global::System.Diagnostics.CodeAnalysis.SetsRequiredMembers]
+#endif
+        public PageItem(
+            global::DoclingServe.Size size,
+            int pageNo,
+            global::DoclingServe.ImageRef? image)
+        {
+            this.Size = size ?? throw new global::System.ArgumentNullException(nameof(size));
+            this.PageNo = pageNo;
+            this.Image = image;
+        }
+
+        /// <summary>
+        /// Initializes a new instance of the <see cref="PageItem" /> class.
+        /// </summary>
+        public PageItem()
+        {
+        }
+    }
+}
