@@ -212,539 +212,599 @@ namespace DoclingServe
         /// <summary>
         /// 
         /// </summary>
-        public global::DoclingServe.CodeLanguageLabel? Type46 { get; set; }
+        public global::DoclingServe.CodeItem? Type46 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::DoclingServe.ContentLayer? Type47 { get; set; }
+        public global::DoclingServe.CodeLanguageLabel? Type47 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::DoclingServe.ConversionStatus? Type48 { get; set; }
+        public global::DoclingServe.ContentLayer? Type48 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::DoclingServe.ConvertDocumentResponse? Type49 { get; set; }
+        public global::DoclingServe.ConversionStatus? Type49 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::DoclingServe.ExportDocumentResponse? Type50 { get; set; }
+        public global::DoclingServe.ConvertDocumentResponse? Type50 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::System.Collections.Generic.IList<global::DoclingServe.ErrorItem>? Type51 { get; set; }
+        public global::DoclingServe.ExportDocumentResponse? Type51 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::DoclingServe.ErrorItem? Type52 { get; set; }
+        public global::System.Collections.Generic.IList<global::DoclingServe.ErrorItem>? Type52 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::System.Collections.Generic.Dictionary<string, global::DoclingServe.ProfilingItem>? Type53 { get; set; }
+        public global::DoclingServe.ErrorItem? Type53 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::DoclingServe.ProfilingItem? Type54 { get; set; }
+        public global::System.Collections.Generic.Dictionary<string, global::DoclingServe.ProfilingItem>? Type54 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::DoclingServe.ConvertDocumentsRequest? Type55 { get; set; }
+        public global::DoclingServe.ProfilingItem? Type55 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::DoclingServe.ConvertDocumentsRequestOptions? Type56 { get; set; }
+        public global::DoclingServe.ConvertDocumentsRequest? Type56 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::System.Collections.Generic.IList<global::DoclingServe.SourcesItem>? Type57 { get; set; }
+        public global::DoclingServe.ConvertDocumentsRequestOptions? Type57 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::DoclingServe.SourcesItem? Type58 { get; set; }
+        public global::System.Collections.Generic.IList<global::DoclingServe.SourcesItem>? Type58 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::DoclingServe.FileSourceRequest? Type59 { get; set; }
+        public global::DoclingServe.SourcesItem? Type59 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::DoclingServe.HttpSourceRequest? Type60 { get; set; }
+        public global::DoclingServe.FileSourceRequest? Type60 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::DoclingServe.S3SourceRequest? Type61 { get; set; }
+        public global::DoclingServe.HttpSourceRequest? Type61 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::DoclingServe.ConvertDocumentsRequestSourceDiscriminator? Type62 { get; set; }
+        public global::DoclingServe.S3SourceRequest? Type62 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::DoclingServe.ConvertDocumentsRequestSourceDiscriminatorKind? Type63 { get; set; }
+        public global::DoclingServe.ConvertDocumentsRequestSourceDiscriminator? Type63 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::DoclingServe.Target? Type64 { get; set; }
+        public global::DoclingServe.ConvertDocumentsRequestSourceDiscriminatorKind? Type64 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::DoclingServe.InBodyTarget? Type65 { get; set; }
+        public global::DoclingServe.Target? Type65 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::DoclingServe.ZipTarget? Type66 { get; set; }
+        public global::DoclingServe.InBodyTarget? Type66 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::DoclingServe.S3Target? Type67 { get; set; }
+        public global::DoclingServe.ZipTarget? Type67 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::DoclingServe.PutTarget? Type68 { get; set; }
+        public global::DoclingServe.S3Target? Type68 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::DoclingServe.ConvertDocumentsRequestTargetDiscriminator? Type69 { get; set; }
+        public global::DoclingServe.PutTarget? Type69 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::DoclingServe.ConvertDocumentsRequestTargetDiscriminatorKind? Type70 { get; set; }
+        public global::DoclingServe.ConvertDocumentsRequestTargetDiscriminator? Type70 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::DoclingServe.PictureDescriptionLocal? Type71 { get; set; }
+        public global::DoclingServe.ConvertDocumentsRequestTargetDiscriminatorKind? Type71 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::DoclingServe.PictureDescriptionApi? Type72 { get; set; }
+        public global::DoclingServe.PictureDescriptionLocal? Type72 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::DoclingServe.VlmModelLocal? Type73 { get; set; }
+        public global::DoclingServe.PictureDescriptionApi? Type73 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::DoclingServe.VlmModelApi? Type74 { get; set; }
+        public global::DoclingServe.VlmModelLocal? Type74 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::DoclingServe.AnyOf<global::DoclingServe.VlmConvertOptions, object, object>? Type75 { get; set; }
+        public global::DoclingServe.VlmModelApi? Type75 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::DoclingServe.VlmConvertOptions? Type76 { get; set; }
+        public global::DoclingServe.AnyOf<global::DoclingServe.VlmConvertOptions, object, object>? Type76 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::DoclingServe.AnyOf<global::DoclingServe.PictureDescriptionVlmEngineOptions, object, object>? Type77 { get; set; }
+        public global::DoclingServe.VlmConvertOptions? Type77 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::DoclingServe.PictureDescriptionVlmEngineOptions? Type78 { get; set; }
+        public global::DoclingServe.AnyOf<global::DoclingServe.PictureDescriptionVlmEngineOptions, object, object>? Type78 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::DoclingServe.AnyOf<global::DoclingServe.CodeFormulaVlmOptions, object, object>? Type79 { get; set; }
+        public global::DoclingServe.PictureDescriptionVlmEngineOptions? Type79 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::DoclingServe.DescriptionAnnotation? Type80 { get; set; }
+        public global::DoclingServe.AnyOf<global::DoclingServe.CodeFormulaVlmOptions, object, object>? Type80 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::DoclingServe.DescriptionMetaField? Type81 { get; set; }
+        public global::DoclingServe.DescriptionAnnotation? Type81 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::DoclingServe.DoclingComponentType? Type82 { get; set; }
+        public global::DoclingServe.DescriptionMetaField? Type82 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::DoclingServe.DocumentOrigin? Type83 { get; set; }
+        public global::DoclingServe.DoclingComponentType? Type83 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::DoclingServe.EngineModelConfig? Type84 { get; set; }
+        public global::DoclingServe.DoclingDocument? Type84 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::DoclingServe.FineRef? Type85 { get; set; }
+        public global::DoclingServe.DocumentOrigin? Type85 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::DoclingServe.FloatingMeta? Type86 { get; set; }
+        public global::DoclingServe.EngineModelConfig? Type86 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::DoclingServe.Formatting? Type87 { get; set; }
+        public global::DoclingServe.FieldHeadingItem? Type87 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::DoclingServe.Script? Type88 { get; set; }
+        public global::DoclingServe.FieldItem? Type88 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::DoclingServe.GraphCell? Type89 { get; set; }
+        public global::DoclingServe.FieldRegionItem? Type89 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::DoclingServe.GraphCellLabel? Type90 { get; set; }
+        public global::DoclingServe.FieldValueItem? Type90 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::DoclingServe.ProvenanceItem? Type91 { get; set; }
+        public global::DoclingServe.FineRef? Type91 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::DoclingServe.RefItem? Type92 { get; set; }
+        public global::DoclingServe.FloatingMeta? Type92 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::DoclingServe.GraphData? Type93 { get; set; }
+        public global::DoclingServe.FormItem? Type93 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::System.Collections.Generic.IList<global::DoclingServe.GraphCell>? Type94 { get; set; }
+        public global::DoclingServe.Formatting? Type94 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::System.Collections.Generic.IList<global::DoclingServe.GraphLink>? Type95 { get; set; }
+        public global::DoclingServe.Script? Type95 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::DoclingServe.GraphLink? Type96 { get; set; }
+        public global::DoclingServe.FormulaItem? Type96 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::DoclingServe.GraphLinkLabel? Type97 { get; set; }
+        public global::DoclingServe.GraphCell? Type97 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::DoclingServe.GroupItem? Type98 { get; set; }
+        public global::DoclingServe.GraphCellLabel? Type98 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::System.Collections.Generic.IList<global::DoclingServe.RefItem>? Type99 { get; set; }
+        public global::DoclingServe.ProvenanceItem? Type99 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::DoclingServe.GroupLabel? Type100 { get; set; }
+        public global::DoclingServe.RefItem? Type100 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::DoclingServe.HTTPValidationError? Type101 { get; set; }
+        public global::DoclingServe.GraphData? Type101 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::System.Collections.Generic.IList<global::DoclingServe.ValidationError>? Type102 { get; set; }
+        public global::System.Collections.Generic.IList<global::DoclingServe.GraphCell>? Type102 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::DoclingServe.ValidationError? Type103 { get; set; }
+        public global::System.Collections.Generic.IList<global::DoclingServe.GraphLink>? Type103 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::DoclingServe.HealthCheckResponse? Type104 { get; set; }
+        public global::DoclingServe.GraphLink? Type104 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::DoclingServe.HierarchicalChunkerOptions? Type105 { get; set; }
+        public global::DoclingServe.GraphLinkLabel? Type105 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::DoclingServe.HierarchicalChunkerOptionsDocumentsRequest? Type106 { get; set; }
+        public global::DoclingServe.GroupItem? Type106 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::System.Collections.Generic.IList<global::DoclingServe.SourcesItem2>? Type107 { get; set; }
+        public global::System.Collections.Generic.IList<global::DoclingServe.RefItem>? Type107 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::DoclingServe.SourcesItem2? Type108 { get; set; }
+        public global::DoclingServe.GroupLabel? Type108 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::DoclingServe.HierarchicalChunkerOptionsDocumentsRequestSourceDiscriminator? Type109 { get; set; }
+        public global::DoclingServe.HTTPValidationError? Type109 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::DoclingServe.HierarchicalChunkerOptionsDocumentsRequestSourceDiscriminatorKind? Type110 { get; set; }
+        public global::System.Collections.Generic.IList<global::DoclingServe.ValidationError>? Type110 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::DoclingServe.Target2? Type111 { get; set; }
+        public global::DoclingServe.ValidationError? Type111 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::DoclingServe.HierarchicalChunkerOptionsDocumentsRequestTargetDiscriminator? Type112 { get; set; }
+        public global::DoclingServe.HealthCheckResponse? Type112 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::DoclingServe.HierarchicalChunkerOptionsDocumentsRequestTargetDiscriminatorKind? Type113 { get; set; }
+        public global::DoclingServe.HierarchicalChunkerOptions? Type113 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::DoclingServe.HybridChunkerOptions? Type114 { get; set; }
+        public global::DoclingServe.HierarchicalChunkerOptionsDocumentsRequest? Type114 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::DoclingServe.HybridChunkerOptionsDocumentsRequest? Type115 { get; set; }
+        public global::System.Collections.Generic.IList<global::DoclingServe.SourcesItem2>? Type115 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::System.Collections.Generic.IList<global::DoclingServe.SourcesItem3>? Type116 { get; set; }
+        public global::DoclingServe.SourcesItem2? Type116 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::DoclingServe.SourcesItem3? Type117 { get; set; }
+        public global::DoclingServe.HierarchicalChunkerOptionsDocumentsRequestSourceDiscriminator? Type117 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::DoclingServe.HybridChunkerOptionsDocumentsRequestSourceDiscriminator? Type118 { get; set; }
+        public global::DoclingServe.HierarchicalChunkerOptionsDocumentsRequestSourceDiscriminatorKind? Type118 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::DoclingServe.HybridChunkerOptionsDocumentsRequestSourceDiscriminatorKind? Type119 { get; set; }
+        public global::DoclingServe.Target2? Type119 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::DoclingServe.Target3? Type120 { get; set; }
+        public global::DoclingServe.HierarchicalChunkerOptionsDocumentsRequestTargetDiscriminator? Type120 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::DoclingServe.HybridChunkerOptionsDocumentsRequestTargetDiscriminator? Type121 { get; set; }
+        public global::DoclingServe.HierarchicalChunkerOptionsDocumentsRequestTargetDiscriminatorKind? Type121 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::DoclingServe.HybridChunkerOptionsDocumentsRequestTargetDiscriminatorKind? Type122 { get; set; }
+        public global::DoclingServe.HybridChunkerOptions? Type122 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::DoclingServe.ImageRef? Type123 { get; set; }
+        public global::DoclingServe.HybridChunkerOptionsDocumentsRequest? Type123 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::DoclingServe.Size? Type124 { get; set; }
+        public global::System.Collections.Generic.IList<global::DoclingServe.SourcesItem3>? Type124 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::DoclingServe.InferenceFramework? Type125 { get; set; }
+        public global::DoclingServe.SourcesItem3? Type125 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::DoclingServe.InlineGroup? Type126 { get; set; }
+        public global::DoclingServe.HybridChunkerOptionsDocumentsRequestSourceDiscriminator? Type126 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::DoclingServe.ListGroup? Type127 { get; set; }
+        public global::DoclingServe.HybridChunkerOptionsDocumentsRequestSourceDiscriminatorKind? Type127 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::DoclingServe.MiscAnnotation? Type128 { get; set; }
+        public global::DoclingServe.Target3? Type128 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::DoclingServe.MoleculeMetaField? Type129 { get; set; }
+        public global::DoclingServe.HybridChunkerOptionsDocumentsRequestTargetDiscriminator? Type129 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::DoclingServe.PageItem? Type130 { get; set; }
+        public global::DoclingServe.HybridChunkerOptionsDocumentsRequestTargetDiscriminatorKind? Type130 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::DoclingServe.PictureBarChartData? Type131 { get; set; }
+        public global::DoclingServe.ImageRef? Type131 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::System.Collections.Generic.IList<global::DoclingServe.ChartBar>? Type132 { get; set; }
+        public global::DoclingServe.Size? Type132 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::DoclingServe.PictureClassificationClass? Type133 { get; set; }
+        public global::DoclingServe.InferenceFramework? Type133 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::DoclingServe.PictureClassificationData? Type134 { get; set; }
+        public global::DoclingServe.InlineGroup? Type134 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::System.Collections.Generic.IList<global::DoclingServe.PictureClassificationClass>? Type135 { get; set; }
+        public global::DoclingServe.KeyValueItem? Type135 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::DoclingServe.PictureClassificationLabel? Type136 { get; set; }
+        public global::DoclingServe.ListGroup? Type136 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::DoclingServe.PictureClassificationMetaField? Type137 { get; set; }
+        public global::DoclingServe.ListItem? Type137 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::System.Collections.Generic.IList<global::DoclingServe.PictureClassificationPrediction>? Type138 { get; set; }
+        public global::DoclingServe.MiscAnnotation? Type138 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::DoclingServe.PictureClassificationPrediction? Type139 { get; set; }
+        public global::DoclingServe.MoleculeMetaField? Type139 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::System.Collections.Generic.Dictionary<string, string>? Type140 { get; set; }
+        public global::DoclingServe.PageItem? Type140 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::System.Collections.Generic.IList<global::DoclingServe.PictureClassificationLabel>? Type141 { get; set; }
+        public global::DoclingServe.PictureBarChartData? Type141 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::DoclingServe.PictureLineChartData? Type142 { get; set; }
+        public global::System.Collections.Generic.IList<global::DoclingServe.ChartBar>? Type142 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::System.Collections.Generic.IList<global::DoclingServe.ChartLine>? Type143 { get; set; }
+        public global::DoclingServe.PictureClassificationClass? Type143 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::DoclingServe.PictureMeta? Type144 { get; set; }
+        public global::DoclingServe.PictureClassificationData? Type144 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::DoclingServe.TabularChartMetaField? Type145 { get; set; }
+        public global::System.Collections.Generic.IList<global::DoclingServe.PictureClassificationClass>? Type145 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::DoclingServe.PictureMoleculeData? Type146 { get; set; }
+        public global::DoclingServe.PictureClassificationLabel? Type146 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::DoclingServe.PicturePieChartData? Type147 { get; set; }
+        public global::DoclingServe.PictureClassificationMetaField? Type147 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::System.Collections.Generic.IList<global::DoclingServe.ChartSlice>? Type148 { get; set; }
+        public global::System.Collections.Generic.IList<global::DoclingServe.PictureClassificationPrediction>? Type148 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::DoclingServe.PictureScatterChartData? Type149 { get; set; }
+        public global::DoclingServe.PictureClassificationPrediction? Type149 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::System.Collections.Generic.IList<global::DoclingServe.ChartPoint>? Type150 { get; set; }
+        public global::System.Collections.Generic.Dictionary<string, string>? Type150 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::DoclingServe.PictureStackedBarChartData? Type151 { get; set; }
+        public global::System.Collections.Generic.IList<global::DoclingServe.PictureClassificationLabel>? Type151 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::System.Collections.Generic.IList<global::DoclingServe.ChartStackedBar>? Type152 { get; set; }
+        public global::DoclingServe.PictureItem? Type152 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::DoclingServe.PictureTabularChartData? Type153 { get; set; }
+        public global::DoclingServe.PictureLineChartData? Type153 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::DoclingServe.TableData? Type154 { get; set; }
+        public global::System.Collections.Generic.IList<global::DoclingServe.ChartLine>? Type154 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::DoclingServe.PresignedUrlConvertDocumentResponse? Type155 { get; set; }
+        public global::DoclingServe.PictureMeta? Type155 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::DoclingServe.ProfilingScope? Type156 { get; set; }
+        public global::DoclingServe.TabularChartMetaField? Type156 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::System.Collections.Generic.IList<double>? Type157 { get; set; }
+        public global::DoclingServe.PictureMoleculeData? Type157 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::System.Collections.Generic.IList<global::System.DateTime>? Type158 { get; set; }
+        public global::DoclingServe.PicturePieChartData? Type158 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::System.DateTime? Type159 { get; set; }
+        public global::System.Collections.Generic.IList<global::DoclingServe.ChartSlice>? Type159 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::DoclingServe.ReadinessResponse? Type160 { get; set; }
+        public global::DoclingServe.PictureScatterChartData? Type160 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::DoclingServe.ResponseFormat? Type161 { get; set; }
+        public global::System.Collections.Generic.IList<global::DoclingServe.ChartPoint>? Type161 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::DoclingServe.RichTableCell? Type162 { get; set; }
+        public global::DoclingServe.PictureStackedBarChartData? Type162 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::DoclingServe.TableCell? Type163 { get; set; }
+        public global::System.Collections.Generic.IList<global::DoclingServe.ChartStackedBar>? Type163 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::System.Collections.Generic.IList<global::DoclingServe.AnyOf<global::DoclingServe.RichTableCell, global::DoclingServe.TableCell>>? Type164 { get; set; }
+        public global::DoclingServe.PictureTabularChartData? Type164 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::DoclingServe.AnyOf<global::DoclingServe.RichTableCell, global::DoclingServe.TableCell>? Type165 { get; set; }
+        public global::DoclingServe.TableData? Type165 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::System.Collections.Generic.IList<global::System.Collections.Generic.IList<global::DoclingServe.TableCell>>? Type166 { get; set; }
+        public global::DoclingServe.PresignedUrlConvertDocumentResponse? Type166 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::System.Collections.Generic.IList<global::DoclingServe.TableCell>? Type167 { get; set; }
+        public global::DoclingServe.ProfilingScope? Type167 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::DoclingServe.TaskProcessingMeta? Type168 { get; set; }
+        public global::System.Collections.Generic.IList<double>? Type168 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::DoclingServe.TaskStatusResponse? Type169 { get; set; }
+        public global::System.Collections.Generic.IList<global::System.DateTime>? Type169 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::DoclingServe.TaskType? Type170 { get; set; }
+        public global::System.DateTime? Type170 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::DoclingServe.TrackSource? Type171 { get; set; }
+        public global::DoclingServe.ReadinessResponse? Type171 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::DoclingServe.TransformersModelType? Type172 { get; set; }
+        public global::DoclingServe.ResponseFormat? Type172 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::System.Collections.Generic.IList<global::DoclingServe.AnyOf<string, int?>>? Type173 { get; set; }
+        public global::DoclingServe.RichTableCell? Type173 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::DoclingServe.AnyOf<string, int?>? Type174 { get; set; }
+        public global::DoclingServe.SectionHeaderItem? Type174 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::System.Collections.Generic.IList<global::DoclingServe.VlmEngineType>? Type175 { get; set; }
+        public global::DoclingServe.TableCell? Type175 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::System.Collections.Generic.Dictionary<string, global::DoclingServe.EngineModelConfig>? Type176 { get; set; }
+        public global::System.Collections.Generic.IList<global::DoclingServe.AnyOf<global::DoclingServe.RichTableCell, global::DoclingServe.TableCell>>? Type176 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::System.Collections.Generic.Dictionary<string, global::DoclingServe.ApiModelConfig>? Type177 { get; set; }
+        public global::DoclingServe.AnyOf<global::DoclingServe.RichTableCell, global::DoclingServe.TableCell>? Type177 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::DoclingServe.AnyOf<global::DoclingServe.ConvertDocumentResponse, global::DoclingServe.PresignedUrlConvertDocumentResponse>? Type178 { get; set; }
+        public global::System.Collections.Generic.IList<global::System.Collections.Generic.IList<global::DoclingServe.TableCell>>? Type178 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::DoclingServe.AnyOf<global::DoclingServe.ConvertDocumentResponse, global::DoclingServe.PresignedUrlConvertDocumentResponse, global::DoclingServe.ChunkDocumentResponse>? Type179 { get; set; }
+        public global::System.Collections.Generic.IList<global::DoclingServe.TableCell>? Type179 { get; set; }
+        /// <summary>
+        /// 
+        /// </summary>
+        public global::DoclingServe.TableItem? Type180 { get; set; }
+        /// <summary>
+        /// 
+        /// </summary>
+        public global::DoclingServe.TaskProcessingMeta? Type181 { get; set; }
+        /// <summary>
+        /// 
+        /// </summary>
+        public global::DoclingServe.TaskStatusResponse? Type182 { get; set; }
+        /// <summary>
+        /// 
+        /// </summary>
+        public global::DoclingServe.TaskType? Type183 { get; set; }
+        /// <summary>
+        /// 
+        /// </summary>
+        public global::DoclingServe.TextItem? Type184 { get; set; }
+        /// <summary>
+        /// 
+        /// </summary>
+        public global::DoclingServe.TitleItem? Type185 { get; set; }
+        /// <summary>
+        /// 
+        /// </summary>
+        public global::DoclingServe.TrackSource? Type186 { get; set; }
+        /// <summary>
+        /// 
+        /// </summary>
+        public global::DoclingServe.TransformersModelType? Type187 { get; set; }
+        /// <summary>
+        /// 
+        /// </summary>
+        public global::System.Collections.Generic.IList<global::DoclingServe.AnyOf<string, int?>>? Type188 { get; set; }
+        /// <summary>
+        /// 
+        /// </summary>
+        public global::DoclingServe.AnyOf<string, int?>? Type189 { get; set; }
+        /// <summary>
+        /// 
+        /// </summary>
+        public global::System.Collections.Generic.IList<global::DoclingServe.VlmEngineType>? Type190 { get; set; }
+        /// <summary>
+        /// 
+        /// </summary>
+        public global::System.Collections.Generic.Dictionary<string, global::DoclingServe.EngineModelConfig>? Type191 { get; set; }
+        /// <summary>
+        /// 
+        /// </summary>
+        public global::System.Collections.Generic.Dictionary<string, global::DoclingServe.ApiModelConfig>? Type192 { get; set; }
+        /// <summary>
+        /// 
+        /// </summary>
+        public global::DoclingServe.AnyOf<global::DoclingServe.ConvertDocumentResponse, global::DoclingServe.PresignedUrlConvertDocumentResponse>? Type193 { get; set; }
+        /// <summary>
+        /// 
+        /// </summary>
+        public global::DoclingServe.AnyOf<global::DoclingServe.ConvertDocumentResponse, global::DoclingServe.PresignedUrlConvertDocumentResponse, global::DoclingServe.ChunkDocumentResponse>? Type194 { get; set; }
 
         /// <summary>
         /// 

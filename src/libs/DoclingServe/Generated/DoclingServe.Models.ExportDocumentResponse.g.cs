@@ -25,7 +25,7 @@ namespace DoclingServe
         /// 
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("json_content")]
-        public object? JsonContent { get; set; }
+        public global::DoclingServe.DoclingDocument? JsonContent { get; set; }
 
         /// <summary>
         /// 
@@ -66,7 +66,7 @@ namespace DoclingServe
         public ExportDocumentResponse(
             string filename,
             string? mdContent,
-            object? jsonContent,
+            global::DoclingServe.DoclingDocument? jsonContent,
             string? htmlContent,
             string? textContent,
             string? doctagsContent)
