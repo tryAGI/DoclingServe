@@ -1,9 +1,9 @@
 /*
-order: 10
-title: Generate
-slug: generate
+order: 30
+title: Management
+slug: management
 
-Basic example showing how to create a client and make a request.
+Check server management information and clear cached converters.
 */
 
 namespace DoclingServe.IntegrationTests;
@@ -11,8 +11,30 @@ namespace DoclingServe.IntegrationTests;
 public partial class Tests
 {
     [TestMethod]
-    public async Task Example_Generate()
+    public async Task GetMemoryUsage()
     {
         using var client = GetAuthenticatedClient();
+
+        //// Retrieve memory usage statistics from the Docling Serve instance.
+        //// This is useful for monitoring resource consumption on self-hosted deployments.
+        var counts = await client.Management.MemoryCountsV1MemoryCountsGetAsync();
+
+        counts.Should().NotBeNull();
+
+        Console.WriteLine($"Converter count: {counts}");
+    }
+
+    [TestMethod]
+    public async Task ClearConverters()
+    {
+        using var client = GetAuthenticatedClient();
+
+        //// Clear cached converters from the Docling Serve instance.
+        //// This frees up memory by unloading previously loaded conversion pipelines.
+        var result = await client.Clear.ClearConvertersV1ClearConvertersGetAsync();
+
+        result.Should().NotBeNull();
+
+        Console.WriteLine($"Clear result: {result}");
     }
 }
