@@ -58,14 +58,14 @@ namespace DoclingServe
         /// <summary>
         /// Initializes a new instance of the <see cref="PictureMoleculeData" /> class.
         /// </summary>
-        /// <param name="kind">
-        /// Default Value: molecule_data
-        /// </param>
         /// <param name="smi"></param>
         /// <param name="confidence"></param>
         /// <param name="className"></param>
         /// <param name="segmentation"></param>
         /// <param name="provenance"></param>
+        /// <param name="kind">
+        /// Default Value: molecule_data
+        /// </param>
 #if NET7_0_OR_GREATER
         [global::System.Diagnostics.CodeAnalysis.SetsRequiredMembers]
 #endif
@@ -77,12 +77,12 @@ namespace DoclingServe
             string provenance,
             string? kind)
         {
+            this.Kind = kind;
             this.Smi = smi ?? throw new global::System.ArgumentNullException(nameof(smi));
             this.Confidence = confidence;
             this.ClassName = className ?? throw new global::System.ArgumentNullException(nameof(className));
             this.Segmentation = segmentation ?? throw new global::System.ArgumentNullException(nameof(segmentation));
             this.Provenance = provenance ?? throw new global::System.ArgumentNullException(nameof(provenance));
-            this.Kind = kind;
         }
 
         /// <summary>

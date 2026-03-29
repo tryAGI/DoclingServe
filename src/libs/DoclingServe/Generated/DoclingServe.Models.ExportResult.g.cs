@@ -50,11 +50,11 @@ namespace DoclingServe
         /// <summary>
         /// Initializes a new instance of the <see cref="ExportResult" /> class.
         /// </summary>
+        /// <param name="content"></param>
+        /// <param name="status"></param>
         /// <param name="kind">
         /// Default Value: ExportResult
         /// </param>
-        /// <param name="content"></param>
-        /// <param name="status"></param>
         /// <param name="errors">
         /// Default Value: []
         /// </param>
@@ -71,9 +71,9 @@ namespace DoclingServe
             global::System.Collections.Generic.IList<global::DoclingServe.ErrorItem>? errors,
             global::System.Collections.Generic.Dictionary<string, global::DoclingServe.ProfilingItem>? timings)
         {
+            this.Kind = kind;
             this.Content = content ?? throw new global::System.ArgumentNullException(nameof(content));
             this.Status = status;
-            this.Kind = kind;
             this.Errors = errors;
             this.Timings = timings;
         }

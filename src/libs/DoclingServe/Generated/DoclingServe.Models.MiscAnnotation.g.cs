@@ -30,10 +30,10 @@ namespace DoclingServe
         /// <summary>
         /// Initializes a new instance of the <see cref="MiscAnnotation" /> class.
         /// </summary>
+        /// <param name="content"></param>
         /// <param name="kind">
         /// Default Value: misc
         /// </param>
-        /// <param name="content"></param>
 #if NET7_0_OR_GREATER
         [global::System.Diagnostics.CodeAnalysis.SetsRequiredMembers]
 #endif
@@ -41,8 +41,8 @@ namespace DoclingServe
             object content,
             string? kind)
         {
-            this.Content = content ?? throw new global::System.ArgumentNullException(nameof(content));
             this.Kind = kind;
+            this.Content = content ?? throw new global::System.ArgumentNullException(nameof(content));
         }
 
         /// <summary>

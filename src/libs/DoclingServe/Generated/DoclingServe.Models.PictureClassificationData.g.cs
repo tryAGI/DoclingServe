@@ -37,11 +37,11 @@ namespace DoclingServe
         /// <summary>
         /// Initializes a new instance of the <see cref="PictureClassificationData" /> class.
         /// </summary>
+        /// <param name="provenance"></param>
+        /// <param name="predictedClasses"></param>
         /// <param name="kind">
         /// Default Value: classification
         /// </param>
-        /// <param name="provenance"></param>
-        /// <param name="predictedClasses"></param>
 #if NET7_0_OR_GREATER
         [global::System.Diagnostics.CodeAnalysis.SetsRequiredMembers]
 #endif
@@ -50,9 +50,9 @@ namespace DoclingServe
             global::System.Collections.Generic.IList<global::DoclingServe.PictureClassificationClass> predictedClasses,
             string? kind)
         {
+            this.Kind = kind;
             this.Provenance = provenance ?? throw new global::System.ArgumentNullException(nameof(provenance));
             this.PredictedClasses = predictedClasses ?? throw new global::System.ArgumentNullException(nameof(predictedClasses));
-            this.Kind = kind;
         }
 
         /// <summary>

@@ -40,11 +40,11 @@ namespace DoclingServe
         /// <summary>
         /// Initializes a new instance of the <see cref="PicturePieChartData" /> class.
         /// </summary>
+        /// <param name="title"></param>
+        /// <param name="slices"></param>
         /// <param name="kind">
         /// Default Value: pie_chart_data
         /// </param>
-        /// <param name="title"></param>
-        /// <param name="slices"></param>
 #if NET7_0_OR_GREATER
         [global::System.Diagnostics.CodeAnalysis.SetsRequiredMembers]
 #endif
@@ -53,9 +53,9 @@ namespace DoclingServe
             global::System.Collections.Generic.IList<global::DoclingServe.ChartSlice> slices,
             string? kind)
         {
+            this.Kind = kind;
             this.Title = title ?? throw new global::System.ArgumentNullException(nameof(title));
             this.Slices = slices ?? throw new global::System.ArgumentNullException(nameof(slices));
-            this.Kind = kind;
         }
 
         /// <summary>

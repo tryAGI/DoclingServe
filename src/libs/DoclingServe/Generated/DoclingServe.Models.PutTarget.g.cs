@@ -30,10 +30,10 @@ namespace DoclingServe
         /// <summary>
         /// Initializes a new instance of the <see cref="PutTarget" /> class.
         /// </summary>
+        /// <param name="url"></param>
         /// <param name="kind">
         /// Default Value: put
         /// </param>
-        /// <param name="url"></param>
 #if NET7_0_OR_GREATER
         [global::System.Diagnostics.CodeAnalysis.SetsRequiredMembers]
 #endif
@@ -41,8 +41,8 @@ namespace DoclingServe
             string url,
             string? kind)
         {
-            this.Url = url ?? throw new global::System.ArgumentNullException(nameof(url));
             this.Kind = kind;
+            this.Url = url ?? throw new global::System.ArgumentNullException(nameof(url));
         }
 
         /// <summary>

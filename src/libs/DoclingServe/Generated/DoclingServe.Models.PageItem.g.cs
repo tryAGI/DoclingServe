@@ -40,8 +40,8 @@ namespace DoclingServe
         /// <param name="size">
         /// Size.
         /// </param>
-        /// <param name="image"></param>
         /// <param name="pageNo"></param>
+        /// <param name="image"></param>
 #if NET7_0_OR_GREATER
         [global::System.Diagnostics.CodeAnalysis.SetsRequiredMembers]
 #endif
@@ -51,8 +51,8 @@ namespace DoclingServe
             global::DoclingServe.ImageRef? image)
         {
             this.Size = size ?? throw new global::System.ArgumentNullException(nameof(size));
-            this.PageNo = pageNo;
             this.Image = image;
+            this.PageNo = pageNo;
         }
 
         /// <summary>

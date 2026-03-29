@@ -37,11 +37,11 @@ namespace DoclingServe
         /// <summary>
         /// Initializes a new instance of the <see cref="DescriptionAnnotation" /> class.
         /// </summary>
+        /// <param name="text"></param>
+        /// <param name="provenance"></param>
         /// <param name="kind">
         /// Default Value: description
         /// </param>
-        /// <param name="text"></param>
-        /// <param name="provenance"></param>
 #if NET7_0_OR_GREATER
         [global::System.Diagnostics.CodeAnalysis.SetsRequiredMembers]
 #endif
@@ -50,9 +50,9 @@ namespace DoclingServe
             string provenance,
             string? kind)
         {
+            this.Kind = kind;
             this.Text = text ?? throw new global::System.ArgumentNullException(nameof(text));
             this.Provenance = provenance ?? throw new global::System.ArgumentNullException(nameof(provenance));
-            this.Kind = kind;
         }
 
         /// <summary>

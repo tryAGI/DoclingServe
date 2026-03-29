@@ -86,6 +86,9 @@ namespace DoclingServe
         /// <param name="text">
         /// The chunk text with structural context (headers, formatting)
         /// </param>
+        /// <param name="docItems">
+        /// List of doc items references
+        /// </param>
         /// <param name="rawText">
         /// Raw chunk text without additional formatting or context
         /// </param>
@@ -97,9 +100,6 @@ namespace DoclingServe
         /// </param>
         /// <param name="captions">
         /// List of captions for this chunk (e.g. for pictures and tables)
-        /// </param>
-        /// <param name="docItems">
-        /// List of doc items references
         /// </param>
         /// <param name="pageNumbers">
         /// Page numbers where this chunk content appears
@@ -125,11 +125,11 @@ namespace DoclingServe
             this.Filename = filename ?? throw new global::System.ArgumentNullException(nameof(filename));
             this.ChunkIndex = chunkIndex;
             this.Text = text ?? throw new global::System.ArgumentNullException(nameof(text));
-            this.DocItems = docItems ?? throw new global::System.ArgumentNullException(nameof(docItems));
             this.RawText = rawText;
             this.NumTokens = numTokens;
             this.Headings = headings;
             this.Captions = captions;
+            this.DocItems = docItems ?? throw new global::System.ArgumentNullException(nameof(docItems));
             this.PageNumbers = pageNumbers;
             this.Metadata = metadata;
         }

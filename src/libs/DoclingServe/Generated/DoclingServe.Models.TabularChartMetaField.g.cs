@@ -42,6 +42,9 @@ namespace DoclingServe
         /// <summary>
         /// Initializes a new instance of the <see cref="TabularChartMetaField" /> class.
         /// </summary>
+        /// <param name="chartData">
+        /// BaseTableData.
+        /// </param>
         /// <param name="confidence">
         /// The confidence of the prediction.
         /// </param>
@@ -49,9 +52,6 @@ namespace DoclingServe
         /// The origin of the prediction.
         /// </param>
         /// <param name="title"></param>
-        /// <param name="chartData">
-        /// BaseTableData.
-        /// </param>
 #if NET7_0_OR_GREATER
         [global::System.Diagnostics.CodeAnalysis.SetsRequiredMembers]
 #endif
@@ -61,10 +61,10 @@ namespace DoclingServe
             string? createdBy,
             string? title)
         {
-            this.ChartData = chartData ?? throw new global::System.ArgumentNullException(nameof(chartData));
             this.Confidence = confidence;
             this.CreatedBy = createdBy;
             this.Title = title;
+            this.ChartData = chartData ?? throw new global::System.ArgumentNullException(nameof(chartData));
         }
 
         /// <summary>

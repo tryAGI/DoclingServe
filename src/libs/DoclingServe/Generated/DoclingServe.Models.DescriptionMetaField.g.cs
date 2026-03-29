@@ -36,13 +36,13 @@ namespace DoclingServe
         /// <summary>
         /// Initializes a new instance of the <see cref="DescriptionMetaField" /> class.
         /// </summary>
+        /// <param name="text"></param>
         /// <param name="confidence">
         /// The confidence of the prediction.
         /// </param>
         /// <param name="createdBy">
         /// The origin of the prediction.
         /// </param>
-        /// <param name="text"></param>
 #if NET7_0_OR_GREATER
         [global::System.Diagnostics.CodeAnalysis.SetsRequiredMembers]
 #endif
@@ -51,9 +51,9 @@ namespace DoclingServe
             double? confidence,
             string? createdBy)
         {
-            this.Text = text ?? throw new global::System.ArgumentNullException(nameof(text));
             this.Confidence = confidence;
             this.CreatedBy = createdBy;
+            this.Text = text ?? throw new global::System.ArgumentNullException(nameof(text));
         }
 
         /// <summary>

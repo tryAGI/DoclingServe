@@ -67,6 +67,9 @@ namespace DoclingServe
         /// <param name="endpoint">
         /// S3 service endpoint, without protocol. Required.
         /// </param>
+        /// <param name="bucket">
+        /// S3 bucket name. Required.
+        /// </param>
         /// <param name="verifySsl">
         /// If enabled, SSL will be used to connect to s3. Boolean. Optional, defaults to true<br/>
         /// Default Value: true
@@ -78,9 +81,6 @@ namespace DoclingServe
         /// <param name="secretKey">
         /// S3 secret key. Required.<br/>
         /// Included only in requests
-        /// </param>
-        /// <param name="bucket">
-        /// S3 bucket name. Required.
         /// </param>
         /// <param name="keyPrefix">
         /// Prefix for the object keys on s3. Optional, defaults to empty.
@@ -101,10 +101,10 @@ namespace DoclingServe
             string? kind)
         {
             this.Endpoint = endpoint ?? throw new global::System.ArgumentNullException(nameof(endpoint));
-            this.Bucket = bucket ?? throw new global::System.ArgumentNullException(nameof(bucket));
             this.VerifySsl = verifySsl;
             this.AccessKey = accessKey;
             this.SecretKey = secretKey;
+            this.Bucket = bucket ?? throw new global::System.ArgumentNullException(nameof(bucket));
             this.KeyPrefix = keyPrefix;
             this.Kind = kind;
         }
