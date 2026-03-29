@@ -40,12 +40,12 @@ namespace DoclingServe
         /// <summary>
         /// Initializes a new instance of the <see cref="PictureTabularChartData" /> class.
         /// </summary>
-        /// <param name="kind">
-        /// Default Value: tabular_chart_data
-        /// </param>
         /// <param name="title"></param>
         /// <param name="chartData">
         /// BaseTableData.
+        /// </param>
+        /// <param name="kind">
+        /// Default Value: tabular_chart_data
         /// </param>
 #if NET7_0_OR_GREATER
         [global::System.Diagnostics.CodeAnalysis.SetsRequiredMembers]
@@ -55,9 +55,9 @@ namespace DoclingServe
             global::DoclingServe.TableData chartData,
             string? kind)
         {
+            this.Kind = kind;
             this.Title = title ?? throw new global::System.ArgumentNullException(nameof(title));
             this.ChartData = chartData ?? throw new global::System.ArgumentNullException(nameof(chartData));
-            this.Kind = kind;
         }
 
         /// <summary>

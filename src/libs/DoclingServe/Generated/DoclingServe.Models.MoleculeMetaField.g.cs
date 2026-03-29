@@ -36,14 +36,14 @@ namespace DoclingServe
         /// <summary>
         /// Initializes a new instance of the <see cref="MoleculeMetaField" /> class.
         /// </summary>
+        /// <param name="smi">
+        /// The SMILES representation of the molecule.
+        /// </param>
         /// <param name="confidence">
         /// The confidence of the prediction.
         /// </param>
         /// <param name="createdBy">
         /// The origin of the prediction.
-        /// </param>
-        /// <param name="smi">
-        /// The SMILES representation of the molecule.
         /// </param>
 #if NET7_0_OR_GREATER
         [global::System.Diagnostics.CodeAnalysis.SetsRequiredMembers]
@@ -53,9 +53,9 @@ namespace DoclingServe
             double? confidence,
             string? createdBy)
         {
-            this.Smi = smi ?? throw new global::System.ArgumentNullException(nameof(smi));
             this.Confidence = confidence;
             this.CreatedBy = createdBy;
+            this.Smi = smi ?? throw new global::System.ArgumentNullException(nameof(smi));
         }
 
         /// <summary>

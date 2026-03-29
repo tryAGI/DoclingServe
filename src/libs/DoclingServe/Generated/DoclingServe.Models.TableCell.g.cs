@@ -94,6 +94,11 @@ namespace DoclingServe
         /// <summary>
         /// Initializes a new instance of the <see cref="TableCell" /> class.
         /// </summary>
+        /// <param name="startRowOffsetIdx"></param>
+        /// <param name="endRowOffsetIdx"></param>
+        /// <param name="startColOffsetIdx"></param>
+        /// <param name="endColOffsetIdx"></param>
+        /// <param name="text"></param>
         /// <param name="bbox"></param>
         /// <param name="rowSpan">
         /// Default Value: 1
@@ -101,11 +106,6 @@ namespace DoclingServe
         /// <param name="colSpan">
         /// Default Value: 1
         /// </param>
-        /// <param name="startRowOffsetIdx"></param>
-        /// <param name="endRowOffsetIdx"></param>
-        /// <param name="startColOffsetIdx"></param>
-        /// <param name="endColOffsetIdx"></param>
-        /// <param name="text"></param>
         /// <param name="columnHeader">
         /// Default Value: false
         /// </param>
@@ -135,14 +135,14 @@ namespace DoclingServe
             bool? rowSection,
             bool? fillable)
         {
+            this.Bbox = bbox;
+            this.RowSpan = rowSpan;
+            this.ColSpan = colSpan;
             this.StartRowOffsetIdx = startRowOffsetIdx;
             this.EndRowOffsetIdx = endRowOffsetIdx;
             this.StartColOffsetIdx = startColOffsetIdx;
             this.EndColOffsetIdx = endColOffsetIdx;
             this.Text = text ?? throw new global::System.ArgumentNullException(nameof(text));
-            this.Bbox = bbox;
-            this.RowSpan = rowSpan;
-            this.ColSpan = colSpan;
             this.ColumnHeader = columnHeader;
             this.RowHeader = rowHeader;
             this.RowSection = rowSection;

@@ -103,15 +103,15 @@ namespace DoclingServe
         /// <param name="defaultRepoId">
         /// Default HuggingFace repository ID
         /// </param>
-        /// <param name="revision">
-        /// Default model revision<br/>
-        /// Default Value: main
-        /// </param>
         /// <param name="prompt">
         /// Prompt template for this model
         /// </param>
         /// <param name="responseFormat">
         /// Expected response format from the model
+        /// </param>
+        /// <param name="revision">
+        /// Default model revision<br/>
+        /// Default Value: main
         /// </param>
         /// <param name="supportedEngines">
         /// Set of supported engines (None = all supported)
@@ -151,9 +151,9 @@ namespace DoclingServe
         {
             this.Name = name ?? throw new global::System.ArgumentNullException(nameof(name));
             this.DefaultRepoId = defaultRepoId ?? throw new global::System.ArgumentNullException(nameof(defaultRepoId));
+            this.Revision = revision;
             this.Prompt = prompt ?? throw new global::System.ArgumentNullException(nameof(prompt));
             this.ResponseFormat = responseFormat;
-            this.Revision = revision;
             this.SupportedEngines = supportedEngines;
             this.EngineOverrides = engineOverrides;
             this.ApiOverrides = apiOverrides;

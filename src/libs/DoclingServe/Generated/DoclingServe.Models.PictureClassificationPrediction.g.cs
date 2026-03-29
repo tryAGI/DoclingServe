@@ -36,13 +36,13 @@ namespace DoclingServe
         /// <summary>
         /// Initializes a new instance of the <see cref="PictureClassificationPrediction" /> class.
         /// </summary>
+        /// <param name="className"></param>
         /// <param name="confidence">
         /// The confidence of the prediction.
         /// </param>
         /// <param name="createdBy">
         /// The origin of the prediction.
         /// </param>
-        /// <param name="className"></param>
 #if NET7_0_OR_GREATER
         [global::System.Diagnostics.CodeAnalysis.SetsRequiredMembers]
 #endif
@@ -51,9 +51,9 @@ namespace DoclingServe
             double? confidence,
             string? createdBy)
         {
-            this.ClassName = className ?? throw new global::System.ArgumentNullException(nameof(className));
             this.Confidence = confidence;
             this.CreatedBy = createdBy;
+            this.ClassName = className ?? throw new global::System.ArgumentNullException(nameof(className));
         }
 
         /// <summary>

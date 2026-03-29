@@ -56,13 +56,13 @@ namespace DoclingServe
         /// <summary>
         /// Initializes a new instance of the <see cref="PictureLineChartData" /> class.
         /// </summary>
-        /// <param name="kind">
-        /// Default Value: line_chart_data
-        /// </param>
         /// <param name="title"></param>
         /// <param name="xAxisLabel"></param>
         /// <param name="yAxisLabel"></param>
         /// <param name="lines"></param>
+        /// <param name="kind">
+        /// Default Value: line_chart_data
+        /// </param>
 #if NET7_0_OR_GREATER
         [global::System.Diagnostics.CodeAnalysis.SetsRequiredMembers]
 #endif
@@ -73,11 +73,11 @@ namespace DoclingServe
             global::System.Collections.Generic.IList<global::DoclingServe.ChartLine> lines,
             string? kind)
         {
+            this.Kind = kind;
             this.Title = title ?? throw new global::System.ArgumentNullException(nameof(title));
             this.XAxisLabel = xAxisLabel ?? throw new global::System.ArgumentNullException(nameof(xAxisLabel));
             this.YAxisLabel = yAxisLabel ?? throw new global::System.ArgumentNullException(nameof(yAxisLabel));
             this.Lines = lines ?? throw new global::System.ArgumentNullException(nameof(lines));
-            this.Kind = kind;
         }
 
         /// <summary>

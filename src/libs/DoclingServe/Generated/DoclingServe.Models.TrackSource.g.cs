@@ -53,15 +53,15 @@ namespace DoclingServe
         /// <summary>
         /// Initializes a new instance of the <see cref="TrackSource" /> class.
         /// </summary>
-        /// <param name="kind">
-        /// Identifies this type of source.<br/>
-        /// Default Value: track
-        /// </param>
         /// <param name="startTime">
         /// Start time offset of the track cue in seconds
         /// </param>
         /// <param name="endTime">
         /// End time offset of the track cue in seconds
+        /// </param>
+        /// <param name="kind">
+        /// Identifies this type of source.<br/>
+        /// Default Value: track
         /// </param>
         /// <param name="identifier">
         /// An identifier of the cue
@@ -79,9 +79,9 @@ namespace DoclingServe
             string? identifier,
             string? voice)
         {
+            this.Kind = kind;
             this.StartTime = startTime;
             this.EndTime = endTime;
-            this.Kind = kind;
             this.Identifier = identifier;
             this.Voice = voice;
         }

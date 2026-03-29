@@ -97,6 +97,12 @@ namespace DoclingServe
         /// <summary>
         /// Initializes a new instance of the <see cref="PictureDescriptionVlmEngineOptions" /> class.
         /// </summary>
+        /// <param name="engineOptions">
+        /// Runtime configuration (transformers, mlx, api, etc.)
+        /// </param>
+        /// <param name="modelSpec">
+        /// Model specification with runtime-specific overrides
+        /// </param>
         /// <param name="batchSize">
         /// Number of images to process in a single batch during picture description. Higher values improve throughput but increase memory usage. Adjust based on available GPU/CPU memory.<br/>
         /// Default Value: 8
@@ -118,12 +124,6 @@ namespace DoclingServe
         /// <param name="classificationMinConfidence">
         /// Minimum classification confidence score (0.0-1.0) required for a picture to be processed. Pictures with classification confidence below this threshold are skipped. Higher values ensure only confidently classified images are described. Range: 0.0 (no filtering) to 1.0 (maximum confidence).<br/>
         /// Default Value: 0F
-        /// </param>
-        /// <param name="engineOptions">
-        /// Runtime configuration (transformers, mlx, api, etc.)
-        /// </param>
-        /// <param name="modelSpec">
-        /// Model specification with runtime-specific overrides
         /// </param>
         /// <param name="prompt">
         /// Prompt template for the vision model. Customize to control description style, detail level, or focus.<br/>
@@ -148,14 +148,14 @@ namespace DoclingServe
             string? prompt,
             object? generationConfig)
         {
-            this.EngineOptions = engineOptions ?? throw new global::System.ArgumentNullException(nameof(engineOptions));
-            this.ModelSpec = modelSpec ?? throw new global::System.ArgumentNullException(nameof(modelSpec));
             this.BatchSize = batchSize;
             this.Scale = scale;
             this.PictureAreaThreshold = pictureAreaThreshold;
             this.ClassificationAllow = classificationAllow;
             this.ClassificationDeny = classificationDeny;
             this.ClassificationMinConfidence = classificationMinConfidence;
+            this.EngineOptions = engineOptions ?? throw new global::System.ArgumentNullException(nameof(engineOptions));
+            this.ModelSpec = modelSpec ?? throw new global::System.ArgumentNullException(nameof(modelSpec));
             this.Prompt = prompt;
             this.GenerationConfig = generationConfig;
         }

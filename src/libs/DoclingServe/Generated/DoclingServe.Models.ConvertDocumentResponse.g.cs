@@ -53,10 +53,10 @@ namespace DoclingServe
         /// </summary>
         /// <param name="document"></param>
         /// <param name="status"></param>
+        /// <param name="processingTime"></param>
         /// <param name="errors">
         /// Default Value: []
         /// </param>
-        /// <param name="processingTime"></param>
         /// <param name="timings">
         /// Default Value: {}
         /// </param>
@@ -72,8 +72,8 @@ namespace DoclingServe
         {
             this.Document = document ?? throw new global::System.ArgumentNullException(nameof(document));
             this.Status = status;
-            this.ProcessingTime = processingTime;
             this.Errors = errors;
+            this.ProcessingTime = processingTime;
             this.Timings = timings;
         }
 
