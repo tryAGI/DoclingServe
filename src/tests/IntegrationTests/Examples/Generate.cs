@@ -13,7 +13,7 @@ public partial class Tests
     [TestMethod]
     public async Task GetMemoryUsage()
     {
-        using var client = GetAuthenticatedClient();
+        var client = Client;
 
         //// Retrieve memory usage statistics from the Docling Serve instance.
         //// This is useful for monitoring resource consumption on self-hosted deployments.
@@ -27,7 +27,7 @@ public partial class Tests
     [TestMethod]
     public async Task ClearConverters()
     {
-        using var client = GetAuthenticatedClient();
+        var client = Client;
 
         //// Clear cached converters from the Docling Serve instance.
         //// This frees up memory by unloading previously loaded conversion pipelines.

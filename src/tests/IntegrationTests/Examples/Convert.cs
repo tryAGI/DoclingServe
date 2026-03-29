@@ -13,7 +13,7 @@ public partial class Tests
     [TestMethod]
     public async Task ConvertFromUrl()
     {
-        using var client = GetAuthenticatedClient();
+        var client = Client;
 
         //// Convert a document from a public URL to Markdown format.
         //// Docling Serve supports PDF, DOCX, PPTX, HTML, images, and many other formats.
@@ -35,7 +35,7 @@ public partial class Tests
     [TestMethod]
     public async Task ConvertFromUrlWithOptions()
     {
-        using var client = GetAuthenticatedClient();
+        var client = Client;
 
         //// Convert a document with custom options.
         //// You can specify output formats, enable/disable OCR,

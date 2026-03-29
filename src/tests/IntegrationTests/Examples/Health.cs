@@ -13,7 +13,7 @@ public partial class Tests
     [TestMethod]
     public async Task CheckHealth()
     {
-        using var client = GetAuthenticatedClient();
+        var client = Client;
 
         //// Check the health status of the Docling Serve instance.
         //// Returns a status string indicating whether the service is operational.
@@ -28,7 +28,7 @@ public partial class Tests
     [TestMethod]
     public async Task CheckReadiness()
     {
-        using var client = GetAuthenticatedClient();
+        var client = Client;
 
         //// Check whether the Docling Serve instance is ready to accept requests.
         //// This verifies that all required models and pipelines are loaded.
@@ -43,7 +43,7 @@ public partial class Tests
     [TestMethod]
     public async Task GetVersion()
     {
-        using var client = GetAuthenticatedClient();
+        var client = Client;
 
         //// Retrieve the version information of the running Docling Serve instance.
         var version = await client.Health.VersionInfoVersionGetAsync();
