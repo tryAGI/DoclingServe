@@ -7,7 +7,7 @@ public sealed class Environment : IAsyncDisposable
 {
     private const string DoclingServeImage = "quay.io/docling-project/docling-serve-cpu:latest";
     private const ushort DoclingServePort = 5001;
-    private static readonly TimeSpan StartupTimeout = TimeSpan.FromMinutes(5);
+    private static readonly TimeSpan StartupTimeout = TimeSpan.FromMinutes(10);
 
     public IContainer? Container { get; init; }
     public required DoclingServeClient Client { get; init; }

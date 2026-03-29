@@ -12,6 +12,14 @@ dotnet build DoclingServe.slnx
 dotnet test src/tests/IntegrationTests/
 ```
 
+### Test Modes (Testcontainers)
+
+Tests use Testcontainers with automatic environment detection:
+- **Debug builds** (`dotnet test`): Connect to local instance at `localhost:5001` (start manually with `docker run -p 5001:5001 quay.io/docling-project/docling-serve-cpu`)
+- **Release/CI builds** (`dotnet test -c Release`): Automatically spin up `docling-serve-cpu` Docker container via Testcontainers (10-minute startup timeout for ML model loading)
+
+Override with env vars: `DOCLINGSERVE_BASE_URL`, `DOCLINGSERVE_API_KEY` (local mode only).
+
 ## Auth
 
 Bearer token auth (optional for local instances, may be required for deployed services):
@@ -27,7 +35,8 @@ Default base URL: `http://localhost:5001` (local Docling Serve instance).
 - `src/libs/DoclingServe/openapi.json` — OpenAPI spec (locally maintained, OpenAPI 3.1.0)
 - `src/libs/DoclingServe/generate.sh` — Runs autosdk to generate client code (no spec download or auth fixes needed)
 - `src/libs/DoclingServe/Generated/` — **Never edit** — auto-generated code (702 files)
-- `src/tests/IntegrationTests/Tests.cs` — Test helper with bearer auth
+- `src/tests/IntegrationTests/Environment.cs` — Testcontainers setup (Docker in CI, localhost in debug)
+- `src/tests/IntegrationTests/Tests.cs` — Assembly-level init/cleanup
 - `src/tests/IntegrationTests/Examples/` — Example tests (also generate docs)
 
 ## Spec Notes
