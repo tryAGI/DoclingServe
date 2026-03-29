@@ -24,6 +24,7 @@ public partial class Tests
                 new HttpSourceRequest
                 {
                     Url = "https://arxiv.org/pdf/2408.09869",
+                    Kind = "http",
                 },
             ]);
 
@@ -46,6 +47,7 @@ public partial class Tests
                 new HttpSourceRequest
                 {
                     Url = "https://arxiv.org/pdf/2408.09869",
+                    Kind = "http",
                 },
             ],
             options: new ConvertDocumentsRequestOptions

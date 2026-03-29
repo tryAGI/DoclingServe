@@ -17,11 +17,19 @@ public partial class Tests
 
         //// Retrieve memory usage statistics from the Docling Serve instance.
         //// This is useful for monitoring resource consumption on self-hosted deployments.
-        var counts = await client.Management.MemoryCountsV1MemoryCountsGetAsync();
+        //// Note: Management endpoints may be disabled on some server configurations (403 Forbidden).
+        try
+        {
+            var counts = await client.Management.MemoryCountsV1MemoryCountsGetAsync();
 
-        counts.Should().NotBeNull();
+            counts.Should().NotBeNull();
 
-        Console.WriteLine($"Converter count: {counts}");
+            Console.WriteLine($"Converter count: {counts}");
+        }
+        catch (ApiException e) when (e.StatusCode == System.Net.HttpStatusCode.Forbidden)
+        {
+            Assert.Inconclusive("Management endpoint is disabled on this server configuration.");
+        }
     }
 
     [TestMethod]
@@ -31,10 +39,18 @@ public partial class Tests
 
         //// Clear cached converters from the Docling Serve instance.
         //// This frees up memory by unloading previously loaded conversion pipelines.
-        var result = await client.Clear.ClearConvertersV1ClearConvertersGetAsync();
+        //// Note: Management endpoints may be disabled on some server configurations (403 Forbidden).
+        try
+        {
+            var result = await client.Clear.ClearConvertersV1ClearConvertersGetAsync();
 
-        result.Should().NotBeNull();
+            result.Should().NotBeNull();
 
-        Console.WriteLine($"Clear result: {result}");
+            Console.WriteLine($"Clear result: {result}");
+        }
+        catch (ApiException e) when (e.StatusCode == System.Net.HttpStatusCode.Forbidden)
+        {
+            Assert.Inconclusive("Clear endpoint is disabled on this server configuration.");
+        }
     }
 }
