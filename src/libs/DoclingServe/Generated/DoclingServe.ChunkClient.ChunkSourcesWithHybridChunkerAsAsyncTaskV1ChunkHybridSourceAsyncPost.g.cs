@@ -232,7 +232,6 @@ namespace DoclingServe
             global::DoclingServe.HybridChunkerOptions? chunkingOptions = default,
             global::System.Threading.CancellationToken cancellationToken = default)
         {
-
             var __request = new global::DoclingServe.HybridChunkerOptionsDocumentsRequest
             {
                 ConvertOptions = convertOptions,
