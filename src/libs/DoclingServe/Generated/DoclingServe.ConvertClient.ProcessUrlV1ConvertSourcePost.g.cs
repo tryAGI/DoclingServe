@@ -219,7 +219,6 @@ namespace DoclingServe
             global::DoclingServe.Target? target = default,
             global::System.Threading.CancellationToken cancellationToken = default)
         {
-
             var __request = new global::DoclingServe.ConvertDocumentsRequest
             {
                 Options = options,
