@@ -675,6 +675,7 @@ namespace DoclingServe
             bool? chunkingIncludeRawText = default,
             global::System.Threading.CancellationToken cancellationToken = default)
         {
+
             var __request = new global::DoclingServe.BodyChunkFilesWithHierarchicalChunkerV1ChunkHierarchicalFilePost
             {
                 Files = files,
