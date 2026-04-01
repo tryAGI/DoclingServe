@@ -77,25 +77,25 @@ namespace DoclingServe.JsonConverters
             {
                 var typeInfo = typeInfoResolver.GetTypeInfo(typeof(global::DoclingServe.InBodyTarget), options) as global::System.Text.Json.Serialization.Metadata.JsonTypeInfo<global::DoclingServe.InBodyTarget?> ??
                                throw new global::System.InvalidOperationException($"Cannot get type info for {typeof(global::DoclingServe.InBodyTarget).Name}");
-                global::System.Text.Json.JsonSerializer.Serialize(writer, value.Inbody, typeInfo);
+                global::System.Text.Json.JsonSerializer.Serialize(writer, value.Inbody!, typeInfo);
             }
             else if (value.IsZip)
             {
                 var typeInfo = typeInfoResolver.GetTypeInfo(typeof(global::DoclingServe.ZipTarget), options) as global::System.Text.Json.Serialization.Metadata.JsonTypeInfo<global::DoclingServe.ZipTarget?> ??
                                throw new global::System.InvalidOperationException($"Cannot get type info for {typeof(global::DoclingServe.ZipTarget).Name}");
-                global::System.Text.Json.JsonSerializer.Serialize(writer, value.Zip, typeInfo);
+                global::System.Text.Json.JsonSerializer.Serialize(writer, value.Zip!, typeInfo);
             }
             else if (value.IsS3)
             {
                 var typeInfo = typeInfoResolver.GetTypeInfo(typeof(global::DoclingServe.S3Target), options) as global::System.Text.Json.Serialization.Metadata.JsonTypeInfo<global::DoclingServe.S3Target?> ??
                                throw new global::System.InvalidOperationException($"Cannot get type info for {typeof(global::DoclingServe.S3Target).Name}");
-                global::System.Text.Json.JsonSerializer.Serialize(writer, value.S3, typeInfo);
+                global::System.Text.Json.JsonSerializer.Serialize(writer, value.S3!, typeInfo);
             }
             else if (value.IsPut)
             {
                 var typeInfo = typeInfoResolver.GetTypeInfo(typeof(global::DoclingServe.PutTarget), options) as global::System.Text.Json.Serialization.Metadata.JsonTypeInfo<global::DoclingServe.PutTarget?> ??
                                throw new global::System.InvalidOperationException($"Cannot get type info for {typeof(global::DoclingServe.PutTarget).Name}");
-                global::System.Text.Json.JsonSerializer.Serialize(writer, value.Put, typeInfo);
+                global::System.Text.Json.JsonSerializer.Serialize(writer, value.Put!, typeInfo);
             }
         }
     }
