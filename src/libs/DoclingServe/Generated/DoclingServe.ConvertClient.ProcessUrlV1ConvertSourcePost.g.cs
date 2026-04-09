@@ -5,6 +5,25 @@ namespace DoclingServe
 {
     public partial class ConvertClient
     {
+
+
+        private static readonly global::DoclingServe.EndPointSecurityRequirement s_ProcessUrlV1ConvertSourcePostSecurityRequirement0 =
+            new global::DoclingServe.EndPointSecurityRequirement
+            {
+                Authorizations = new global::DoclingServe.EndPointAuthorizationRequirement[]
+                {                    new global::DoclingServe.EndPointAuthorizationRequirement
+                    {
+                        Type = "",
+                        Location = "",
+                        Name = "",
+                        FriendlyName = "Authorization",
+                    },
+                },
+            };
+        private static readonly global::DoclingServe.EndPointSecurityRequirement[] s_ProcessUrlV1ConvertSourcePostSecurityRequirements =
+            new global::DoclingServe.EndPointSecurityRequirement[]
+            {                s_ProcessUrlV1ConvertSourcePostSecurityRequirement0,
+            };
         partial void PrepareProcessUrlV1ConvertSourcePostArguments(
             global::System.Net.Http.HttpClient httpClient,
             global::DoclingServe.ConvertDocumentsRequest request);
@@ -40,9 +59,15 @@ namespace DoclingServe
                 httpClient: HttpClient,
                 request: request);
 
+
+            var __authorizations = global::DoclingServe.EndPointSecurityResolver.ResolveAuthorizations(
+                availableAuthorizations: Authorizations,
+                securityRequirements: s_ProcessUrlV1ConvertSourcePostSecurityRequirements,
+                operationName: "ProcessUrlV1ConvertSourcePostAsync");
+
             var __pathBuilder = new global::DoclingServe.PathBuilder(
                 path: "/v1/convert/source",
-                baseUri: HttpClient.BaseAddress); 
+                baseUri: HttpClient.BaseAddress);
             var __path = __pathBuilder.ToString();
             using var __httpRequest = new global::System.Net.Http.HttpRequestMessage(
                 method: global::System.Net.Http.HttpMethod.Post,

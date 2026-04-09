@@ -6,6 +6,7 @@ namespace DoclingServe
     public sealed partial class DoclingServeClient
     {
         /// <inheritdoc cref="DoclingServeClient(global::System.Net.Http.HttpClient?, global::System.Uri?, global::System.Collections.Generic.List{global::DoclingServe.EndPointAuthorization}?, bool)"/>
+
         public DoclingServeClient(
             string apiKey,
             global::System.Net.Http.HttpClient? httpClient = null,

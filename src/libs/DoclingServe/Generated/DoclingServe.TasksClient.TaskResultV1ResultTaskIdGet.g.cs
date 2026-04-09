@@ -5,6 +5,25 @@ namespace DoclingServe
 {
     public partial class TasksClient
     {
+
+
+        private static readonly global::DoclingServe.EndPointSecurityRequirement s_TaskResultV1ResultTaskIdGetSecurityRequirement0 =
+            new global::DoclingServe.EndPointSecurityRequirement
+            {
+                Authorizations = new global::DoclingServe.EndPointAuthorizationRequirement[]
+                {                    new global::DoclingServe.EndPointAuthorizationRequirement
+                    {
+                        Type = "",
+                        Location = "",
+                        Name = "",
+                        FriendlyName = "Authorization",
+                    },
+                },
+            };
+        private static readonly global::DoclingServe.EndPointSecurityRequirement[] s_TaskResultV1ResultTaskIdGetSecurityRequirements =
+            new global::DoclingServe.EndPointSecurityRequirement[]
+            {                s_TaskResultV1ResultTaskIdGetSecurityRequirement0,
+            };
         partial void PrepareTaskResultV1ResultTaskIdGetArguments(
             global::System.Net.Http.HttpClient httpClient,
             ref string taskId);
@@ -37,9 +56,15 @@ namespace DoclingServe
                 httpClient: HttpClient,
                 taskId: ref taskId);
 
+
+            var __authorizations = global::DoclingServe.EndPointSecurityResolver.ResolveAuthorizations(
+                availableAuthorizations: Authorizations,
+                securityRequirements: s_TaskResultV1ResultTaskIdGetSecurityRequirements,
+                operationName: "TaskResultV1ResultTaskIdGetAsync");
+
             var __pathBuilder = new global::DoclingServe.PathBuilder(
                 path: $"/v1/result/{taskId}",
-                baseUri: HttpClient.BaseAddress); 
+                baseUri: HttpClient.BaseAddress);
             var __path = __pathBuilder.ToString();
             using var __httpRequest = new global::System.Net.Http.HttpRequestMessage(
                 method: global::System.Net.Http.HttpMethod.Get,

@@ -5,6 +5,25 @@ namespace DoclingServe
 {
     public partial class ManagementClient
     {
+
+
+        private static readonly global::DoclingServe.EndPointSecurityRequirement s_MemoryStatsV1MemoryStatsGetSecurityRequirement0 =
+            new global::DoclingServe.EndPointSecurityRequirement
+            {
+                Authorizations = new global::DoclingServe.EndPointAuthorizationRequirement[]
+                {                    new global::DoclingServe.EndPointAuthorizationRequirement
+                    {
+                        Type = "Http",
+                        Location = "Header",
+                        Name = "Bearer",
+                        FriendlyName = "Bearer",
+                    },
+                },
+            };
+        private static readonly global::DoclingServe.EndPointSecurityRequirement[] s_MemoryStatsV1MemoryStatsGetSecurityRequirements =
+            new global::DoclingServe.EndPointSecurityRequirement[]
+            {                s_MemoryStatsV1MemoryStatsGetSecurityRequirement0,
+            };
         partial void PrepareMemoryStatsV1MemoryStatsGetArguments(
             global::System.Net.Http.HttpClient httpClient);
         partial void PrepareMemoryStatsV1MemoryStatsGetRequest(
@@ -32,9 +51,15 @@ namespace DoclingServe
             PrepareMemoryStatsV1MemoryStatsGetArguments(
                 httpClient: HttpClient);
 
+
+            var __authorizations = global::DoclingServe.EndPointSecurityResolver.ResolveAuthorizations(
+                availableAuthorizations: Authorizations,
+                securityRequirements: s_MemoryStatsV1MemoryStatsGetSecurityRequirements,
+                operationName: "MemoryStatsV1MemoryStatsGetAsync");
+
             var __pathBuilder = new global::DoclingServe.PathBuilder(
                 path: "/v1/memory/stats",
-                baseUri: HttpClient.BaseAddress); 
+                baseUri: HttpClient.BaseAddress);
             var __path = __pathBuilder.ToString();
             using var __httpRequest = new global::System.Net.Http.HttpRequestMessage(
                 method: global::System.Net.Http.HttpMethod.Get,
@@ -44,7 +69,7 @@ namespace DoclingServe
             __httpRequest.VersionPolicy = global::System.Net.Http.HttpVersionPolicy.RequestVersionOrHigher;
 #endif
 
-            foreach (var __authorization in Authorizations)
+            foreach (var __authorization in __authorizations)
             {
                 if (__authorization.Type == "Http" ||
                     __authorization.Type == "OAuth2")
