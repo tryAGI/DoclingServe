@@ -13,7 +13,7 @@ namespace DoclingServe
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("files")]
         [global::System.Text.Json.Serialization.JsonRequired]
-        public required global::System.Collections.Generic.IList<string> Files { get; set; }
+        public required global::System.Collections.Generic.IList<byte[]> Files { get; set; }
 
         /// <summary>
         /// If true, the output will include both the chunks and the converted document.<br/>
@@ -109,7 +109,7 @@ namespace DoclingServe
         /// Default Value: [1, 9223372036854775807L]
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("convert_page_range")]
-        public byte[]? ConvertPageRange { get; set; }
+        public global::System.Collections.Generic.IList<int>? ConvertPageRange { get; set; }
 
         /// <summary>
         /// The timeout for processing each document, in seconds.<br/>
@@ -476,7 +476,7 @@ namespace DoclingServe
         [global::System.Diagnostics.CodeAnalysis.SetsRequiredMembers]
 #endif
         public BodyChunkFilesWithHybridChunkerAsAsyncTaskV1ChunkHybridFileAsyncPost(
-            global::System.Collections.Generic.IList<string> files,
+            global::System.Collections.Generic.IList<byte[]> files,
             bool? includeConvertedDoc,
             global::DoclingServe.TargetName? targetType,
             global::System.Collections.Generic.IList<global::DoclingServe.InputFormat>? convertFromFormats,
@@ -489,7 +489,7 @@ namespace DoclingServe
             global::DoclingServe.TableFormerMode? convertTableMode,
             bool? convertTableCellMatching,
             global::DoclingServe.ProcessingPipeline? convertPipeline,
-            byte[]? convertPageRange,
+            global::System.Collections.Generic.IList<int>? convertPageRange,
             double? convertDocumentTimeout,
             bool? convertAbortOnError,
             bool? convertDoTableStructure,

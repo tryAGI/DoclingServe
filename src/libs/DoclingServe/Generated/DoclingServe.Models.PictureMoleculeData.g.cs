@@ -40,7 +40,7 @@ namespace DoclingServe
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("segmentation")]
         [global::System.Text.Json.Serialization.JsonRequired]
-        public required global::System.Collections.Generic.IList<byte[]> Segmentation { get; set; }
+        public required global::System.Collections.Generic.IList<global::System.Collections.Generic.IList<double>> Segmentation { get; set; }
 
         /// <summary>
         /// 
@@ -73,7 +73,7 @@ namespace DoclingServe
             string smi,
             double confidence,
             string className,
-            global::System.Collections.Generic.IList<byte[]> segmentation,
+            global::System.Collections.Generic.IList<global::System.Collections.Generic.IList<double>> segmentation,
             string provenance,
             string? kind)
         {

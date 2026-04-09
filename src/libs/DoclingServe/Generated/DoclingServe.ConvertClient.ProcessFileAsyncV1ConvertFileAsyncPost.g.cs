@@ -52,9 +52,18 @@ namespace DoclingServe
             __httpRequest.VersionPolicy = global::System.Net.Http.HttpVersionPolicy.RequestVersionOrHigher;
 #endif
             using var __httpRequestContent = new global::System.Net.Http.MultipartFormDataContent();
-            __httpRequestContent.Add(
-                content: new global::System.Net.Http.StringContent($"[{string.Join(",", global::System.Linq.Enumerable.Select(request.Files, x => x))}]"),
-                name: "\"files\"");
+            for (var __iFiles = 0; __iFiles < request.Files.Count; __iFiles++)
+            {
+                var __contentFiles = new global::System.Net.Http.ByteArrayContent(request.Files[__iFiles]);
+                __httpRequestContent.Add(
+                    content: __contentFiles,
+                    name: "\"files\"",
+                    fileName: $"\"file{__iFiles}.bin\"");
+                if (__contentFiles.Headers.ContentDisposition != null)
+                {
+                    __contentFiles.Headers.ContentDisposition.FileNameStar = null;
+                }
+            }
             if (request.TargetType != default)
             {
 
@@ -143,7 +152,7 @@ namespace DoclingServe
             {
 
                 __httpRequestContent.Add(
-                    content: new global::System.Net.Http.StringContent($"{request.PageRange}"),
+                    content: new global::System.Net.Http.StringContent($"[{string.Join(",", global::System.Linq.Enumerable.Select(request.PageRange, x => x))}]"),
                     name: "\"page_range\"");
             } 
             if (request.DocumentTimeout != default)
@@ -608,7 +617,7 @@ namespace DoclingServe
         /// <param name="cancellationToken">The token to cancel the operation with</param>
         /// <exception cref="global::System.InvalidOperationException"></exception>
         public async global::System.Threading.Tasks.Task<global::DoclingServe.TaskStatusResponse> ProcessFileAsyncV1ConvertFileAsyncPostAsync(
-            global::System.Collections.Generic.IList<string> files,
+            global::System.Collections.Generic.IList<byte[]> files,
             global::DoclingServe.TargetName? targetType = default,
             global::System.Collections.Generic.IList<global::DoclingServe.InputFormat>? fromFormats = default,
             global::System.Collections.Generic.IList<global::DoclingServe.OutputFormat>? toFormats = default,
@@ -621,7 +630,7 @@ namespace DoclingServe
             global::DoclingServe.TableFormerMode? tableMode = default,
             bool? tableCellMatching = default,
             global::DoclingServe.ProcessingPipeline? pipeline = default,
-            byte[]? pageRange = default,
+            global::System.Collections.Generic.IList<int>? pageRange = default,
             double? documentTimeout = default,
             bool? abortOnError = default,
             bool? doTableStructure = default,

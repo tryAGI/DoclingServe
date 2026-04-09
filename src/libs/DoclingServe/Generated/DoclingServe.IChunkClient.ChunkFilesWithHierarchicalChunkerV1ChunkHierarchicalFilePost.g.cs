@@ -166,7 +166,7 @@ namespace DoclingServe
         /// <param name="cancellationToken">The token to cancel the operation with</param>
         /// <exception cref="global::System.InvalidOperationException"></exception>
         global::System.Threading.Tasks.Task<global::DoclingServe.ChunkDocumentResponse> ChunkFilesWithHierarchicalChunkerV1ChunkHierarchicalFilePostAsync(
-            global::System.Collections.Generic.IList<string> files,
+            global::System.Collections.Generic.IList<byte[]> files,
             bool? includeConvertedDoc = default,
             global::DoclingServe.TargetName? targetType = default,
             global::System.Collections.Generic.IList<global::DoclingServe.InputFormat>? convertFromFormats = default,
@@ -179,7 +179,7 @@ namespace DoclingServe
             global::DoclingServe.TableFormerMode? convertTableMode = default,
             bool? convertTableCellMatching = default,
             global::DoclingServe.ProcessingPipeline? convertPipeline = default,
-            byte[]? convertPageRange = default,
+            global::System.Collections.Generic.IList<int>? convertPageRange = default,
             double? convertDocumentTimeout = default,
             bool? convertAbortOnError = default,
             bool? convertDoTableStructure = default,
