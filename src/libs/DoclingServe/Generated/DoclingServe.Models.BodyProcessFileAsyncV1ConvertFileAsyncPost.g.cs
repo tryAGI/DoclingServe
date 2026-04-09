@@ -13,7 +13,7 @@ namespace DoclingServe
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("files")]
         [global::System.Text.Json.Serialization.JsonRequired]
-        public required global::System.Collections.Generic.IList<string> Files { get; set; }
+        public required global::System.Collections.Generic.IList<byte[]> Files { get; set; }
 
         /// <summary>
         /// Default Value: inbody
@@ -108,7 +108,7 @@ namespace DoclingServe
         /// Default Value: [1, 9223372036854775807L]
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("page_range")]
-        public byte[]? PageRange { get; set; }
+        public global::System.Collections.Generic.IList<int>? PageRange { get; set; }
 
         /// <summary>
         /// The timeout for processing each document, in seconds.<br/>
@@ -421,7 +421,7 @@ namespace DoclingServe
         [global::System.Diagnostics.CodeAnalysis.SetsRequiredMembers]
 #endif
         public BodyProcessFileAsyncV1ConvertFileAsyncPost(
-            global::System.Collections.Generic.IList<string> files,
+            global::System.Collections.Generic.IList<byte[]> files,
             global::DoclingServe.TargetName? targetType,
             global::System.Collections.Generic.IList<global::DoclingServe.InputFormat>? fromFormats,
             global::System.Collections.Generic.IList<global::DoclingServe.OutputFormat>? toFormats,
@@ -434,7 +434,7 @@ namespace DoclingServe
             global::DoclingServe.TableFormerMode? tableMode,
             bool? tableCellMatching,
             global::DoclingServe.ProcessingPipeline? pipeline,
-            byte[]? pageRange,
+            global::System.Collections.Generic.IList<int>? pageRange,
             double? documentTimeout,
             bool? abortOnError,
             bool? doTableStructure,

@@ -16,7 +16,7 @@ namespace DoclingServe
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("value")]
         [global::System.Text.Json.Serialization.JsonRequired]
-        public required byte[] Value { get; set; }
+        public required global::System.Collections.Generic.IList<double> Value { get; set; }
 
         /// <summary>
         /// Additional properties that are not explicitly defined in the schema
@@ -32,7 +32,7 @@ namespace DoclingServe
         [global::System.Diagnostics.CodeAnalysis.SetsRequiredMembers]
 #endif
         public ChartPoint(
-            byte[] value)
+            global::System.Collections.Generic.IList<double> value)
         {
             this.Value = value ?? throw new global::System.ArgumentNullException(nameof(value));
         }

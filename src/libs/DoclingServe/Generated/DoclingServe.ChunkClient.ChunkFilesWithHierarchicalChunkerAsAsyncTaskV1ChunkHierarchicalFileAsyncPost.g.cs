@@ -52,9 +52,18 @@ namespace DoclingServe
             __httpRequest.VersionPolicy = global::System.Net.Http.HttpVersionPolicy.RequestVersionOrHigher;
 #endif
             using var __httpRequestContent = new global::System.Net.Http.MultipartFormDataContent();
-            __httpRequestContent.Add(
-                content: new global::System.Net.Http.StringContent($"[{string.Join(",", global::System.Linq.Enumerable.Select(request.Files, x => x))}]"),
-                name: "\"files\"");
+            for (var __iFiles = 0; __iFiles < request.Files.Count; __iFiles++)
+            {
+                var __contentFiles = new global::System.Net.Http.ByteArrayContent(request.Files[__iFiles]);
+                __httpRequestContent.Add(
+                    content: __contentFiles,
+                    name: "\"files\"",
+                    fileName: $"\"file{__iFiles}.bin\"");
+                if (__contentFiles.Headers.ContentDisposition != null)
+                {
+                    __contentFiles.Headers.ContentDisposition.FileNameStar = null;
+                }
+            }
             if (request.IncludeConvertedDoc != default)
             {
 
@@ -143,7 +152,7 @@ namespace DoclingServe
             {
 
                 __httpRequestContent.Add(
-                    content: new global::System.Net.Http.StringContent($"{request.ConvertPageRange}"),
+                    content: new global::System.Net.Http.StringContent($"[{string.Join(",", global::System.Linq.Enumerable.Select(request.ConvertPageRange, x => x))}]"),
                     name: "\"convert_page_range\"");
             } 
             if (request.ConvertDocumentTimeout != default)
@@ -631,7 +640,7 @@ namespace DoclingServe
         /// <param name="cancellationToken">The token to cancel the operation with</param>
         /// <exception cref="global::System.InvalidOperationException"></exception>
         public async global::System.Threading.Tasks.Task<global::DoclingServe.TaskStatusResponse> ChunkFilesWithHierarchicalChunkerAsAsyncTaskV1ChunkHierarchicalFileAsyncPostAsync(
-            global::System.Collections.Generic.IList<string> files,
+            global::System.Collections.Generic.IList<byte[]> files,
             bool? includeConvertedDoc = default,
             global::DoclingServe.TargetName? targetType = default,
             global::System.Collections.Generic.IList<global::DoclingServe.InputFormat>? convertFromFormats = default,
@@ -644,7 +653,7 @@ namespace DoclingServe
             global::DoclingServe.TableFormerMode? convertTableMode = default,
             bool? convertTableCellMatching = default,
             global::DoclingServe.ProcessingPipeline? convertPipeline = default,
-            byte[]? convertPageRange = default,
+            global::System.Collections.Generic.IList<int>? convertPageRange = default,
             double? convertDocumentTimeout = default,
             bool? convertAbortOnError = default,
             bool? convertDoTableStructure = default,

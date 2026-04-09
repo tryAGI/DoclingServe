@@ -157,7 +157,7 @@ namespace DoclingServe
         /// <param name="cancellationToken">The token to cancel the operation with</param>
         /// <exception cref="global::System.InvalidOperationException"></exception>
         global::System.Threading.Tasks.Task<global::DoclingServe.AnyOf<global::DoclingServe.ConvertDocumentResponse, global::DoclingServe.PresignedUrlConvertDocumentResponse>> ProcessFileV1ConvertFilePostAsync(
-            global::System.Collections.Generic.IList<string> files,
+            global::System.Collections.Generic.IList<byte[]> files,
             global::DoclingServe.TargetName? targetType = default,
             global::System.Collections.Generic.IList<global::DoclingServe.InputFormat>? fromFormats = default,
             global::System.Collections.Generic.IList<global::DoclingServe.OutputFormat>? toFormats = default,
@@ -170,7 +170,7 @@ namespace DoclingServe
             global::DoclingServe.TableFormerMode? tableMode = default,
             bool? tableCellMatching = default,
             global::DoclingServe.ProcessingPipeline? pipeline = default,
-            byte[]? pageRange = default,
+            global::System.Collections.Generic.IList<int>? pageRange = default,
             double? documentTimeout = default,
             bool? abortOnError = default,
             bool? doTableStructure = default,

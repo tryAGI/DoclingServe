@@ -30,7 +30,7 @@ namespace DoclingServe
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("charspan")]
         [global::System.Text.Json.Serialization.JsonRequired]
-        public required byte[] Charspan { get; set; }
+        public required global::System.Collections.Generic.IList<int> Charspan { get; set; }
 
         /// <summary>
         /// Additional properties that are not explicitly defined in the schema
@@ -56,7 +56,7 @@ namespace DoclingServe
         public ProvenanceItem(
             int pageNo,
             global::DoclingServe.BoundingBox bbox,
-            byte[] charspan)
+            global::System.Collections.Generic.IList<int> charspan)
         {
             this.PageNo = pageNo;
             this.Bbox = bbox ?? throw new global::System.ArgumentNullException(nameof(bbox));
