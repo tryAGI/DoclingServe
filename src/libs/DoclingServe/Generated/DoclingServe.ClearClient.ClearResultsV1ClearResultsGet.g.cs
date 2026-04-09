@@ -5,6 +5,25 @@ namespace DoclingServe
 {
     public partial class ClearClient
     {
+
+
+        private static readonly global::DoclingServe.EndPointSecurityRequirement s_ClearResultsV1ClearResultsGetSecurityRequirement0 =
+            new global::DoclingServe.EndPointSecurityRequirement
+            {
+                Authorizations = new global::DoclingServe.EndPointAuthorizationRequirement[]
+                {                    new global::DoclingServe.EndPointAuthorizationRequirement
+                    {
+                        Type = "",
+                        Location = "",
+                        Name = "",
+                        FriendlyName = "Authorization",
+                    },
+                },
+            };
+        private static readonly global::DoclingServe.EndPointSecurityRequirement[] s_ClearResultsV1ClearResultsGetSecurityRequirements =
+            new global::DoclingServe.EndPointSecurityRequirement[]
+            {                s_ClearResultsV1ClearResultsGetSecurityRequirement0,
+            };
         partial void PrepareClearResultsV1ClearResultsGetArguments(
             global::System.Net.Http.HttpClient httpClient,
             ref double? olderThen);
@@ -39,12 +58,18 @@ namespace DoclingServe
                 httpClient: HttpClient,
                 olderThen: ref olderThen);
 
+
+            var __authorizations = global::DoclingServe.EndPointSecurityResolver.ResolveAuthorizations(
+                availableAuthorizations: Authorizations,
+                securityRequirements: s_ClearResultsV1ClearResultsGetSecurityRequirements,
+                operationName: "ClearResultsV1ClearResultsGetAsync");
+
             var __pathBuilder = new global::DoclingServe.PathBuilder(
                 path: "/v1/clear/results",
                 baseUri: HttpClient.BaseAddress); 
             __pathBuilder
                 .AddOptionalParameter("older_then", olderThen?.ToString()) 
-                ; 
+                ;
             var __path = __pathBuilder.ToString();
             using var __httpRequest = new global::System.Net.Http.HttpRequestMessage(
                 method: global::System.Net.Http.HttpMethod.Get,

@@ -5,6 +5,25 @@ namespace DoclingServe
 {
     public partial class ConvertClient
     {
+
+
+        private static readonly global::DoclingServe.EndPointSecurityRequirement s_ProcessFileAsyncV1ConvertFileAsyncPostSecurityRequirement0 =
+            new global::DoclingServe.EndPointSecurityRequirement
+            {
+                Authorizations = new global::DoclingServe.EndPointAuthorizationRequirement[]
+                {                    new global::DoclingServe.EndPointAuthorizationRequirement
+                    {
+                        Type = "",
+                        Location = "",
+                        Name = "",
+                        FriendlyName = "Authorization",
+                    },
+                },
+            };
+        private static readonly global::DoclingServe.EndPointSecurityRequirement[] s_ProcessFileAsyncV1ConvertFileAsyncPostSecurityRequirements =
+            new global::DoclingServe.EndPointSecurityRequirement[]
+            {                s_ProcessFileAsyncV1ConvertFileAsyncPostSecurityRequirement0,
+            };
         partial void PrepareProcessFileAsyncV1ConvertFileAsyncPostArguments(
             global::System.Net.Http.HttpClient httpClient,
             global::DoclingServe.BodyProcessFileAsyncV1ConvertFileAsyncPost request);
@@ -40,9 +59,15 @@ namespace DoclingServe
                 httpClient: HttpClient,
                 request: request);
 
+
+            var __authorizations = global::DoclingServe.EndPointSecurityResolver.ResolveAuthorizations(
+                availableAuthorizations: Authorizations,
+                securityRequirements: s_ProcessFileAsyncV1ConvertFileAsyncPostSecurityRequirements,
+                operationName: "ProcessFileAsyncV1ConvertFileAsyncPostAsync");
+
             var __pathBuilder = new global::DoclingServe.PathBuilder(
                 path: "/v1/convert/file/async",
-                baseUri: HttpClient.BaseAddress); 
+                baseUri: HttpClient.BaseAddress);
             var __path = __pathBuilder.ToString();
             using var __httpRequest = new global::System.Net.Http.HttpRequestMessage(
                 method: global::System.Net.Http.HttpMethod.Post,
