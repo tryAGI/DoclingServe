@@ -23,6 +23,7 @@ namespace DoclingServe
             Authorizations.Add(new global::DoclingServe.EndPointAuthorization
             {
                 Type = "",
+                SchemeId = "APIKeyAuth",
                 Location = "",
                 Name = "",
                 Value = "",

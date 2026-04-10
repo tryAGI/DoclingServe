@@ -8,11 +8,13 @@ namespace DoclingServe
         /// Process Url
         /// </summary>
         /// <param name="request"></param>
+        /// <param name="requestOptions">Per-request overrides such as headers, query parameters, timeout, retries, and response buffering.</param>
         /// <param name="cancellationToken">The token to cancel the operation with</param>
         /// <exception cref="global::DoclingServe.ApiException"></exception>
         global::System.Threading.Tasks.Task<global::DoclingServe.AnyOf<global::DoclingServe.ConvertDocumentResponse, global::DoclingServe.PresignedUrlConvertDocumentResponse>> ProcessUrlV1ConvertSourcePostAsync(
 
             global::DoclingServe.ConvertDocumentsRequest request,
+            global::DoclingServe.AutoSDKRequestOptions? requestOptions = default,
             global::System.Threading.CancellationToken cancellationToken = default);
         /// <summary>
         /// Process Url
@@ -24,12 +26,14 @@ namespace DoclingServe
         /// <param name="target">
         /// Default Value: {"kind":"inbody"}
         /// </param>
+        /// <param name="requestOptions">Per-request overrides such as headers, query parameters, timeout, retries, and response buffering.</param>
         /// <param name="cancellationToken">The token to cancel the operation with</param>
         /// <exception cref="global::System.InvalidOperationException"></exception>
         global::System.Threading.Tasks.Task<global::DoclingServe.AnyOf<global::DoclingServe.ConvertDocumentResponse, global::DoclingServe.PresignedUrlConvertDocumentResponse>> ProcessUrlV1ConvertSourcePostAsync(
             global::System.Collections.Generic.IList<global::DoclingServe.SourcesItem> sources,
             global::DoclingServe.ConvertDocumentsRequestOptions? options = default,
             global::DoclingServe.Target? target = default,
+            global::DoclingServe.AutoSDKRequestOptions? requestOptions = default,
             global::System.Threading.CancellationToken cancellationToken = default);
     }
 }

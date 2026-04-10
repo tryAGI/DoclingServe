@@ -8,11 +8,13 @@ namespace DoclingServe
         /// Process File
         /// </summary>
         /// <param name="request"></param>
+        /// <param name="requestOptions">Per-request overrides such as headers, query parameters, timeout, retries, and response buffering.</param>
         /// <param name="cancellationToken">The token to cancel the operation with</param>
         /// <exception cref="global::DoclingServe.ApiException"></exception>
         global::System.Threading.Tasks.Task<global::DoclingServe.AnyOf<global::DoclingServe.ConvertDocumentResponse, global::DoclingServe.PresignedUrlConvertDocumentResponse>> ProcessFileV1ConvertFilePostAsync(
 
             global::DoclingServe.BodyProcessFileV1ConvertFilePost request,
+            global::DoclingServe.AutoSDKRequestOptions? requestOptions = default,
             global::System.Threading.CancellationToken cancellationToken = default);
         /// <summary>
         /// Process File
@@ -154,6 +156,7 @@ namespace DoclingServe
         /// <param name="layoutCustomConfig">
         /// Custom configuration for layout model. Use this to specify a non-default kind with its options. The 'kind' field in the config dict determines which layout implementation to use. If not specified, uses the default kind with preset configuration.
         /// </param>
+        /// <param name="requestOptions">Per-request overrides such as headers, query parameters, timeout, retries, and response buffering.</param>
         /// <param name="cancellationToken">The token to cancel the operation with</param>
         /// <exception cref="global::System.InvalidOperationException"></exception>
         global::System.Threading.Tasks.Task<global::DoclingServe.AnyOf<global::DoclingServe.ConvertDocumentResponse, global::DoclingServe.PresignedUrlConvertDocumentResponse>> ProcessFileV1ConvertFilePostAsync(
@@ -196,6 +199,7 @@ namespace DoclingServe
             string? codeFormulaCustomConfig = default,
             object? tableStructureCustomConfig = default,
             object? layoutCustomConfig = default,
+            global::DoclingServe.AutoSDKRequestOptions? requestOptions = default,
             global::System.Threading.CancellationToken cancellationToken = default);
     }
 }

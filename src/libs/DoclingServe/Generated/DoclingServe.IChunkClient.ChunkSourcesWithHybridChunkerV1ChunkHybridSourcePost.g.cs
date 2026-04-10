@@ -8,11 +8,13 @@ namespace DoclingServe
         /// Chunk Sources With Hybridchunker
         /// </summary>
         /// <param name="request"></param>
+        /// <param name="requestOptions">Per-request overrides such as headers, query parameters, timeout, retries, and response buffering.</param>
         /// <param name="cancellationToken">The token to cancel the operation with</param>
         /// <exception cref="global::DoclingServe.ApiException"></exception>
         global::System.Threading.Tasks.Task<global::DoclingServe.ChunkDocumentResponse> ChunkSourcesWithHybridChunkerV1ChunkHybridSourcePostAsync(
 
             global::DoclingServe.HybridChunkerOptionsDocumentsRequest request,
+            global::DoclingServe.AutoSDKRequestOptions? requestOptions = default,
             global::System.Threading.CancellationToken cancellationToken = default);
         /// <summary>
         /// Chunk Sources With Hybridchunker
@@ -35,6 +37,7 @@ namespace DoclingServe
         /// <param name="chunkingOptions">
         /// Options specific to the chunker.
         /// </param>
+        /// <param name="requestOptions">Per-request overrides such as headers, query parameters, timeout, retries, and response buffering.</param>
         /// <param name="cancellationToken">The token to cancel the operation with</param>
         /// <exception cref="global::System.InvalidOperationException"></exception>
         global::System.Threading.Tasks.Task<global::DoclingServe.ChunkDocumentResponse> ChunkSourcesWithHybridChunkerV1ChunkHybridSourcePostAsync(
@@ -43,6 +46,7 @@ namespace DoclingServe
             bool? includeConvertedDoc = default,
             global::DoclingServe.Target3? target = default,
             global::DoclingServe.HybridChunkerOptions? chunkingOptions = default,
+            global::DoclingServe.AutoSDKRequestOptions? requestOptions = default,
             global::System.Threading.CancellationToken cancellationToken = default);
     }
 }
