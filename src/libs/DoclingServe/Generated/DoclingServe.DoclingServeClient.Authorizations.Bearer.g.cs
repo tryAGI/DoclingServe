@@ -25,6 +25,7 @@ namespace DoclingServe
             Authorizations.Add(new global::DoclingServe.EndPointAuthorization
             {
                 Type = "Http",
+                SchemeId = "Bearer",
                 Location = "Header",
                 Name = "Bearer",
                 Value = apiKey,
