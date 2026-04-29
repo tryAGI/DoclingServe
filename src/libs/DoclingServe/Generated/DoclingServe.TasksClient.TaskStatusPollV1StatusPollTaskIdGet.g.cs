@@ -118,7 +118,7 @@ namespace DoclingServe
                 PrepareTaskStatusPollV1StatusPollTaskIdGetRequest(
                     httpClient: HttpClient,
                     httpRequestMessage: __httpRequest,
-                    taskId: taskId,
+                    taskId: taskId!,
                     wait: wait);
 
                 return __httpRequest;
