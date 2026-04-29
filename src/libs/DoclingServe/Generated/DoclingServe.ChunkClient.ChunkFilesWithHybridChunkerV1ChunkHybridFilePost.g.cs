@@ -103,6 +103,7 @@ namespace DoclingServe
                             for (var __iFiles = 0; __iFiles < request.Files.Count; __iFiles++)
                             {
                                 var __contentFiles = new global::System.Net.Http.ByteArrayContent(request.Files[__iFiles]);
+                            __contentFiles.Headers.ContentType = new global::System.Net.Http.Headers.MediaTypeHeaderValue("application/octet-stream");
                                 __httpRequestContent.Add(
                                     content: __contentFiles,
                                     name: "\"files\"",
@@ -116,14 +117,14 @@ namespace DoclingServe
                             {
 
                                 __httpRequestContent.Add(
-                                    content: new global::System.Net.Http.StringContent($"{request.IncludeConvertedDoc}"),
+                                    content: new global::System.Net.Http.StringContent((global::System.Convert.ToString(request.IncludeConvertedDoc, global::System.Globalization.CultureInfo.InvariantCulture) ?? string.Empty).ToLowerInvariant()),
                                     name: "\"include_converted_doc\"");
                             } 
                             if (request.TargetType != default)
                             {
 
                                 __httpRequestContent.Add(
-                                    content: new global::System.Net.Http.StringContent($"{request.TargetType?.ToValueString()}"),
+                                    content: new global::System.Net.Http.StringContent((request.TargetType).HasValue ? (request.TargetType).GetValueOrDefault().ToValueString() : string.Empty),
                                     name: "\"target_type\"");
                             } 
                             if (request.ConvertFromFormats != default)
@@ -137,280 +138,280 @@ namespace DoclingServe
                             {
 
                                 __httpRequestContent.Add(
-                                    content: new global::System.Net.Http.StringContent($"{request.ConvertImageExportMode?.ToValueString()}"),
+                                    content: new global::System.Net.Http.StringContent((request.ConvertImageExportMode).HasValue ? (request.ConvertImageExportMode).GetValueOrDefault().ToValueString() : string.Empty),
                                     name: "\"convert_image_export_mode\"");
                             } 
                             if (request.ConvertDoOcr != default)
                             {
 
                                 __httpRequestContent.Add(
-                                    content: new global::System.Net.Http.StringContent($"{request.ConvertDoOcr}"),
+                                    content: new global::System.Net.Http.StringContent((global::System.Convert.ToString(request.ConvertDoOcr, global::System.Globalization.CultureInfo.InvariantCulture) ?? string.Empty).ToLowerInvariant()),
                                     name: "\"convert_do_ocr\"");
                             } 
                             if (request.ConvertForceOcr != default)
                             {
 
                                 __httpRequestContent.Add(
-                                    content: new global::System.Net.Http.StringContent($"{request.ConvertForceOcr}"),
+                                    content: new global::System.Net.Http.StringContent((global::System.Convert.ToString(request.ConvertForceOcr, global::System.Globalization.CultureInfo.InvariantCulture) ?? string.Empty).ToLowerInvariant()),
                                     name: "\"convert_force_ocr\"");
                             } 
                             if (request.ConvertOcrEngine != default)
                             {
 
                                 __httpRequestContent.Add(
-                                    content: new global::System.Net.Http.StringContent($"{request.ConvertOcrEngine?.ToValueString()}"),
+                                    content: new global::System.Net.Http.StringContent((request.ConvertOcrEngine).HasValue ? (request.ConvertOcrEngine).GetValueOrDefault().ToValueString() : string.Empty),
                                     name: "\"convert_ocr_engine\"");
                             } 
                             if (request.ConvertOcrLang != default)
                             {
 
                                 __httpRequestContent.Add(
-                                    content: new global::System.Net.Http.StringContent($"{request.ConvertOcrLang}"),
+                                    content: new global::System.Net.Http.StringContent(request.ConvertOcrLang.ToString() ?? string.Empty),
                                     name: "\"convert_ocr_lang\"");
                             } 
                             if (request.ConvertPdfBackend != default)
                             {
 
                                 __httpRequestContent.Add(
-                                    content: new global::System.Net.Http.StringContent($"{request.ConvertPdfBackend?.ToValueString()}"),
+                                    content: new global::System.Net.Http.StringContent((request.ConvertPdfBackend).HasValue ? (request.ConvertPdfBackend).GetValueOrDefault().ToValueString() : string.Empty),
                                     name: "\"convert_pdf_backend\"");
                             } 
                             if (request.ConvertTableMode != default)
                             {
 
                                 __httpRequestContent.Add(
-                                    content: new global::System.Net.Http.StringContent($"{request.ConvertTableMode?.ToValueString()}"),
+                                    content: new global::System.Net.Http.StringContent((request.ConvertTableMode).HasValue ? (request.ConvertTableMode).GetValueOrDefault().ToValueString() : string.Empty),
                                     name: "\"convert_table_mode\"");
                             } 
                             if (request.ConvertTableCellMatching != default)
                             {
 
                                 __httpRequestContent.Add(
-                                    content: new global::System.Net.Http.StringContent($"{request.ConvertTableCellMatching}"),
+                                    content: new global::System.Net.Http.StringContent((global::System.Convert.ToString(request.ConvertTableCellMatching, global::System.Globalization.CultureInfo.InvariantCulture) ?? string.Empty).ToLowerInvariant()),
                                     name: "\"convert_table_cell_matching\"");
                             } 
                             if (request.ConvertPipeline != default)
                             {
 
                                 __httpRequestContent.Add(
-                                    content: new global::System.Net.Http.StringContent($"{request.ConvertPipeline?.ToValueString()}"),
+                                    content: new global::System.Net.Http.StringContent((request.ConvertPipeline).HasValue ? (request.ConvertPipeline).GetValueOrDefault().ToValueString() : string.Empty),
                                     name: "\"convert_pipeline\"");
                             } 
                             if (request.ConvertPageRange != default)
                             {
 
                                 __httpRequestContent.Add(
-                                    content: new global::System.Net.Http.StringContent($"[{string.Join(",", global::System.Linq.Enumerable.Select(request.ConvertPageRange, x => x))}]"),
+                                    content: new global::System.Net.Http.StringContent($"[{string.Join(",", global::System.Linq.Enumerable.Select(request.ConvertPageRange, x => global::System.Convert.ToString(x, global::System.Globalization.CultureInfo.InvariantCulture) ?? string.Empty))}]"),
                                     name: "\"convert_page_range\"");
                             } 
                             if (request.ConvertDocumentTimeout != default)
                             {
 
                                 __httpRequestContent.Add(
-                                    content: new global::System.Net.Http.StringContent($"{request.ConvertDocumentTimeout}"),
+                                    content: new global::System.Net.Http.StringContent(global::System.Convert.ToString(request.ConvertDocumentTimeout, global::System.Globalization.CultureInfo.InvariantCulture) ?? string.Empty),
                                     name: "\"convert_document_timeout\"");
                             } 
                             if (request.ConvertAbortOnError != default)
                             {
 
                                 __httpRequestContent.Add(
-                                    content: new global::System.Net.Http.StringContent($"{request.ConvertAbortOnError}"),
+                                    content: new global::System.Net.Http.StringContent((global::System.Convert.ToString(request.ConvertAbortOnError, global::System.Globalization.CultureInfo.InvariantCulture) ?? string.Empty).ToLowerInvariant()),
                                     name: "\"convert_abort_on_error\"");
                             } 
                             if (request.ConvertDoTableStructure != default)
                             {
 
                                 __httpRequestContent.Add(
-                                    content: new global::System.Net.Http.StringContent($"{request.ConvertDoTableStructure}"),
+                                    content: new global::System.Net.Http.StringContent((global::System.Convert.ToString(request.ConvertDoTableStructure, global::System.Globalization.CultureInfo.InvariantCulture) ?? string.Empty).ToLowerInvariant()),
                                     name: "\"convert_do_table_structure\"");
                             } 
                             if (request.ConvertIncludeImages != default)
                             {
 
                                 __httpRequestContent.Add(
-                                    content: new global::System.Net.Http.StringContent($"{request.ConvertIncludeImages}"),
+                                    content: new global::System.Net.Http.StringContent((global::System.Convert.ToString(request.ConvertIncludeImages, global::System.Globalization.CultureInfo.InvariantCulture) ?? string.Empty).ToLowerInvariant()),
                                     name: "\"convert_include_images\"");
                             } 
                             if (request.ConvertImagesScale != default)
                             {
 
                                 __httpRequestContent.Add(
-                                    content: new global::System.Net.Http.StringContent($"{request.ConvertImagesScale}"),
+                                    content: new global::System.Net.Http.StringContent(global::System.Convert.ToString(request.ConvertImagesScale, global::System.Globalization.CultureInfo.InvariantCulture) ?? string.Empty),
                                     name: "\"convert_images_scale\"");
                             } 
                             if (request.ConvertMdPageBreakPlaceholder != default)
                             {
 
                                 __httpRequestContent.Add(
-                                    content: new global::System.Net.Http.StringContent($"{request.ConvertMdPageBreakPlaceholder}"),
+                                    content: new global::System.Net.Http.StringContent(request.ConvertMdPageBreakPlaceholder ?? string.Empty),
                                     name: "\"convert_md_page_break_placeholder\"");
                             } 
                             if (request.ConvertDoCodeEnrichment != default)
                             {
 
                                 __httpRequestContent.Add(
-                                    content: new global::System.Net.Http.StringContent($"{request.ConvertDoCodeEnrichment}"),
+                                    content: new global::System.Net.Http.StringContent((global::System.Convert.ToString(request.ConvertDoCodeEnrichment, global::System.Globalization.CultureInfo.InvariantCulture) ?? string.Empty).ToLowerInvariant()),
                                     name: "\"convert_do_code_enrichment\"");
                             } 
                             if (request.ConvertDoFormulaEnrichment != default)
                             {
 
                                 __httpRequestContent.Add(
-                                    content: new global::System.Net.Http.StringContent($"{request.ConvertDoFormulaEnrichment}"),
+                                    content: new global::System.Net.Http.StringContent((global::System.Convert.ToString(request.ConvertDoFormulaEnrichment, global::System.Globalization.CultureInfo.InvariantCulture) ?? string.Empty).ToLowerInvariant()),
                                     name: "\"convert_do_formula_enrichment\"");
                             } 
                             if (request.ConvertDoPictureClassification != default)
                             {
 
                                 __httpRequestContent.Add(
-                                    content: new global::System.Net.Http.StringContent($"{request.ConvertDoPictureClassification}"),
+                                    content: new global::System.Net.Http.StringContent((global::System.Convert.ToString(request.ConvertDoPictureClassification, global::System.Globalization.CultureInfo.InvariantCulture) ?? string.Empty).ToLowerInvariant()),
                                     name: "\"convert_do_picture_classification\"");
                             } 
                             if (request.ConvertDoChartExtraction != default)
                             {
 
                                 __httpRequestContent.Add(
-                                    content: new global::System.Net.Http.StringContent($"{request.ConvertDoChartExtraction}"),
+                                    content: new global::System.Net.Http.StringContent((global::System.Convert.ToString(request.ConvertDoChartExtraction, global::System.Globalization.CultureInfo.InvariantCulture) ?? string.Empty).ToLowerInvariant()),
                                     name: "\"convert_do_chart_extraction\"");
                             } 
                             if (request.ConvertDoPictureDescription != default)
                             {
 
                                 __httpRequestContent.Add(
-                                    content: new global::System.Net.Http.StringContent($"{request.ConvertDoPictureDescription}"),
+                                    content: new global::System.Net.Http.StringContent((global::System.Convert.ToString(request.ConvertDoPictureDescription, global::System.Globalization.CultureInfo.InvariantCulture) ?? string.Empty).ToLowerInvariant()),
                                     name: "\"convert_do_picture_description\"");
                             } 
                             if (request.ConvertPictureDescriptionAreaThreshold != default)
                             {
 
                                 __httpRequestContent.Add(
-                                    content: new global::System.Net.Http.StringContent($"{request.ConvertPictureDescriptionAreaThreshold}"),
+                                    content: new global::System.Net.Http.StringContent(global::System.Convert.ToString(request.ConvertPictureDescriptionAreaThreshold, global::System.Globalization.CultureInfo.InvariantCulture) ?? string.Empty),
                                     name: "\"convert_picture_description_area_threshold\"");
                             } 
                             if (request.ConvertPictureDescriptionLocal != default)
                             {
 
                                 __httpRequestContent.Add(
-                                    content: new global::System.Net.Http.StringContent($"{request.ConvertPictureDescriptionLocal}"),
+                                    content: new global::System.Net.Http.StringContent(request.ConvertPictureDescriptionLocal ?? string.Empty),
                                     name: "\"convert_picture_description_local\"");
                             } 
                             if (request.ConvertPictureDescriptionApi != default)
                             {
 
                                 __httpRequestContent.Add(
-                                    content: new global::System.Net.Http.StringContent($"{request.ConvertPictureDescriptionApi}"),
+                                    content: new global::System.Net.Http.StringContent(request.ConvertPictureDescriptionApi ?? string.Empty),
                                     name: "\"convert_picture_description_api\"");
                             } 
                             if (request.ConvertVlmPipelineModel != default)
                             {
 
                                 __httpRequestContent.Add(
-                                    content: new global::System.Net.Http.StringContent($"{request.ConvertVlmPipelineModel}"),
+                                    content: new global::System.Net.Http.StringContent(request.ConvertVlmPipelineModel.ToString() ?? string.Empty),
                                     name: "\"convert_vlm_pipeline_model\"");
                             } 
                             if (request.ConvertVlmPipelineModelLocal != default)
                             {
 
                                 __httpRequestContent.Add(
-                                    content: new global::System.Net.Http.StringContent($"{request.ConvertVlmPipelineModelLocal}"),
+                                    content: new global::System.Net.Http.StringContent(request.ConvertVlmPipelineModelLocal ?? string.Empty),
                                     name: "\"convert_vlm_pipeline_model_local\"");
                             } 
                             if (request.ConvertVlmPipelineModelApi != default)
                             {
 
                                 __httpRequestContent.Add(
-                                    content: new global::System.Net.Http.StringContent($"{request.ConvertVlmPipelineModelApi}"),
+                                    content: new global::System.Net.Http.StringContent(request.ConvertVlmPipelineModelApi ?? string.Empty),
                                     name: "\"convert_vlm_pipeline_model_api\"");
                             } 
                             if (request.ConvertVlmPipelinePreset != default)
                             {
 
                                 __httpRequestContent.Add(
-                                    content: new global::System.Net.Http.StringContent($"{request.ConvertVlmPipelinePreset}"),
+                                    content: new global::System.Net.Http.StringContent(request.ConvertVlmPipelinePreset ?? string.Empty),
                                     name: "\"convert_vlm_pipeline_preset\"");
                             } 
                             if (request.ConvertPictureDescriptionPreset != default)
                             {
 
                                 __httpRequestContent.Add(
-                                    content: new global::System.Net.Http.StringContent($"{request.ConvertPictureDescriptionPreset}"),
+                                    content: new global::System.Net.Http.StringContent(request.ConvertPictureDescriptionPreset ?? string.Empty),
                                     name: "\"convert_picture_description_preset\"");
                             } 
                             if (request.ConvertCodeFormulaPreset != default)
                             {
 
                                 __httpRequestContent.Add(
-                                    content: new global::System.Net.Http.StringContent($"{request.ConvertCodeFormulaPreset}"),
+                                    content: new global::System.Net.Http.StringContent(request.ConvertCodeFormulaPreset ?? string.Empty),
                                     name: "\"convert_code_formula_preset\"");
                             } 
                             if (request.ConvertVlmPipelineCustomConfig != default)
                             {
 
                                 __httpRequestContent.Add(
-                                    content: new global::System.Net.Http.StringContent($"{request.ConvertVlmPipelineCustomConfig}"),
+                                    content: new global::System.Net.Http.StringContent(request.ConvertVlmPipelineCustomConfig ?? string.Empty),
                                     name: "\"convert_vlm_pipeline_custom_config\"");
                             } 
                             if (request.ConvertPictureDescriptionCustomConfig != default)
                             {
 
                                 __httpRequestContent.Add(
-                                    content: new global::System.Net.Http.StringContent($"{request.ConvertPictureDescriptionCustomConfig}"),
+                                    content: new global::System.Net.Http.StringContent(request.ConvertPictureDescriptionCustomConfig ?? string.Empty),
                                     name: "\"convert_picture_description_custom_config\"");
                             } 
                             if (request.ConvertCodeFormulaCustomConfig != default)
                             {
 
                                 __httpRequestContent.Add(
-                                    content: new global::System.Net.Http.StringContent($"{request.ConvertCodeFormulaCustomConfig}"),
+                                    content: new global::System.Net.Http.StringContent(request.ConvertCodeFormulaCustomConfig ?? string.Empty),
                                     name: "\"convert_code_formula_custom_config\"");
                             } 
                             if (request.ConvertTableStructureCustomConfig != default)
                             {
 
                                 __httpRequestContent.Add(
-                                    content: new global::System.Net.Http.StringContent($"{request.ConvertTableStructureCustomConfig}"),
+                                    content: new global::System.Net.Http.StringContent(request.ConvertTableStructureCustomConfig.ToString() ?? string.Empty),
                                     name: "\"convert_table_structure_custom_config\"");
                             } 
                             if (request.ConvertLayoutCustomConfig != default)
                             {
 
                                 __httpRequestContent.Add(
-                                    content: new global::System.Net.Http.StringContent($"{request.ConvertLayoutCustomConfig}"),
+                                    content: new global::System.Net.Http.StringContent(request.ConvertLayoutCustomConfig.ToString() ?? string.Empty),
                                     name: "\"convert_layout_custom_config\"");
                             } 
                             if (request.ChunkingUseMarkdownTables != default)
                             {
 
                                 __httpRequestContent.Add(
-                                    content: new global::System.Net.Http.StringContent($"{request.ChunkingUseMarkdownTables}"),
+                                    content: new global::System.Net.Http.StringContent((global::System.Convert.ToString(request.ChunkingUseMarkdownTables, global::System.Globalization.CultureInfo.InvariantCulture) ?? string.Empty).ToLowerInvariant()),
                                     name: "\"chunking_use_markdown_tables\"");
                             } 
                             if (request.ChunkingIncludeRawText != default)
                             {
 
                                 __httpRequestContent.Add(
-                                    content: new global::System.Net.Http.StringContent($"{request.ChunkingIncludeRawText}"),
+                                    content: new global::System.Net.Http.StringContent((global::System.Convert.ToString(request.ChunkingIncludeRawText, global::System.Globalization.CultureInfo.InvariantCulture) ?? string.Empty).ToLowerInvariant()),
                                     name: "\"chunking_include_raw_text\"");
                             } 
                             if (request.ChunkingMaxTokens != default)
                             {
 
                                 __httpRequestContent.Add(
-                                    content: new global::System.Net.Http.StringContent($"{request.ChunkingMaxTokens}"),
+                                    content: new global::System.Net.Http.StringContent(global::System.Convert.ToString(request.ChunkingMaxTokens, global::System.Globalization.CultureInfo.InvariantCulture) ?? string.Empty),
                                     name: "\"chunking_max_tokens\"");
                             } 
                             if (request.ChunkingTokenizer != default)
                             {
 
                                 __httpRequestContent.Add(
-                                    content: new global::System.Net.Http.StringContent($"{request.ChunkingTokenizer}"),
+                                    content: new global::System.Net.Http.StringContent(request.ChunkingTokenizer ?? string.Empty),
                                     name: "\"chunking_tokenizer\"");
                             } 
                             if (request.ChunkingMergePeers != default)
                             {
 
                                 __httpRequestContent.Add(
-                                    content: new global::System.Net.Http.StringContent($"{request.ChunkingMergePeers}"),
+                                    content: new global::System.Net.Http.StringContent((global::System.Convert.ToString(request.ChunkingMergePeers, global::System.Globalization.CultureInfo.InvariantCulture) ?? string.Empty).ToLowerInvariant()),
                                     name: "\"chunking_merge_peers\"");
                             }
                             __httpRequest.Content = __httpRequestContent;
