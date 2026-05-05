@@ -42,7 +42,7 @@ namespace DoclingServe
         /// <summary>
         /// 
         /// </summary>
-        public ChunkClient Chunk => new ChunkClient(HttpClient, authorizations: Authorizations, options: Options)
+        public ChunkClient Chunk => new ChunkClient(HttpClient, baseUri: null, authorizations: Authorizations, options: Options)
         {
             ReadResponseAsString = ReadResponseAsString,
             JsonSerializerContext = JsonSerializerContext,
@@ -51,7 +51,7 @@ namespace DoclingServe
         /// <summary>
         /// 
         /// </summary>
-        public ClearClient Clear => new ClearClient(HttpClient, authorizations: Authorizations, options: Options)
+        public ClearClient Clear => new ClearClient(HttpClient, baseUri: null, authorizations: Authorizations, options: Options)
         {
             ReadResponseAsString = ReadResponseAsString,
             JsonSerializerContext = JsonSerializerContext,
@@ -60,7 +60,7 @@ namespace DoclingServe
         /// <summary>
         /// 
         /// </summary>
-        public ConvertClient Convert => new ConvertClient(HttpClient, authorizations: Authorizations, options: Options)
+        public ConvertClient Convert => new ConvertClient(HttpClient, baseUri: null, authorizations: Authorizations, options: Options)
         {
             ReadResponseAsString = ReadResponseAsString,
             JsonSerializerContext = JsonSerializerContext,
@@ -69,7 +69,7 @@ namespace DoclingServe
         /// <summary>
         /// 
         /// </summary>
-        public HealthClient Health => new HealthClient(HttpClient, authorizations: Authorizations, options: Options)
+        public HealthClient Health => new HealthClient(HttpClient, baseUri: null, authorizations: Authorizations, options: Options)
         {
             ReadResponseAsString = ReadResponseAsString,
             JsonSerializerContext = JsonSerializerContext,
@@ -78,7 +78,7 @@ namespace DoclingServe
         /// <summary>
         /// 
         /// </summary>
-        public ManagementClient Management => new ManagementClient(HttpClient, authorizations: Authorizations, options: Options)
+        public ManagementClient Management => new ManagementClient(HttpClient, baseUri: null, authorizations: Authorizations, options: Options)
         {
             ReadResponseAsString = ReadResponseAsString,
             JsonSerializerContext = JsonSerializerContext,
@@ -87,7 +87,7 @@ namespace DoclingServe
         /// <summary>
         /// 
         /// </summary>
-        public TasksClient Tasks => new TasksClient(HttpClient, authorizations: Authorizations, options: Options)
+        public TasksClient Tasks => new TasksClient(HttpClient, baseUri: null, authorizations: Authorizations, options: Options)
         {
             ReadResponseAsString = ReadResponseAsString,
             JsonSerializerContext = JsonSerializerContext,
@@ -126,10 +126,10 @@ namespace DoclingServe
         /// <param name="options">Client-wide request defaults such as headers, query parameters, retries, and timeout.</param>
         /// <param name="disposeHttpClient">Dispose the HttpClient when the instance is disposed. True by default.</param>
         public DoclingServeClient(
-            global::System.Net.Http.HttpClient? httpClient = null,
-            global::System.Uri? baseUri = null,
-            global::System.Collections.Generic.List<global::DoclingServe.EndPointAuthorization>? authorizations = null,
-            global::DoclingServe.AutoSDKClientOptions? options = null,
+            global::System.Net.Http.HttpClient? httpClient,
+            global::System.Uri? baseUri,
+            global::System.Collections.Generic.List<global::DoclingServe.EndPointAuthorization>? authorizations,
+            global::DoclingServe.AutoSDKClientOptions? options,
             bool disposeHttpClient = true)
         {
 
