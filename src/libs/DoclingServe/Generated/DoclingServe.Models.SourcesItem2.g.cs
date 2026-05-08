@@ -34,6 +34,19 @@ namespace DoclingServe
         /// <summary>
         /// 
         /// </summary>
+        public bool TryPickFile(
+#if NET6_0_OR_GREATER
+            [global::System.Diagnostics.CodeAnalysis.NotNullWhen(true)]
+#endif
+            out global::DoclingServe.FileSourceRequest? value)
+        {
+            value = File;
+            return IsFile;
+        }
+
+        /// <summary>
+        /// 
+        /// </summary>
 #if NET6_0_OR_GREATER
         public global::DoclingServe.HttpSourceRequest? Http { get; init; }
 #else
@@ -51,6 +64,19 @@ namespace DoclingServe
         /// <summary>
         /// 
         /// </summary>
+        public bool TryPickHttp(
+#if NET6_0_OR_GREATER
+            [global::System.Diagnostics.CodeAnalysis.NotNullWhen(true)]
+#endif
+            out global::DoclingServe.HttpSourceRequest? value)
+        {
+            value = Http;
+            return IsHttp;
+        }
+
+        /// <summary>
+        /// 
+        /// </summary>
 #if NET6_0_OR_GREATER
         public global::DoclingServe.S3SourceRequest? S3 { get; init; }
 #else
@@ -64,6 +90,19 @@ namespace DoclingServe
         [global::System.Diagnostics.CodeAnalysis.MemberNotNullWhen(true, nameof(S3))]
 #endif
         public bool IsS3 => S3 != null;
+
+        /// <summary>
+        /// 
+        /// </summary>
+        public bool TryPickS3(
+#if NET6_0_OR_GREATER
+            [global::System.Diagnostics.CodeAnalysis.NotNullWhen(true)]
+#endif
+            out global::DoclingServe.S3SourceRequest? value)
+        {
+            value = S3;
+            return IsS3;
+        }
         /// <summary>
         /// 
         /// </summary>
@@ -165,9 +204,9 @@ namespace DoclingServe
         /// 
         /// </summary>
         public TResult? Match<TResult>(
-            global::System.Func<global::DoclingServe.FileSourceRequest?, TResult>? file = null,
-            global::System.Func<global::DoclingServe.HttpSourceRequest?, TResult>? http = null,
-            global::System.Func<global::DoclingServe.S3SourceRequest?, TResult>? s3 = null,
+            global::System.Func<global::DoclingServe.FileSourceRequest, TResult>? file = null,
+            global::System.Func<global::DoclingServe.HttpSourceRequest, TResult>? http = null,
+            global::System.Func<global::DoclingServe.S3SourceRequest, TResult>? s3 = null,
             bool validate = true)
         {
             if (validate)
@@ -195,9 +234,39 @@ namespace DoclingServe
         /// 
         /// </summary>
         public void Match(
-            global::System.Action<global::DoclingServe.FileSourceRequest?>? file = null,
-            global::System.Action<global::DoclingServe.HttpSourceRequest?>? http = null,
-            global::System.Action<global::DoclingServe.S3SourceRequest?>? s3 = null,
+            global::System.Action<global::DoclingServe.FileSourceRequest>? file = null,
+
+            global::System.Action<global::DoclingServe.HttpSourceRequest>? http = null,
+
+            global::System.Action<global::DoclingServe.S3SourceRequest>? s3 = null,
+            bool validate = true)
+        {
+            if (validate)
+            {
+                Validate();
+            }
+
+            if (IsFile)
+            {
+                file?.Invoke(File!);
+            }
+            else if (IsHttp)
+            {
+                http?.Invoke(Http!);
+            }
+            else if (IsS3)
+            {
+                s3?.Invoke(S3!);
+            }
+        }
+
+        /// <summary>
+        /// 
+        /// </summary>
+        public void Switch(
+            global::System.Action<global::DoclingServe.FileSourceRequest>? file = null,
+            global::System.Action<global::DoclingServe.HttpSourceRequest>? http = null,
+            global::System.Action<global::DoclingServe.S3SourceRequest>? s3 = null,
             bool validate = true)
         {
             if (validate)
