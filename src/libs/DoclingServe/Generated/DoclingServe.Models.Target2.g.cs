@@ -48,6 +48,13 @@ namespace DoclingServe
         /// <summary>
         /// 
         /// </summary>
+        public global::DoclingServe.InBodyTarget PickInbody() => IsInbody
+            ? Inbody!
+            : throw new global::System.InvalidOperationException($"Expected union variant 'Inbody' but the value was {ToString()}.");
+
+        /// <summary>
+        /// 
+        /// </summary>
 #if NET6_0_OR_GREATER
         public global::DoclingServe.ZipTarget? Zip { get; init; }
 #else
@@ -74,6 +81,13 @@ namespace DoclingServe
             value = Zip;
             return IsZip;
         }
+
+        /// <summary>
+        /// 
+        /// </summary>
+        public global::DoclingServe.ZipTarget PickZip() => IsZip
+            ? Zip!
+            : throw new global::System.InvalidOperationException($"Expected union variant 'Zip' but the value was {ToString()}.");
 
         /// <summary>
         /// 
@@ -108,6 +122,13 @@ namespace DoclingServe
         /// <summary>
         /// 
         /// </summary>
+        public global::DoclingServe.S3Target PickS3() => IsS3
+            ? S3!
+            : throw new global::System.InvalidOperationException($"Expected union variant 'S3' but the value was {ToString()}.");
+
+        /// <summary>
+        /// 
+        /// </summary>
 #if NET6_0_OR_GREATER
         public global::DoclingServe.PutTarget? Put { get; init; }
 #else
@@ -134,6 +155,13 @@ namespace DoclingServe
             value = Put;
             return IsPut;
         }
+
+        /// <summary>
+        /// 
+        /// </summary>
+        public global::DoclingServe.PutTarget PickPut() => IsPut
+            ? Put!
+            : throw new global::System.InvalidOperationException($"Expected union variant 'Put' but the value was {ToString()}.");
         /// <summary>
         /// 
         /// </summary>

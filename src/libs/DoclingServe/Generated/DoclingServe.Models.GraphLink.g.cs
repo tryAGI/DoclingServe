@@ -63,5 +63,6 @@ namespace DoclingServe
         public GraphLink()
         {
         }
+
     }
 }

@@ -168,5 +168,6 @@ namespace DoclingServe
         public VlmModelSpec()
         {
         }
+
     }
 }

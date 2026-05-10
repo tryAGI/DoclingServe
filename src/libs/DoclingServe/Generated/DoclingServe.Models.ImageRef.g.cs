@@ -72,5 +72,6 @@ namespace DoclingServe
         public ImageRef()
         {
         }
+
     }
 }

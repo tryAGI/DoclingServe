@@ -62,5 +62,6 @@ namespace DoclingServe
         public PictureClassificationPrediction()
         {
         }
+
     }
 }

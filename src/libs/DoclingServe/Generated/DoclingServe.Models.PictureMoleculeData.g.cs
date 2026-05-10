@@ -91,5 +91,6 @@ namespace DoclingServe
         public PictureMoleculeData()
         {
         }
+
     }
 }

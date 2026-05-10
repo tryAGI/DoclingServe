@@ -56,5 +56,6 @@ namespace DoclingServe
         public ChartStackedBar()
         {
         }
+
     }
 }
