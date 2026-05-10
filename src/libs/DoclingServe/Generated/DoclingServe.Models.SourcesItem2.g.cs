@@ -124,6 +124,11 @@ namespace DoclingServe
         /// <summary>
         /// 
         /// </summary>
+        public static SourcesItem2 FromFile(global::DoclingServe.FileSourceRequest? value) => new SourcesItem2(value);
+
+        /// <summary>
+        /// 
+        /// </summary>
         public static implicit operator SourcesItem2(global::DoclingServe.HttpSourceRequest value) => new SourcesItem2((global::DoclingServe.HttpSourceRequest?)value);
 
         /// <summary>
@@ -142,6 +147,11 @@ namespace DoclingServe
         /// <summary>
         /// 
         /// </summary>
+        public static SourcesItem2 FromHttp(global::DoclingServe.HttpSourceRequest? value) => new SourcesItem2(value);
+
+        /// <summary>
+        /// 
+        /// </summary>
         public static implicit operator SourcesItem2(global::DoclingServe.S3SourceRequest value) => new SourcesItem2((global::DoclingServe.S3SourceRequest?)value);
 
         /// <summary>
@@ -156,6 +166,11 @@ namespace DoclingServe
         {
             S3 = value;
         }
+
+        /// <summary>
+        /// 
+        /// </summary>
+        public static SourcesItem2 FromS3(global::DoclingServe.S3SourceRequest? value) => new SourcesItem2(value);
 
         /// <summary>
         /// 

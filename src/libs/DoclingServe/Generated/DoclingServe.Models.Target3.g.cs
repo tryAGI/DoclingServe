@@ -155,6 +155,11 @@ namespace DoclingServe
         /// <summary>
         /// 
         /// </summary>
+        public static Target3 FromInbody(global::DoclingServe.InBodyTarget? value) => new Target3(value);
+
+        /// <summary>
+        /// 
+        /// </summary>
         public static implicit operator Target3(global::DoclingServe.ZipTarget value) => new Target3((global::DoclingServe.ZipTarget?)value);
 
         /// <summary>
@@ -169,6 +174,11 @@ namespace DoclingServe
         {
             Zip = value;
         }
+
+        /// <summary>
+        /// 
+        /// </summary>
+        public static Target3 FromZip(global::DoclingServe.ZipTarget? value) => new Target3(value);
 
         /// <summary>
         /// 
@@ -191,6 +201,11 @@ namespace DoclingServe
         /// <summary>
         /// 
         /// </summary>
+        public static Target3 FromS3(global::DoclingServe.S3Target? value) => new Target3(value);
+
+        /// <summary>
+        /// 
+        /// </summary>
         public static implicit operator Target3(global::DoclingServe.PutTarget value) => new Target3((global::DoclingServe.PutTarget?)value);
 
         /// <summary>
@@ -205,6 +220,11 @@ namespace DoclingServe
         {
             Put = value;
         }
+
+        /// <summary>
+        /// 
+        /// </summary>
+        public static Target3 FromPut(global::DoclingServe.PutTarget? value) => new Target3(value);
 
         /// <summary>
         /// 
