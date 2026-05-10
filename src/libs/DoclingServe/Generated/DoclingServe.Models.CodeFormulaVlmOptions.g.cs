@@ -112,5 +112,6 @@ namespace DoclingServe
         public CodeFormulaVlmOptions()
         {
         }
+
     }
 }

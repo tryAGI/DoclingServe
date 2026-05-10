@@ -41,5 +41,6 @@ namespace DoclingServe
         public HealthCheckResponse()
         {
         }
+
     }
 }

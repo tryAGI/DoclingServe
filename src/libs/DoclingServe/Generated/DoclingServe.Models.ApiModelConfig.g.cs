@@ -42,5 +42,6 @@ namespace DoclingServe
         public ApiModelConfig()
         {
         }
+
     }
 }

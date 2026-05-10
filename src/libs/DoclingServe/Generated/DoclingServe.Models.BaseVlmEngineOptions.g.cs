@@ -45,5 +45,6 @@ namespace DoclingServe
         public BaseVlmEngineOptions()
         {
         }
+
     }
 }

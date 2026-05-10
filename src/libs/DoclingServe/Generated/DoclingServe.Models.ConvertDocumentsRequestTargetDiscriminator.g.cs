@@ -40,5 +40,6 @@ namespace DoclingServe
         public ConvertDocumentsRequestTargetDiscriminator()
         {
         }
+
     }
 }

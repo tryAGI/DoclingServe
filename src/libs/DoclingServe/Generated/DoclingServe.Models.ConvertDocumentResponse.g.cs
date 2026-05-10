@@ -83,5 +83,6 @@ namespace DoclingServe
         public ConvertDocumentResponse()
         {
         }
+
     }
 }

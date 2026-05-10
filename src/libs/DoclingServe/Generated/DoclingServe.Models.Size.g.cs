@@ -48,5 +48,6 @@ namespace DoclingServe
         public Size()
         {
         }
+
     }
 }

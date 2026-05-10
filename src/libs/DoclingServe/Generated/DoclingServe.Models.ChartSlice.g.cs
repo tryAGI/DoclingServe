@@ -53,5 +53,6 @@ namespace DoclingServe
         public ChartSlice()
         {
         }
+
     }
 }
