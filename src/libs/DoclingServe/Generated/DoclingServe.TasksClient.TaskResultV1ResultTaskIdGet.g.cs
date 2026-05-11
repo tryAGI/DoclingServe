@@ -130,6 +130,8 @@ namespace DoclingServe
                     httpRequestMessage: __httpRequest,
                     taskId: taskId!);
 
+                global::DoclingServe.AutoSDKHttpRequestOptions.StampAuthorizationOverride(__httpRequest);
+
                 return __httpRequest;
             }
 
