@@ -458,6 +458,8 @@ namespace DoclingServe
                     httpRequestMessage: __httpRequest,
                     request: request);
 
+                global::DoclingServe.AutoSDKHttpRequestOptions.StampAuthorizationOverride(__httpRequest);
+
                 return __httpRequest;
             }
 
@@ -1656,6 +1658,8 @@ namespace DoclingServe
                     httpRequestMessage: __httpRequest,
                     request: request);
 
+                global::DoclingServe.AutoSDKHttpRequestOptions.StampAuthorizationOverride(__httpRequest);
+
                 return __httpRequest;
             }
 
@@ -2610,6 +2614,8 @@ namespace DoclingServe
                     httpClient: HttpClient,
                     httpRequestMessage: __httpRequest,
                     request: request);
+
+                global::DoclingServe.AutoSDKHttpRequestOptions.StampAuthorizationOverride(__httpRequest);
 
                 return __httpRequest;
             }
