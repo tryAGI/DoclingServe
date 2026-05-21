@@ -93,5 +93,6 @@ namespace DoclingServe
         public HierarchicalChunkerOptionsDocumentsRequest()
         {
         }
+
     }
 }

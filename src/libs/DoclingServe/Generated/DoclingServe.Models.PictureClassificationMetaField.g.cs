@@ -39,5 +39,6 @@ namespace DoclingServe
         public PictureClassificationMetaField()
         {
         }
+
     }
 }

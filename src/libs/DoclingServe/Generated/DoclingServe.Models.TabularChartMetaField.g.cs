@@ -73,5 +73,6 @@ namespace DoclingServe
         public TabularChartMetaField()
         {
         }
+
     }
 }

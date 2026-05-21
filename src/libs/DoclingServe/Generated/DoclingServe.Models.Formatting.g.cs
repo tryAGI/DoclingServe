@@ -88,5 +88,6 @@ namespace DoclingServe
         public Formatting()
         {
         }
+
     }
 }

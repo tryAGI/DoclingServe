@@ -69,5 +69,6 @@ namespace DoclingServe
         public DocumentOrigin()
         {
         }
+
     }
 }

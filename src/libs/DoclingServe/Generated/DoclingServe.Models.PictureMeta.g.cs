@@ -75,5 +75,6 @@ namespace DoclingServe
         public PictureMeta()
         {
         }
+
     }
 }

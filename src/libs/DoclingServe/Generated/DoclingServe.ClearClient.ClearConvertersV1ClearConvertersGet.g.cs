@@ -121,6 +121,8 @@ namespace DoclingServe
                     httpClient: HttpClient,
                     httpRequestMessage: __httpRequest);
 
+                global::DoclingServe.AutoSDKHttpRequestOptions.StampAuthorizationOverride(__httpRequest);
+
                 return __httpRequest;
             }
 

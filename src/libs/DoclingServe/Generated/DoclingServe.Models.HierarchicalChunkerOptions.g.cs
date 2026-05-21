@@ -67,5 +67,6 @@ namespace DoclingServe
         public HierarchicalChunkerOptions()
         {
         }
+
     }
 }

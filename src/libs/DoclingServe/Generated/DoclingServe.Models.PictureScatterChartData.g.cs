@@ -86,5 +86,6 @@ namespace DoclingServe
         public PictureScatterChartData()
         {
         }
+
     }
 }
