@@ -36,11 +36,9 @@ public sealed class Environment : IAsyncDisposable
                 var apiKey =
                     System.Environment.GetEnvironmentVariable("DOCLINGSERVE_API_KEY") is { Length: > 0 } apiKeyValue
                         ? apiKeyValue
-                        : null;
+                        : "test";
 
-                var client = apiKey is not null
-                    ? new DoclingServeClient(apiKey, baseUri: new Uri(baseUrl))
-                    : new DoclingServeClient(baseUri: new Uri(baseUrl));
+                var client = new DoclingServeClient(apiKey, baseUri: new Uri(baseUrl));
 
                 return new Environment
                 {
@@ -62,6 +60,7 @@ public sealed class Environment : IAsyncDisposable
                 await container.StartAsync(cts.Token);
 
                 var client = new DoclingServeClient(
+                    "test",
                     baseUri: new UriBuilder(
                         Uri.UriSchemeHttp,
                         container.Hostname,
