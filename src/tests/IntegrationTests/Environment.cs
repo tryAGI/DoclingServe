@@ -39,6 +39,7 @@ public sealed class Environment : IAsyncDisposable
                         : "test";
 
                 var client = new DoclingServeClient(apiKey, baseUri: new Uri(baseUrl));
+                client.AuthorizeUsingAuthorization();
 
                 return new Environment
                 {
@@ -65,6 +66,7 @@ public sealed class Environment : IAsyncDisposable
                         Uri.UriSchemeHttp,
                         container.Hostname,
                         container.GetMappedPublicPort(DoclingServePort)).Uri);
+                client.AuthorizeUsingAuthorization();
 
                 return new Environment
                 {
