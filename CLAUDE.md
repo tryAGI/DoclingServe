@@ -15,10 +15,16 @@ dotnet test src/tests/IntegrationTests/
 ### Test Modes (Testcontainers)
 
 Tests use Testcontainers with automatic environment detection:
-- **Debug builds** (`dotnet test`): Connect to local instance at `localhost:5001` (start manually with `docker run -p 5001:5001 quay.io/docling-project/docling-serve-cpu`)
-- **Release/CI builds** (`dotnet test -c Release`): Automatically spin up `docling-serve-cpu` Docker container via Testcontainers (10-minute startup timeout for ML model loading)
+- **Docker available:** Automatically spin up `docling-serve-cpu` Docker container via Testcontainers (10-minute startup timeout for ML model loading)
+- **Docker unavailable:** Connect to local instance at `localhost:5001` (start manually with `docker run -p 5001:5001 quay.io/docling-project/docling-serve-cpu`)
 
-Override with env vars: `DOCLINGSERVE_BASE_URL`, `DOCLINGSERVE_API_KEY` (local mode only).
+First-run pre-pull for faster container startup:
+
+```bash
+docker pull quay.io/docling-project/docling-serve-cpu:latest
+```
+
+Override with env vars: `DOCLINGSERVE_TEST_ENVIRONMENT=Local|Container`, `DOCLINGSERVE_BASE_URL`, `DOCLINGSERVE_API_KEY` (local mode only).
 
 ## Auth
 
