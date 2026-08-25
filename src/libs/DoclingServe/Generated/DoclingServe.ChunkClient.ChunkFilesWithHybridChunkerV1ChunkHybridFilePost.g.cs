@@ -123,6 +123,10 @@ namespace DoclingServe
                 __httpRequest.VersionPolicy = global::System.Net.Http.HttpVersionPolicy.RequestVersionOrHigher;
 #endif
 
+                __httpRequest.Headers.TryAddWithoutValidation(
+                    "Accept",
+                    "application/json");
+
                             var __httpRequestContent = new global::System.Net.Http.MultipartFormDataContent();
                             for (var __iFiles = 0; __iFiles < request.Files.Count; __iFiles++)
                             {
@@ -1386,6 +1390,10 @@ namespace DoclingServe
                 __httpRequest.VersionPolicy = global::System.Net.Http.HttpVersionPolicy.RequestVersionOrHigher;
 #endif
 
+                __httpRequest.Headers.TryAddWithoutValidation(
+                    "Accept",
+                    "application/json");
+
                             var __httpRequestContent = new global::System.Net.Http.MultipartFormDataContent();
                             for (var __iFiles = 0; __iFiles < files.Count; __iFiles++)
                             {
@@ -2407,6 +2415,10 @@ namespace DoclingServe
                 __httpRequest.Version = global::System.Net.HttpVersion.Version11;
                 __httpRequest.VersionPolicy = global::System.Net.Http.HttpVersionPolicy.RequestVersionOrHigher;
 #endif
+
+                __httpRequest.Headers.TryAddWithoutValidation(
+                    "Accept",
+                    "application/json");
 
                             var __httpRequestContent = new global::System.Net.Http.MultipartFormDataContent();
                             for (var __iFiles = 0; __iFiles < files.Count; __iFiles++)
