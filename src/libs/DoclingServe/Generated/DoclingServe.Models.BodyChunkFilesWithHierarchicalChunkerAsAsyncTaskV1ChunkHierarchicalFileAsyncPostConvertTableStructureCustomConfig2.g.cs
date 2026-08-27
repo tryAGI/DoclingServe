@@ -4,7 +4,7 @@
 namespace DoclingServe
 {
     /// <summary>
-    /// 
+    ///
     /// </summary>
     public sealed partial class BodyChunkFilesWithHierarchicalChunkerAsAsyncTaskV1ChunkHierarchicalFileAsyncPostConvertTableStructureCustomConfig2
     {

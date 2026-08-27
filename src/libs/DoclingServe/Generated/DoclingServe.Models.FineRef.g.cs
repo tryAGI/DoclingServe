@@ -9,14 +9,14 @@ namespace DoclingServe
     public sealed partial class FineRef
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("$ref")]
         [global::System.Text.Json.Serialization.JsonRequired]
         public required string x_ref { get; set; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("range")]
         public global::System.Collections.Generic.IList<int>? Range { get; set; }

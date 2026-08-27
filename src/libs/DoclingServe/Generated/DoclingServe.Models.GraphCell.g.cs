@@ -17,34 +17,34 @@ namespace DoclingServe
         public required global::DoclingServe.GraphCellLabel Label { get; set; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("cell_id")]
         [global::System.Text.Json.Serialization.JsonRequired]
         public required int CellId { get; set; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("text")]
         [global::System.Text.Json.Serialization.JsonRequired]
         public required string Text { get; set; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("orig")]
         [global::System.Text.Json.Serialization.JsonRequired]
         public required string Orig { get; set; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("prov")]
         public global::DoclingServe.ProvenanceItem? Prov { get; set; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("item_ref")]
         public global::DoclingServe.RefItem? ItemRef { get; set; }

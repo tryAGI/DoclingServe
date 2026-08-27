@@ -9,71 +9,71 @@ namespace DoclingServe
     public enum InputFormat
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Asciidoc,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Audio,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Csv,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Docx,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Html,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Image,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         JsonDocling,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Latex,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Md,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         MetsGbs,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Pdf,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Pptx,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Vtt,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Xlsx,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         XmlJats,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         XmlUspto,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         XmlXbrl,
     }

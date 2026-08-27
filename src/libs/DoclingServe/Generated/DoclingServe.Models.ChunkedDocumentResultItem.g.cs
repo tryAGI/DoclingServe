@@ -9,14 +9,14 @@ namespace DoclingServe
     public sealed partial class ChunkedDocumentResultItem
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("filename")]
         [global::System.Text.Json.Serialization.JsonRequired]
         public required string Filename { get; set; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("chunk_index")]
         [global::System.Text.Json.Serialization.JsonRequired]

@@ -4,28 +4,28 @@
 namespace DoclingServe
 {
     /// <summary>
-    /// 
+    ///
     /// </summary>
     public enum DoclingComponentType
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         DocAssembler,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         DocumentBackend,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Model,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Pipeline,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         UserInput,
     }

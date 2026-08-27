@@ -9,28 +9,28 @@ namespace DoclingServe
     public sealed partial class BoundingBox
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("l")]
         [global::System.Text.Json.Serialization.JsonRequired]
         public required double L { get; set; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("t")]
         [global::System.Text.Json.Serialization.JsonRequired]
         public required double T { get; set; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("r")]
         [global::System.Text.Json.Serialization.JsonRequired]
         public required double R { get; set; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("b")]
         [global::System.Text.Json.Serialization.JsonRequired]

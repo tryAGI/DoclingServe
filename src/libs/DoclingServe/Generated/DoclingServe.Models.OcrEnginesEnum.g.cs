@@ -4,32 +4,32 @@
 namespace DoclingServe
 {
     /// <summary>
-    /// 
+    ///
     /// </summary>
     public enum OcrEnginesEnum
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Auto,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Easyocr,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Ocrmac,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Rapidocr,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Tesseract,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Tesserocr,
     }

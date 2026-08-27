@@ -16,11 +16,11 @@ namespace DoclingServe
     public enum TableFormerMode
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Accurate,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Fast,
     }

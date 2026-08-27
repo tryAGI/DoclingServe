@@ -10,12 +10,12 @@ namespace DoclingServe
     public readonly partial struct Target : global::System.IEquatable<Target>
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public global::DoclingServe.ConvertDocumentsRequestTargetDiscriminatorKind? Kind { get; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
 #if NET6_0_OR_GREATER
         public global::DoclingServe.InBodyTarget? Inbody { get; init; }
@@ -24,7 +24,7 @@ namespace DoclingServe
 #endif
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
 #if NET6_0_OR_GREATER
         [global::System.Diagnostics.CodeAnalysis.MemberNotNullWhen(true, nameof(Inbody))]
@@ -32,7 +32,7 @@ namespace DoclingServe
         public bool IsInbody => Inbody != null;
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public bool TryPickInbody(
 #if NET6_0_OR_GREATER
@@ -45,14 +45,14 @@ namespace DoclingServe
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public global::DoclingServe.InBodyTarget PickInbody() => IsInbody
             ? Inbody!
             : throw new global::System.InvalidOperationException($"Expected union variant 'Inbody' but the value was {ToString()}.");
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
 #if NET6_0_OR_GREATER
         public global::DoclingServe.ZipTarget? Zip { get; init; }
@@ -61,7 +61,7 @@ namespace DoclingServe
 #endif
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
 #if NET6_0_OR_GREATER
         [global::System.Diagnostics.CodeAnalysis.MemberNotNullWhen(true, nameof(Zip))]
@@ -69,7 +69,7 @@ namespace DoclingServe
         public bool IsZip => Zip != null;
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public bool TryPickZip(
 #if NET6_0_OR_GREATER
@@ -82,14 +82,14 @@ namespace DoclingServe
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public global::DoclingServe.ZipTarget PickZip() => IsZip
             ? Zip!
             : throw new global::System.InvalidOperationException($"Expected union variant 'Zip' but the value was {ToString()}.");
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
 #if NET6_0_OR_GREATER
         public global::DoclingServe.S3Target? S3 { get; init; }
@@ -98,7 +98,7 @@ namespace DoclingServe
 #endif
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
 #if NET6_0_OR_GREATER
         [global::System.Diagnostics.CodeAnalysis.MemberNotNullWhen(true, nameof(S3))]
@@ -106,7 +106,7 @@ namespace DoclingServe
         public bool IsS3 => S3 != null;
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public bool TryPickS3(
 #if NET6_0_OR_GREATER
@@ -119,14 +119,14 @@ namespace DoclingServe
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public global::DoclingServe.S3Target PickS3() => IsS3
             ? S3!
             : throw new global::System.InvalidOperationException($"Expected union variant 'S3' but the value was {ToString()}.");
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
 #if NET6_0_OR_GREATER
         public global::DoclingServe.PutTarget? Put { get; init; }
@@ -135,7 +135,7 @@ namespace DoclingServe
 #endif
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
 #if NET6_0_OR_GREATER
         [global::System.Diagnostics.CodeAnalysis.MemberNotNullWhen(true, nameof(Put))]
@@ -143,7 +143,7 @@ namespace DoclingServe
         public bool IsPut => Put != null;
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public bool TryPickPut(
 #if NET6_0_OR_GREATER
@@ -156,23 +156,23 @@ namespace DoclingServe
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public global::DoclingServe.PutTarget PickPut() => IsPut
             ? Put!
             : throw new global::System.InvalidOperationException($"Expected union variant 'Put' but the value was {ToString()}.");
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static implicit operator Target(global::DoclingServe.InBodyTarget value) => new Target((global::DoclingServe.InBodyTarget?)value);
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static implicit operator global::DoclingServe.InBodyTarget?(Target @this) => @this.Inbody;
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public Target(global::DoclingServe.InBodyTarget? value)
         {
@@ -180,22 +180,22 @@ namespace DoclingServe
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static Target FromInbody(global::DoclingServe.InBodyTarget? value) => new Target(value);
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static implicit operator Target(global::DoclingServe.ZipTarget value) => new Target((global::DoclingServe.ZipTarget?)value);
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static implicit operator global::DoclingServe.ZipTarget?(Target @this) => @this.Zip;
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public Target(global::DoclingServe.ZipTarget? value)
         {
@@ -203,22 +203,22 @@ namespace DoclingServe
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static Target FromZip(global::DoclingServe.ZipTarget? value) => new Target(value);
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static implicit operator Target(global::DoclingServe.S3Target value) => new Target((global::DoclingServe.S3Target?)value);
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static implicit operator global::DoclingServe.S3Target?(Target @this) => @this.S3;
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public Target(global::DoclingServe.S3Target? value)
         {
@@ -226,22 +226,22 @@ namespace DoclingServe
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static Target FromS3(global::DoclingServe.S3Target? value) => new Target(value);
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static implicit operator Target(global::DoclingServe.PutTarget value) => new Target((global::DoclingServe.PutTarget?)value);
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static implicit operator global::DoclingServe.PutTarget?(Target @this) => @this.Put;
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public Target(global::DoclingServe.PutTarget? value)
         {
@@ -249,12 +249,12 @@ namespace DoclingServe
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static Target FromPut(global::DoclingServe.PutTarget? value) => new Target(value);
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public Target(
             global::DoclingServe.ConvertDocumentsRequestTargetDiscriminatorKind? kind,
@@ -273,27 +273,27 @@ namespace DoclingServe
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public object? Object =>
             Put as object ??
             S3 as object ??
             Zip as object ??
-            Inbody as object 
+            Inbody as object
             ;
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public override string? ToString() =>
             Inbody?.ToString() ??
             Zip?.ToString() ??
             S3?.ToString() ??
-            Put?.ToString() 
+            Put?.ToString()
             ;
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public bool Validate()
         {
@@ -301,7 +301,7 @@ namespace DoclingServe
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public TResult? Match<TResult>(
             global::System.Func<global::DoclingServe.InBodyTarget, TResult>? inbody = null,
@@ -336,7 +336,7 @@ namespace DoclingServe
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public void Match(
             global::System.Action<global::DoclingServe.InBodyTarget>? inbody = null,
@@ -372,7 +372,7 @@ namespace DoclingServe
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public void Switch(
             global::System.Action<global::DoclingServe.InBodyTarget>? inbody = null,
@@ -405,7 +405,7 @@ namespace DoclingServe
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public override int GetHashCode()
         {
@@ -430,7 +430,7 @@ namespace DoclingServe
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public bool Equals(Target other)
         {
@@ -438,12 +438,12 @@ namespace DoclingServe
                 global::System.Collections.Generic.EqualityComparer<global::DoclingServe.InBodyTarget?>.Default.Equals(Inbody, other.Inbody) &&
                 global::System.Collections.Generic.EqualityComparer<global::DoclingServe.ZipTarget?>.Default.Equals(Zip, other.Zip) &&
                 global::System.Collections.Generic.EqualityComparer<global::DoclingServe.S3Target?>.Default.Equals(S3, other.S3) &&
-                global::System.Collections.Generic.EqualityComparer<global::DoclingServe.PutTarget?>.Default.Equals(Put, other.Put) 
+                global::System.Collections.Generic.EqualityComparer<global::DoclingServe.PutTarget?>.Default.Equals(Put, other.Put)
                 ;
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static bool operator ==(Target obj1, Target obj2)
         {
@@ -451,7 +451,7 @@ namespace DoclingServe
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static bool operator !=(Target obj1, Target obj2)
         {
@@ -459,7 +459,7 @@ namespace DoclingServe
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public override bool Equals(object? obj)
         {

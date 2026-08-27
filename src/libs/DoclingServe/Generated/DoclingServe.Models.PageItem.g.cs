@@ -16,13 +16,13 @@ namespace DoclingServe
         public required global::DoclingServe.Size Size { get; set; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("image")]
         public global::DoclingServe.ImageRef? Image { get; set; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("page_no")]
         [global::System.Text.Json.Serialization.JsonRequired]

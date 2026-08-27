@@ -9,7 +9,7 @@ namespace DoclingServe
     public sealed partial class PictureClassificationMetaField
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("predictions")]
         public global::System.Collections.Generic.IList<global::DoclingServe.PictureClassificationPrediction>? Predictions { get; set; }

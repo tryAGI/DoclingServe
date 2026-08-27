@@ -9,23 +9,23 @@ namespace DoclingServe
     public enum GraphLinkLabel
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         ToChild,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         ToKey,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         ToParent,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         ToValue,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Unspecified,
     }

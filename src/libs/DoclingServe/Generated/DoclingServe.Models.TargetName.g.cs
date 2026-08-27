@@ -4,16 +4,16 @@
 namespace DoclingServe
 {
     /// <summary>
-    /// 
+    ///
     /// </summary>
     public enum TargetName
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Inbody,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Zip,
     }

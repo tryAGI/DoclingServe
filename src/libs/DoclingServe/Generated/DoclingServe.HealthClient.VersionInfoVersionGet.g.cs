@@ -124,7 +124,7 @@ namespace DoclingServe
                          __authorization.Location == "Header")
                 {
                     __httpRequest.Headers.Add(__authorization.Name, __authorization.Value);
-                } 
+                }
             }
                 global::DoclingServe.AutoSDKRequestOptionsSupport.ApplyHeaders(
                     request: __httpRequest,

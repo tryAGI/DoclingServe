@@ -4,12 +4,12 @@
 namespace DoclingServe
 {
     /// <summary>
-    /// 
+    ///
     /// </summary>
     public sealed partial class ErrorItem
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("component_type")]
         [global::System.Text.Json.Serialization.JsonConverter(typeof(global::DoclingServe.JsonConverters.DoclingComponentTypeJsonConverter))]
@@ -17,14 +17,14 @@ namespace DoclingServe
         public required global::DoclingServe.DoclingComponentType ComponentType { get; set; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("module_name")]
         [global::System.Text.Json.Serialization.JsonRequired]
         public required string ModuleName { get; set; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("error_message")]
         [global::System.Text.Json.Serialization.JsonRequired]

@@ -9,159 +9,159 @@ namespace DoclingServe
     public enum PictureClassificationLabel
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         BarChart,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         BarCode,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         BoxPlot,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         CadDrawing,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Calendar,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         ChemistryMarkushStructure,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         ChemistryMolecularStructure,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         ChemistryStructure,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         CrosswordPuzzle,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         ElectricalDiagram,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         EngineeringDrawing,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         FlowChart,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         FullPageImage,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         GeographicalMap,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Heatmap,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Icon,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         LineChart,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Logo,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Map,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Music,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         NaturalImage,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Other,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         PageThumbnail,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Photograph,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         PictureGroup,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         PieChart,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         QrCode,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         RemoteSensing,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         ScatterChart,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         ScatterPlot,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Screenshot,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         ScreenshotFromComputer,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         ScreenshotFromManual,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Signature,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         StackedBarChart,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Stamp,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         StratigraphicChart,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Table,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         TopographicalMap,
     }

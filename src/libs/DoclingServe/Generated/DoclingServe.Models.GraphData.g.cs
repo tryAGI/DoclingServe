@@ -9,13 +9,13 @@ namespace DoclingServe
     public sealed partial class GraphData
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("cells")]
         public global::System.Collections.Generic.IList<global::DoclingServe.GraphCell>? Cells { get; set; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("links")]
         public global::System.Collections.Generic.IList<global::DoclingServe.GraphLink>? Links { get; set; }

@@ -4,33 +4,33 @@
 namespace DoclingServe
 {
     /// <summary>
-    /// 
+    ///
     /// </summary>
     public sealed partial class PresignedUrlConvertDocumentResponse
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("processing_time")]
         [global::System.Text.Json.Serialization.JsonRequired]
         public required double ProcessingTime { get; set; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("num_converted")]
         [global::System.Text.Json.Serialization.JsonRequired]
         public required int NumConverted { get; set; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("num_succeeded")]
         [global::System.Text.Json.Serialization.JsonRequired]
         public required int NumSucceeded { get; set; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("num_failed")]
         [global::System.Text.Json.Serialization.JsonRequired]

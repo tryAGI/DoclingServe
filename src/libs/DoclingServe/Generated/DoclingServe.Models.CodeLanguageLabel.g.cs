@@ -9,235 +9,235 @@ namespace DoclingServe
     public enum CodeLanguageLabel
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Ada,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Awk,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Bash,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         C,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         C_,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         CPlusPlus,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         CMake,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Cobol,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Css,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Ceylon,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Clojure,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Crystal,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Cuda,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Cython,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         D,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Dart,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Dockerfile,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Elixir,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Erlang,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Fortran,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Forth,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Go,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Html,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Haskell,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Haxe,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Json,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Java,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         JavaScript,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Julia,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Kotlin,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Lisp,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Lua,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Matlab,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         MoonScript,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Nim,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         OCaml,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         ObjectiveC,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Octave,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Php,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Pascal,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Perl,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Prolog,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Python,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Racket,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Ruby,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Rust,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Sml,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Sql,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Scala,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Scheme,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Swift,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         TypeScript,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         VisualBasic,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Xml,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Yaml,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Bc,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Dc,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Unknown,
     }

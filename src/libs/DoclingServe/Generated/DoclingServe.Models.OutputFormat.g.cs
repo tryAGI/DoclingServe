@@ -4,40 +4,40 @@
 namespace DoclingServe
 {
     /// <summary>
-    /// 
+    ///
     /// </summary>
     public enum OutputFormat
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Doctags,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Html,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         HtmlSplitPage,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Json,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Md,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Text,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Vtt,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Yaml,
     }

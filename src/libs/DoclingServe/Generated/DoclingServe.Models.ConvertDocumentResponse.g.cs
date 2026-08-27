@@ -4,19 +4,19 @@
 namespace DoclingServe
 {
     /// <summary>
-    /// 
+    ///
     /// </summary>
     public sealed partial class ConvertDocumentResponse
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("document")]
         [global::System.Text.Json.Serialization.JsonRequired]
         public required global::DoclingServe.ExportDocumentResponse Document { get; set; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("status")]
         [global::System.Text.Json.Serialization.JsonConverter(typeof(global::DoclingServe.JsonConverters.ConversionStatusJsonConverter))]
@@ -30,7 +30,7 @@ namespace DoclingServe
         public global::System.Collections.Generic.IList<global::DoclingServe.ErrorItem>? Errors { get; set; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("processing_time")]
         [global::System.Text.Json.Serialization.JsonRequired]

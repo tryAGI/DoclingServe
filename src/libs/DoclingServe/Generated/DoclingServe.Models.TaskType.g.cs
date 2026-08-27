@@ -4,16 +4,16 @@
 namespace DoclingServe
 {
     /// <summary>
-    /// 
+    ///
     /// </summary>
     public enum TaskType
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Chunk,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Convert,
     }

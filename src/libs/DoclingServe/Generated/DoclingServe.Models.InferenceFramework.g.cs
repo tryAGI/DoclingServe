@@ -4,20 +4,20 @@
 namespace DoclingServe
 {
     /// <summary>
-    /// 
+    ///
     /// </summary>
     public enum InferenceFramework
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Mlx,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Transformers,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Vllm,
     }

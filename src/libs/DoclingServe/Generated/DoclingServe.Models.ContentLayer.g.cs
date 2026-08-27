@@ -9,23 +9,23 @@ namespace DoclingServe
     public enum ContentLayer
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Background,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Body,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Furniture,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Invisible,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Notes,
     }

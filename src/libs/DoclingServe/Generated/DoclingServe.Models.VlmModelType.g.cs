@@ -4,44 +4,44 @@
 namespace DoclingServe
 {
     /// <summary>
-    /// 
+    ///
     /// </summary>
     public enum VlmModelType
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         DeepseekocrOllama,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         GotOcr2,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         GraniteDocling,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         GraniteDoclingVllm,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         GraniteVision,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         GraniteVisionOllama,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         GraniteVisionVllm,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Smoldocling,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         SmoldoclingVllm,
     }

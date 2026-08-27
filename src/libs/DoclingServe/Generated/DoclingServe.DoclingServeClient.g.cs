@@ -10,7 +10,7 @@ namespace DoclingServe
     public sealed partial class DoclingServeClient : global::DoclingServe.IDoclingServeClient, global::System.IDisposable
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public const string DefaultBaseUrl = "http://localhost:5001/";
 
@@ -37,7 +37,7 @@ namespace DoclingServe
         internal global::System.Lazy<global::System.Text.Json.Serialization.JsonSerializerContext> JsonSerializerContextProvider { get; set; } = new(() => global::DoclingServe.SourceGenerationContext.Default);
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public global::System.Text.Json.Serialization.JsonSerializerContext JsonSerializerContext
         {
@@ -47,7 +47,7 @@ namespace DoclingServe
 
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public ChunkClient Chunk => new ChunkClient(HttpClient, baseUri: null, authorizations: Authorizations, options: Options)
         {
@@ -56,7 +56,7 @@ namespace DoclingServe
         };
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public ClearClient Clear => new ClearClient(HttpClient, baseUri: null, authorizations: Authorizations, options: Options)
         {
@@ -65,7 +65,7 @@ namespace DoclingServe
         };
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public ConvertClient Convert => new ConvertClient(HttpClient, baseUri: null, authorizations: Authorizations, options: Options)
         {
@@ -74,7 +74,7 @@ namespace DoclingServe
         };
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public HealthClient Health => new HealthClient(HttpClient, baseUri: null, authorizations: Authorizations, options: Options)
         {
@@ -83,7 +83,7 @@ namespace DoclingServe
         };
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public ManagementClient Management => new ManagementClient(HttpClient, baseUri: null, authorizations: Authorizations, options: Options)
         {
@@ -92,7 +92,7 @@ namespace DoclingServe
         };
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public TasksClient Tasks => new TasksClient(HttpClient, baseUri: null, authorizations: Authorizations, options: Options)
         {

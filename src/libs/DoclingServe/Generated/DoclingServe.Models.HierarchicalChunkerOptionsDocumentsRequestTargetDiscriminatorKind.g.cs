@@ -4,24 +4,24 @@
 namespace DoclingServe
 {
     /// <summary>
-    /// 
+    ///
     /// </summary>
     public enum HierarchicalChunkerOptionsDocumentsRequestTargetDiscriminatorKind
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Inbody,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Put,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         S3,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Zip,
     }

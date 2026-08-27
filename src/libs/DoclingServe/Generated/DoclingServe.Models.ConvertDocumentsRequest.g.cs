@@ -4,7 +4,7 @@
 namespace DoclingServe
 {
     /// <summary>
-    /// 
+    ///
     /// </summary>
     public sealed partial class ConvertDocumentsRequest
     {
@@ -15,7 +15,7 @@ namespace DoclingServe
         public global::DoclingServe.ConvertDocumentsRequestOptions? Options { get; set; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("sources")]
         [global::System.Text.Json.Serialization.JsonRequired]
