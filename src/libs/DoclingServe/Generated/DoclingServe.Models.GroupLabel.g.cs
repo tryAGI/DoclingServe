@@ -9,51 +9,51 @@ namespace DoclingServe
     public enum GroupLabel
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Chapter,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         CommentSection,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         FormArea,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Inline,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         KeyValueArea,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         List,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         OrderedList,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         PictureArea,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Section,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Sheet,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Slide,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Unspecified,
     }

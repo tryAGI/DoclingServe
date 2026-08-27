@@ -17,14 +17,14 @@ namespace DoclingServe
         public required global::DoclingServe.GraphLinkLabel Label { get; set; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("source_cell_id")]
         [global::System.Text.Json.Serialization.JsonRequired]
         public required int SourceCellId { get; set; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("target_cell_id")]
         [global::System.Text.Json.Serialization.JsonRequired]

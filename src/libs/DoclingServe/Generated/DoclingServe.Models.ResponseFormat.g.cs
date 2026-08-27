@@ -4,32 +4,32 @@
 namespace DoclingServe
 {
     /// <summary>
-    /// 
+    ///
     /// </summary>
     public enum ResponseFormat
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         DeepseekocrMarkdown,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Doctags,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Html,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Markdown,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Otsl,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Plaintext,
     }

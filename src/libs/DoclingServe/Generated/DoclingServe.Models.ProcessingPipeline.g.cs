@@ -16,19 +16,19 @@ namespace DoclingServe
     public enum ProcessingPipeline
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Asr,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Legacy,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Standard,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Vlm,
     }

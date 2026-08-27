@@ -20,7 +20,7 @@ namespace DoclingServe.JsonConverters
                     {
                         return global::DoclingServe.VlmEngineTypeExtensions.ToEnum(stringValue) ?? default;
                     }
-                    
+
                     break;
                 }
                 case global::System.Text.Json.JsonTokenType.Number:

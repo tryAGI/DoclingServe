@@ -4,19 +4,19 @@
 namespace DoclingServe
 {
     /// <summary>
-    /// 
+    ///
     /// </summary>
     public sealed partial class TaskStatusResponse
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("task_id")]
         [global::System.Text.Json.Serialization.JsonRequired]
         public required string TaskId { get; set; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("task_type")]
         [global::System.Text.Json.Serialization.JsonConverter(typeof(global::DoclingServe.JsonConverters.TaskTypeJsonConverter))]
@@ -24,26 +24,26 @@ namespace DoclingServe
         public required global::DoclingServe.TaskType TaskType { get; set; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("task_status")]
         [global::System.Text.Json.Serialization.JsonRequired]
         public required string TaskStatus { get; set; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("task_position")]
         public int? TaskPosition { get; set; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("task_meta")]
         public global::DoclingServe.TaskProcessingMeta? TaskMeta { get; set; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("error_message")]
         public string? ErrorMessage { get; set; }

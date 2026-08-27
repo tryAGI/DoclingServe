@@ -4,12 +4,12 @@
 namespace DoclingServe
 {
     /// <summary>
-    /// 
+    ///
     /// </summary>
     public sealed partial class BodyProcessFileAsyncV1ConvertFileAsyncPost
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("files")]
         [global::System.Text.Json.Serialization.JsonRequired]

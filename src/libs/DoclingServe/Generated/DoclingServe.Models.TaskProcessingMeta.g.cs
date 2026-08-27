@@ -4,12 +4,12 @@
 namespace DoclingServe
 {
     /// <summary>
-    /// 
+    ///
     /// </summary>
     public sealed partial class TaskProcessingMeta
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("num_docs")]
         [global::System.Text.Json.Serialization.JsonRequired]

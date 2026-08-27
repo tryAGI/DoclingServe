@@ -4,12 +4,12 @@
 namespace DoclingServe
 {
     /// <summary>
-    /// 
+    ///
     /// </summary>
     public sealed partial class HierarchicalChunkerOptionsDocumentsRequestSourceDiscriminator
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("kind")]
         [global::System.Text.Json.Serialization.JsonConverter(typeof(global::DoclingServe.JsonConverters.HierarchicalChunkerOptionsDocumentsRequestSourceDiscriminatorKindJsonConverter))]

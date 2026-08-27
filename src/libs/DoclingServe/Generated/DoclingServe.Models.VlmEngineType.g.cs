@@ -9,35 +9,35 @@ namespace DoclingServe
     public enum VlmEngineType
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Api,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         ApiLmstudio,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         ApiOllama,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         ApiOpenai,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         AutoInline,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Mlx,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Transformers,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Vllm,
     }

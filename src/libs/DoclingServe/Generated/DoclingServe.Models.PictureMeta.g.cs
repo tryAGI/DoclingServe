@@ -9,31 +9,31 @@ namespace DoclingServe
     public sealed partial class PictureMeta
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("summary")]
         public global::DoclingServe.SummaryMetaField? Summary { get; set; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("description")]
         public global::DoclingServe.DescriptionMetaField? Description { get; set; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("classification")]
         public global::DoclingServe.PictureClassificationMetaField? Classification { get; set; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("molecule")]
         public global::DoclingServe.MoleculeMetaField? Molecule { get; set; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("tabular_chart")]
         public global::DoclingServe.TabularChartMetaField? TabularChart { get; set; }

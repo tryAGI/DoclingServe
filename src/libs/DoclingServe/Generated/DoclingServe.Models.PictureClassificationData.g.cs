@@ -15,14 +15,14 @@ namespace DoclingServe
         public string? Kind { get; set; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("provenance")]
         [global::System.Text.Json.Serialization.JsonRequired]
         public required string Provenance { get; set; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("predicted_classes")]
         [global::System.Text.Json.Serialization.JsonRequired]

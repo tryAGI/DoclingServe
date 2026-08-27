@@ -9,7 +9,7 @@ namespace DoclingServe
     public sealed partial class RefItem
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("$ref")]
         [global::System.Text.Json.Serialization.JsonRequired]

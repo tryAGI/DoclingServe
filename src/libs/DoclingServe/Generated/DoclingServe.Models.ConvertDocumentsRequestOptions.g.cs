@@ -6,7 +6,7 @@
 namespace DoclingServe
 {
     /// <summary>
-    /// 
+    ///
     /// </summary>
     public sealed partial class ConvertDocumentsRequestOptions
     {

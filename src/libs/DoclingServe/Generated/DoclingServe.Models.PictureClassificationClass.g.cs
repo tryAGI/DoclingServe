@@ -9,14 +9,14 @@ namespace DoclingServe
     public sealed partial class PictureClassificationClass
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("class_name")]
         [global::System.Text.Json.Serialization.JsonRequired]
         public required string ClassName { get; set; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("confidence")]
         [global::System.Text.Json.Serialization.JsonRequired]

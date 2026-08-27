@@ -5,17 +5,17 @@
 namespace DoclingServe
 {
     /// <summary>
-    /// 
+    ///
     /// </summary>
     public readonly partial struct SourcesItem3 : global::System.IEquatable<SourcesItem3>
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public global::DoclingServe.HybridChunkerOptionsDocumentsRequestSourceDiscriminatorKind? Kind { get; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
 #if NET6_0_OR_GREATER
         public global::DoclingServe.FileSourceRequest? File { get; init; }
@@ -24,7 +24,7 @@ namespace DoclingServe
 #endif
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
 #if NET6_0_OR_GREATER
         [global::System.Diagnostics.CodeAnalysis.MemberNotNullWhen(true, nameof(File))]
@@ -32,7 +32,7 @@ namespace DoclingServe
         public bool IsFile => File != null;
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public bool TryPickFile(
 #if NET6_0_OR_GREATER
@@ -45,14 +45,14 @@ namespace DoclingServe
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public global::DoclingServe.FileSourceRequest PickFile() => IsFile
             ? File!
             : throw new global::System.InvalidOperationException($"Expected union variant 'File' but the value was {ToString()}.");
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
 #if NET6_0_OR_GREATER
         public global::DoclingServe.HttpSourceRequest? Http { get; init; }
@@ -61,7 +61,7 @@ namespace DoclingServe
 #endif
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
 #if NET6_0_OR_GREATER
         [global::System.Diagnostics.CodeAnalysis.MemberNotNullWhen(true, nameof(Http))]
@@ -69,7 +69,7 @@ namespace DoclingServe
         public bool IsHttp => Http != null;
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public bool TryPickHttp(
 #if NET6_0_OR_GREATER
@@ -82,14 +82,14 @@ namespace DoclingServe
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public global::DoclingServe.HttpSourceRequest PickHttp() => IsHttp
             ? Http!
             : throw new global::System.InvalidOperationException($"Expected union variant 'Http' but the value was {ToString()}.");
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
 #if NET6_0_OR_GREATER
         public global::DoclingServe.S3SourceRequest? S3 { get; init; }
@@ -98,7 +98,7 @@ namespace DoclingServe
 #endif
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
 #if NET6_0_OR_GREATER
         [global::System.Diagnostics.CodeAnalysis.MemberNotNullWhen(true, nameof(S3))]
@@ -106,7 +106,7 @@ namespace DoclingServe
         public bool IsS3 => S3 != null;
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public bool TryPickS3(
 #if NET6_0_OR_GREATER
@@ -119,23 +119,23 @@ namespace DoclingServe
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public global::DoclingServe.S3SourceRequest PickS3() => IsS3
             ? S3!
             : throw new global::System.InvalidOperationException($"Expected union variant 'S3' but the value was {ToString()}.");
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static implicit operator SourcesItem3(global::DoclingServe.FileSourceRequest value) => new SourcesItem3((global::DoclingServe.FileSourceRequest?)value);
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static implicit operator global::DoclingServe.FileSourceRequest?(SourcesItem3 @this) => @this.File;
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public SourcesItem3(global::DoclingServe.FileSourceRequest? value)
         {
@@ -143,22 +143,22 @@ namespace DoclingServe
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static SourcesItem3 FromFile(global::DoclingServe.FileSourceRequest? value) => new SourcesItem3(value);
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static implicit operator SourcesItem3(global::DoclingServe.HttpSourceRequest value) => new SourcesItem3((global::DoclingServe.HttpSourceRequest?)value);
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static implicit operator global::DoclingServe.HttpSourceRequest?(SourcesItem3 @this) => @this.Http;
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public SourcesItem3(global::DoclingServe.HttpSourceRequest? value)
         {
@@ -166,22 +166,22 @@ namespace DoclingServe
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static SourcesItem3 FromHttp(global::DoclingServe.HttpSourceRequest? value) => new SourcesItem3(value);
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static implicit operator SourcesItem3(global::DoclingServe.S3SourceRequest value) => new SourcesItem3((global::DoclingServe.S3SourceRequest?)value);
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static implicit operator global::DoclingServe.S3SourceRequest?(SourcesItem3 @this) => @this.S3;
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public SourcesItem3(global::DoclingServe.S3SourceRequest? value)
         {
@@ -189,12 +189,12 @@ namespace DoclingServe
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static SourcesItem3 FromS3(global::DoclingServe.S3SourceRequest? value) => new SourcesItem3(value);
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public SourcesItem3(
             global::DoclingServe.HybridChunkerOptionsDocumentsRequestSourceDiscriminatorKind? kind,
@@ -211,25 +211,25 @@ namespace DoclingServe
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public object? Object =>
             S3 as object ??
             Http as object ??
-            File as object 
+            File as object
             ;
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public override string? ToString() =>
             File?.ToString() ??
             Http?.ToString() ??
-            S3?.ToString() 
+            S3?.ToString()
             ;
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public bool Validate()
         {
@@ -237,7 +237,7 @@ namespace DoclingServe
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public TResult? Match<TResult>(
             global::System.Func<global::DoclingServe.FileSourceRequest, TResult>? file = null,
@@ -267,7 +267,7 @@ namespace DoclingServe
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public void Match(
             global::System.Action<global::DoclingServe.FileSourceRequest>? file = null,
@@ -297,7 +297,7 @@ namespace DoclingServe
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public void Switch(
             global::System.Action<global::DoclingServe.FileSourceRequest>? file = null,
@@ -325,7 +325,7 @@ namespace DoclingServe
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public override int GetHashCode()
         {
@@ -348,19 +348,19 @@ namespace DoclingServe
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public bool Equals(SourcesItem3 other)
         {
             return
                 global::System.Collections.Generic.EqualityComparer<global::DoclingServe.FileSourceRequest?>.Default.Equals(File, other.File) &&
                 global::System.Collections.Generic.EqualityComparer<global::DoclingServe.HttpSourceRequest?>.Default.Equals(Http, other.Http) &&
-                global::System.Collections.Generic.EqualityComparer<global::DoclingServe.S3SourceRequest?>.Default.Equals(S3, other.S3) 
+                global::System.Collections.Generic.EqualityComparer<global::DoclingServe.S3SourceRequest?>.Default.Equals(S3, other.S3)
                 ;
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static bool operator ==(SourcesItem3 obj1, SourcesItem3 obj2)
         {
@@ -368,7 +368,7 @@ namespace DoclingServe
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static bool operator !=(SourcesItem3 obj1, SourcesItem3 obj2)
         {
@@ -376,7 +376,7 @@ namespace DoclingServe
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public override bool Equals(object? obj)
         {

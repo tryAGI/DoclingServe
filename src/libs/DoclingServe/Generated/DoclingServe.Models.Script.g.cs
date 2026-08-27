@@ -9,15 +9,15 @@ namespace DoclingServe
     public enum Script
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Baseline,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Sub,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Super,
     }

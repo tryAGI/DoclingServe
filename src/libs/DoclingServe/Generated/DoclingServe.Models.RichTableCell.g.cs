@@ -9,7 +9,7 @@ namespace DoclingServe
     public sealed partial class RichTableCell
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("bbox")]
         public global::DoclingServe.BoundingBox? Bbox { get; set; }
@@ -27,35 +27,35 @@ namespace DoclingServe
         public int? ColSpan { get; set; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("start_row_offset_idx")]
         [global::System.Text.Json.Serialization.JsonRequired]
         public required int StartRowOffsetIdx { get; set; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("end_row_offset_idx")]
         [global::System.Text.Json.Serialization.JsonRequired]
         public required int EndRowOffsetIdx { get; set; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("start_col_offset_idx")]
         [global::System.Text.Json.Serialization.JsonRequired]
         public required int StartColOffsetIdx { get; set; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("end_col_offset_idx")]
         [global::System.Text.Json.Serialization.JsonRequired]
         public required int EndColOffsetIdx { get; set; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("text")]
         [global::System.Text.Json.Serialization.JsonRequired]

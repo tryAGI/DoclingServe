@@ -9,13 +9,13 @@ namespace DoclingServe
     public sealed partial class FloatingMeta
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("summary")]
         public global::DoclingServe.SummaryMetaField? Summary { get; set; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("description")]
         public global::DoclingServe.DescriptionMetaField? Description { get; set; }

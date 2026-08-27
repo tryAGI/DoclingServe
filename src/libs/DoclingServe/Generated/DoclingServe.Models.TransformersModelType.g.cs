@@ -4,24 +4,24 @@
 namespace DoclingServe
 {
     /// <summary>
-    /// 
+    ///
     /// </summary>
     public enum TransformersModelType
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Automodel,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         AutomodelCausallm,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         AutomodelImagetexttotext,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         AutomodelVision2seq,
     }

@@ -20,7 +20,7 @@ namespace DoclingServe.JsonConverters
                     {
                         return global::DoclingServe.GraphLinkLabelExtensions.ToEnum(stringValue);
                     }
-                    
+
                     break;
                 }
                 case global::System.Text.Json.JsonTokenType.Number:

@@ -10,7 +10,7 @@ namespace DoclingServe
     public sealed partial class ConvertClient : global::DoclingServe.IConvertClient, global::System.IDisposable
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public const string DefaultBaseUrl = "http://localhost:5001/";
 
@@ -37,7 +37,7 @@ namespace DoclingServe
         internal global::System.Lazy<global::System.Text.Json.Serialization.JsonSerializerContext> JsonSerializerContextProvider { get; set; } = new(() => global::DoclingServe.SourceGenerationContext.Default);
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public global::System.Text.Json.Serialization.JsonSerializerContext JsonSerializerContext
         {

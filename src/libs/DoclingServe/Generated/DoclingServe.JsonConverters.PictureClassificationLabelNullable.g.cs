@@ -20,7 +20,7 @@ namespace DoclingServe.JsonConverters
                     {
                         return global::DoclingServe.PictureClassificationLabelExtensions.ToEnum(stringValue);
                     }
-                    
+
                     break;
                 }
                 case global::System.Text.Json.JsonTokenType.Number:

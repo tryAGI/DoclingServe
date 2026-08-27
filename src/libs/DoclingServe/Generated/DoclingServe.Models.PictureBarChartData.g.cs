@@ -20,28 +20,28 @@ namespace DoclingServe
         public string? Kind { get; set; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("title")]
         [global::System.Text.Json.Serialization.JsonRequired]
         public required string Title { get; set; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("x_axis_label")]
         [global::System.Text.Json.Serialization.JsonRequired]
         public required string XAxisLabel { get; set; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("y_axis_label")]
         [global::System.Text.Json.Serialization.JsonRequired]
         public required string YAxisLabel { get; set; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("bars")]
         [global::System.Text.Json.Serialization.JsonRequired]

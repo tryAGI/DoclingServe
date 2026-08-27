@@ -9,14 +9,14 @@ namespace DoclingServe
     public sealed partial class ImageRef
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("mimetype")]
         [global::System.Text.Json.Serialization.JsonRequired]
         public required string Mimetype { get; set; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("dpi")]
         [global::System.Text.Json.Serialization.JsonRequired]
@@ -30,7 +30,7 @@ namespace DoclingServe
         public required global::DoclingServe.Size Size { get; set; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("uri")]
         [global::System.Text.Json.Serialization.JsonRequired]

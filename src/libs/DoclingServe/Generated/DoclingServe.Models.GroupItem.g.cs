@@ -9,14 +9,14 @@ namespace DoclingServe
     public sealed partial class GroupItem
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("self_ref")]
         [global::System.Text.Json.Serialization.JsonRequired]
         public required string SelfRef { get; set; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("parent")]
         public global::DoclingServe.RefItem? Parent { get; set; }
@@ -36,7 +36,7 @@ namespace DoclingServe
         public global::DoclingServe.ContentLayer? ContentLayer { get; set; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("meta")]
         public global::DoclingServe.BaseMeta? Meta { get; set; }

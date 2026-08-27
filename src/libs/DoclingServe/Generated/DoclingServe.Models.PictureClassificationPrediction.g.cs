@@ -21,7 +21,7 @@ namespace DoclingServe
         public string? CreatedBy { get; set; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("class_name")]
         [global::System.Text.Json.Serialization.JsonRequired]

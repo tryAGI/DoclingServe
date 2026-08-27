@@ -39,38 +39,38 @@ namespace DoclingServe
 
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         global::System.Text.Json.Serialization.JsonSerializerContext JsonSerializerContext { get; set; }
 
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public ChunkClient Chunk { get; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public ClearClient Clear { get; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public ConvertClient Convert { get; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public HealthClient Health { get; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public ManagementClient Management { get; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public TasksClient Tasks { get; }
 

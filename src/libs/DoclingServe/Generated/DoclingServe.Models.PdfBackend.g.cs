@@ -21,23 +21,23 @@ namespace DoclingServe
     public enum PdfBackend
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         DlparseV1,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         DlparseV2,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         DlparseV4,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         DoclingParse,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Pypdfium2,
     }

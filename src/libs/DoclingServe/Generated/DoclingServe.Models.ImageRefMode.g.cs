@@ -9,15 +9,15 @@ namespace DoclingServe
     public enum ImageRefMode
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Embedded,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Placeholder,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Referenced,
     }

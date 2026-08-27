@@ -9,19 +9,19 @@ namespace DoclingServe
     public enum GraphCellLabel
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Checkbox,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Key,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Unspecified,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Value,
     }

@@ -9,11 +9,11 @@ namespace DoclingServe
     public enum CoordOrigin
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Bottomleft,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Topleft,
     }
