@@ -193,7 +193,7 @@ namespace DoclingServe
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.IList<int>))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(int))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(double))]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::DoclingServe.VlmModelType))]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::DoclingServe.VlmModelType), TypeInfoPropertyName = "VlmModelType2")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::DoclingServe.BodyChunkFilesWithHierarchicalChunkerV1ChunkHierarchicalFilePost))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::DoclingServe.BodyChunkFilesWithHybridChunkerAsAsyncTaskV1ChunkHybridFileAsyncPost))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::DoclingServe.BodyChunkFilesWithHybridChunkerV1ChunkHybridFilePost))]
