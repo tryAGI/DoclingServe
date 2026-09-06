@@ -4,7 +4,7 @@
 namespace DoclingServe
 {
     /// <summary>
-    /// Additional metadata associated with this chunk
+    ///
     /// </summary>
     public sealed partial class ChunkedDocumentResultItemMetadata
     {
