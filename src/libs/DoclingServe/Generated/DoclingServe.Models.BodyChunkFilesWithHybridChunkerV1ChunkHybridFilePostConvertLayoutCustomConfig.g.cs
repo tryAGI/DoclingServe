@@ -4,7 +4,7 @@
 namespace DoclingServe
 {
     /// <summary>
-    /// Custom configuration for layout model. Use this to specify a non-default kind with its options. The 'kind' field in the config dict determines which layout implementation to use. If not specified, uses the default kind with preset configuration.
+    ///
     /// </summary>
     public sealed partial class BodyChunkFilesWithHybridChunkerV1ChunkHybridFilePostConvertLayoutCustomConfig
     {
