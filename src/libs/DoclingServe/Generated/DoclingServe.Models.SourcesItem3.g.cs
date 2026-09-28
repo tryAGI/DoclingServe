@@ -47,8 +47,8 @@ namespace DoclingServe
         /// <summary>
         ///
         /// </summary>
-        public global::DoclingServe.FileSourceRequest PickFile() => IsFile
-            ? File!
+        public global::DoclingServe.FileSourceRequest PickFile() => File is { } value
+            ? value
             : throw new global::System.InvalidOperationException($"Expected union variant 'File' but the value was {ToString()}.");
 
         /// <summary>
@@ -84,8 +84,8 @@ namespace DoclingServe
         /// <summary>
         ///
         /// </summary>
-        public global::DoclingServe.HttpSourceRequest PickHttp() => IsHttp
-            ? Http!
+        public global::DoclingServe.HttpSourceRequest PickHttp() => Http is { } value
+            ? value
             : throw new global::System.InvalidOperationException($"Expected union variant 'Http' but the value was {ToString()}.");
 
         /// <summary>
@@ -121,8 +121,8 @@ namespace DoclingServe
         /// <summary>
         ///
         /// </summary>
-        public global::DoclingServe.S3SourceRequest PickS3() => IsS3
-            ? S3!
+        public global::DoclingServe.S3SourceRequest PickS3() => S3 is { } value
+            ? value
             : throw new global::System.InvalidOperationException($"Expected union variant 'S3' but the value was {ToString()}.");
         /// <summary>
         ///
@@ -250,17 +250,17 @@ namespace DoclingServe
                 Validate();
             }
 
-            if (IsFile && file != null)
+            if (File is { } __value0 && file != null)
             {
-                return file(File!);
+                return file(__value0);
             }
-            else if (IsHttp && http != null)
+            else if (Http is { } __value1 && http != null)
             {
-                return http(Http!);
+                return http(__value1);
             }
-            else if (IsS3 && s3 != null)
+            else if (S3 is { } __value2 && s3 != null)
             {
-                return s3(S3!);
+                return s3(__value2);
             }
 
             return default(TResult);
@@ -282,17 +282,17 @@ namespace DoclingServe
                 Validate();
             }
 
-            if (IsFile)
+            if (File is { } __value0)
             {
-                file?.Invoke(File!);
+                file?.Invoke(__value0);
             }
-            else if (IsHttp)
+            else if (Http is { } __value1)
             {
-                http?.Invoke(Http!);
+                http?.Invoke(__value1);
             }
-            else if (IsS3)
+            else if (S3 is { } __value2)
             {
-                s3?.Invoke(S3!);
+                s3?.Invoke(__value2);
             }
         }
 
@@ -310,17 +310,17 @@ namespace DoclingServe
                 Validate();
             }
 
-            if (IsFile)
+            if (File is { } __value0)
             {
-                file?.Invoke(File!);
+                file?.Invoke(__value0);
             }
-            else if (IsHttp)
+            else if (Http is { } __value1)
             {
-                http?.Invoke(Http!);
+                http?.Invoke(__value1);
             }
-            else if (IsS3)
+            else if (S3 is { } __value2)
             {
-                s3?.Invoke(S3!);
+                s3?.Invoke(__value2);
             }
         }
 
