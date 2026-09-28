@@ -1,14 +1,12 @@
 
 #nullable enable
 
-#pragma warning disable CS0618 // Type or member is obsolete
-#pragma warning disable CS3016 // Arrays as attribute arguments is not CLS-compliant
-
 namespace DoclingServe
 {
     /// <summary>
     ///
     /// </summary>
+    #pragma warning disable CS3016 // Converter type array in this attribute is not CLS-compliant.
     [global::System.Text.Json.Serialization.JsonSourceGenerationOptions(
         DefaultIgnoreCondition = global::System.Text.Json.Serialization.JsonIgnoreCondition.WhenWritingNull,
         Converters = new global::System.Type[]
@@ -169,6 +167,7 @@ namespace DoclingServe
 
             typeof(global::DoclingServe.JsonConverters.UnixTimestampJsonConverter),
         })]
+    #pragma warning restore CS3016
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::DoclingServe.JsonSerializerContextTypes))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.List<object>), TypeInfoPropertyName = "SystemCollectionsGeneric_ObjectList")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::DoclingServe.ApiModelConfig))]
@@ -248,10 +247,18 @@ namespace DoclingServe
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::DoclingServe.PutTarget))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::DoclingServe.ConvertDocumentsRequestTargetDiscriminator))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::DoclingServe.ConvertDocumentsRequestTargetDiscriminatorKind), TypeInfoPropertyName = "ConvertDocumentsRequestTargetDiscriminatorKind2")]
+    #pragma warning disable CS0618 // This registration names a deprecated API model.
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::DoclingServe.PictureDescriptionLocal))]
+    #pragma warning restore CS0618
+    #pragma warning disable CS0618 // This registration names a deprecated API model.
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::DoclingServe.PictureDescriptionApi))]
+    #pragma warning restore CS0618
+    #pragma warning disable CS0618 // This registration names a deprecated API model.
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::DoclingServe.VlmModelLocal))]
+    #pragma warning restore CS0618
+    #pragma warning disable CS0618 // This registration names a deprecated API model.
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::DoclingServe.VlmModelApi))]
+    #pragma warning restore CS0618
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::DoclingServe.AnyOf<global::DoclingServe.VlmConvertOptions, object, object>), TypeInfoPropertyName = "AnyOfVlmConvertOptionsObjectObject2")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::DoclingServe.VlmConvertOptions))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::DoclingServe.AnyOf<global::DoclingServe.PictureDescriptionVlmEngineOptions, object, object>), TypeInfoPropertyName = "AnyOfPictureDescriptionVlmEngineOptionsObjectObject2")]
