@@ -48,8 +48,8 @@ namespace DoclingServe
         /// <summary>
         ///
         /// </summary>
-        public global::DoclingServe.InBodyTarget PickInbody() => IsInbody
-            ? Inbody!
+        public global::DoclingServe.InBodyTarget PickInbody() => Inbody is { } value
+            ? value
             : throw new global::System.InvalidOperationException($"Expected union variant 'Inbody' but the value was {ToString()}.");
 
         /// <summary>
@@ -85,8 +85,8 @@ namespace DoclingServe
         /// <summary>
         ///
         /// </summary>
-        public global::DoclingServe.ZipTarget PickZip() => IsZip
-            ? Zip!
+        public global::DoclingServe.ZipTarget PickZip() => Zip is { } value
+            ? value
             : throw new global::System.InvalidOperationException($"Expected union variant 'Zip' but the value was {ToString()}.");
 
         /// <summary>
@@ -122,8 +122,8 @@ namespace DoclingServe
         /// <summary>
         ///
         /// </summary>
-        public global::DoclingServe.S3Target PickS3() => IsS3
-            ? S3!
+        public global::DoclingServe.S3Target PickS3() => S3 is { } value
+            ? value
             : throw new global::System.InvalidOperationException($"Expected union variant 'S3' but the value was {ToString()}.");
 
         /// <summary>
@@ -159,8 +159,8 @@ namespace DoclingServe
         /// <summary>
         ///
         /// </summary>
-        public global::DoclingServe.PutTarget PickPut() => IsPut
-            ? Put!
+        public global::DoclingServe.PutTarget PickPut() => Put is { } value
+            ? value
             : throw new global::System.InvalidOperationException($"Expected union variant 'Put' but the value was {ToString()}.");
         /// <summary>
         ///
@@ -316,21 +316,21 @@ namespace DoclingServe
                 Validate();
             }
 
-            if (IsInbody && inbody != null)
+            if (Inbody is { } __value0 && inbody != null)
             {
-                return inbody(Inbody!);
+                return inbody(__value0);
             }
-            else if (IsZip && zip != null)
+            else if (Zip is { } __value1 && zip != null)
             {
-                return zip(Zip!);
+                return zip(__value1);
             }
-            else if (IsS3 && s3 != null)
+            else if (S3 is { } __value2 && s3 != null)
             {
-                return s3(S3!);
+                return s3(__value2);
             }
-            else if (IsPut && put != null)
+            else if (Put is { } __value3 && put != null)
             {
-                return put(Put!);
+                return put(__value3);
             }
 
             return default(TResult);
@@ -354,21 +354,21 @@ namespace DoclingServe
                 Validate();
             }
 
-            if (IsInbody)
+            if (Inbody is { } __value0)
             {
-                inbody?.Invoke(Inbody!);
+                inbody?.Invoke(__value0);
             }
-            else if (IsZip)
+            else if (Zip is { } __value1)
             {
-                zip?.Invoke(Zip!);
+                zip?.Invoke(__value1);
             }
-            else if (IsS3)
+            else if (S3 is { } __value2)
             {
-                s3?.Invoke(S3!);
+                s3?.Invoke(__value2);
             }
-            else if (IsPut)
+            else if (Put is { } __value3)
             {
-                put?.Invoke(Put!);
+                put?.Invoke(__value3);
             }
         }
 
@@ -387,21 +387,21 @@ namespace DoclingServe
                 Validate();
             }
 
-            if (IsInbody)
+            if (Inbody is { } __value0)
             {
-                inbody?.Invoke(Inbody!);
+                inbody?.Invoke(__value0);
             }
-            else if (IsZip)
+            else if (Zip is { } __value1)
             {
-                zip?.Invoke(Zip!);
+                zip?.Invoke(__value1);
             }
-            else if (IsS3)
+            else if (S3 is { } __value2)
             {
-                s3?.Invoke(S3!);
+                s3?.Invoke(__value2);
             }
-            else if (IsPut)
+            else if (Put is { } __value3)
             {
-                put?.Invoke(Put!);
+                put?.Invoke(__value3);
             }
         }
 
