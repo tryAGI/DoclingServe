@@ -238,22 +238,22 @@ namespace DoclingServe
         /// Custom VLM configuration including model spec and engine options. Only available if admin allows it. Must include 'model_spec' and 'engine_options'.
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("vlm_pipeline_custom_config")]
-        [global::System.Text.Json.Serialization.JsonConverter(typeof(global::DoclingServe.JsonConverters.AnyOfJsonConverter<global::DoclingServe.VlmConvertOptions, object, object>))]
-        public global::DoclingServe.AnyOf<global::DoclingServe.VlmConvertOptions, object, object>? VlmPipelineCustomConfig { get; set; }
+        [global::System.Text.Json.Serialization.JsonConverter(typeof(global::DoclingServe.JsonConverters.AnyOfJsonConverter<global::DoclingServe.VlmConvertOptions, object>))]
+        public global::DoclingServe.AnyOf<global::DoclingServe.VlmConvertOptions, object>? VlmPipelineCustomConfig { get; set; }
 
         /// <summary>
         /// Custom picture description configuration including model spec and engine options.
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("picture_description_custom_config")]
-        [global::System.Text.Json.Serialization.JsonConverter(typeof(global::DoclingServe.JsonConverters.AnyOfJsonConverter<global::DoclingServe.PictureDescriptionVlmEngineOptions, object, object>))]
-        public global::DoclingServe.AnyOf<global::DoclingServe.PictureDescriptionVlmEngineOptions, object, object>? PictureDescriptionCustomConfig { get; set; }
+        [global::System.Text.Json.Serialization.JsonConverter(typeof(global::DoclingServe.JsonConverters.AnyOfJsonConverter<global::DoclingServe.PictureDescriptionVlmEngineOptions, object>))]
+        public global::DoclingServe.AnyOf<global::DoclingServe.PictureDescriptionVlmEngineOptions, object>? PictureDescriptionCustomConfig { get; set; }
 
         /// <summary>
         /// Custom code/formula extraction configuration including model spec and engine options.
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("code_formula_custom_config")]
-        [global::System.Text.Json.Serialization.JsonConverter(typeof(global::DoclingServe.JsonConverters.AnyOfJsonConverter<global::DoclingServe.CodeFormulaVlmOptions, object, object>))]
-        public global::DoclingServe.AnyOf<global::DoclingServe.CodeFormulaVlmOptions, object, object>? CodeFormulaCustomConfig { get; set; }
+        [global::System.Text.Json.Serialization.JsonConverter(typeof(global::DoclingServe.JsonConverters.AnyOfJsonConverter<global::DoclingServe.CodeFormulaVlmOptions, object>))]
+        public global::DoclingServe.AnyOf<global::DoclingServe.CodeFormulaVlmOptions, object>? CodeFormulaCustomConfig { get; set; }
 
         /// <summary>
         /// Custom configuration for table structure model. Use this to specify a non-default kind with its options. The 'kind' field in the config dict determines which table structure implementation to use. If not specified, uses the default kind with preset configuration.
@@ -425,9 +425,9 @@ namespace DoclingServe
             string? vlmPipelinePreset,
             string? pictureDescriptionPreset,
             string? codeFormulaPreset,
-            global::DoclingServe.AnyOf<global::DoclingServe.VlmConvertOptions, object, object>? vlmPipelineCustomConfig,
-            global::DoclingServe.AnyOf<global::DoclingServe.PictureDescriptionVlmEngineOptions, object, object>? pictureDescriptionCustomConfig,
-            global::DoclingServe.AnyOf<global::DoclingServe.CodeFormulaVlmOptions, object, object>? codeFormulaCustomConfig,
+            global::DoclingServe.AnyOf<global::DoclingServe.VlmConvertOptions, object>? vlmPipelineCustomConfig,
+            global::DoclingServe.AnyOf<global::DoclingServe.PictureDescriptionVlmEngineOptions, object>? pictureDescriptionCustomConfig,
+            global::DoclingServe.AnyOf<global::DoclingServe.CodeFormulaVlmOptions, object>? codeFormulaCustomConfig,
             object? tableStructureCustomConfig,
             object? layoutCustomConfig)
         {
