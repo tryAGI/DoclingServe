@@ -149,11 +149,11 @@ namespace DoclingServe
 
             typeof(global::DoclingServe.JsonConverters.AnyOfJsonConverter<string, int?>),
 
-            typeof(global::DoclingServe.JsonConverters.AnyOfJsonConverter<global::DoclingServe.VlmConvertOptions, object, object>),
+            typeof(global::DoclingServe.JsonConverters.AnyOfJsonConverter<global::DoclingServe.VlmConvertOptions, object>),
 
-            typeof(global::DoclingServe.JsonConverters.AnyOfJsonConverter<global::DoclingServe.PictureDescriptionVlmEngineOptions, object, object>),
+            typeof(global::DoclingServe.JsonConverters.AnyOfJsonConverter<global::DoclingServe.PictureDescriptionVlmEngineOptions, object>),
 
-            typeof(global::DoclingServe.JsonConverters.AnyOfJsonConverter<global::DoclingServe.CodeFormulaVlmOptions, object, object>),
+            typeof(global::DoclingServe.JsonConverters.AnyOfJsonConverter<global::DoclingServe.CodeFormulaVlmOptions, object>),
 
             typeof(global::DoclingServe.JsonConverters.AnyOfJsonConverter<global::DoclingServe.RichTableCell, global::DoclingServe.TableCell>),
 
@@ -259,11 +259,11 @@ namespace DoclingServe
     #pragma warning disable CS0618 // This registration names a deprecated API model.
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::DoclingServe.VlmModelApi))]
     #pragma warning restore CS0618
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::DoclingServe.AnyOf<global::DoclingServe.VlmConvertOptions, object, object>), TypeInfoPropertyName = "AnyOfVlmConvertOptionsObjectObject2")]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::DoclingServe.AnyOf<global::DoclingServe.VlmConvertOptions, object>), TypeInfoPropertyName = "AnyOfVlmConvertOptionsObject2")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::DoclingServe.VlmConvertOptions))]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::DoclingServe.AnyOf<global::DoclingServe.PictureDescriptionVlmEngineOptions, object, object>), TypeInfoPropertyName = "AnyOfPictureDescriptionVlmEngineOptionsObjectObject2")]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::DoclingServe.AnyOf<global::DoclingServe.PictureDescriptionVlmEngineOptions, object>), TypeInfoPropertyName = "AnyOfPictureDescriptionVlmEngineOptionsObject2")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::DoclingServe.PictureDescriptionVlmEngineOptions))]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::DoclingServe.AnyOf<global::DoclingServe.CodeFormulaVlmOptions, object, object>), TypeInfoPropertyName = "AnyOfCodeFormulaVlmOptionsObjectObject2")]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::DoclingServe.AnyOf<global::DoclingServe.CodeFormulaVlmOptions, object>), TypeInfoPropertyName = "AnyOfCodeFormulaVlmOptionsObject2")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::DoclingServe.DescriptionAnnotation))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::DoclingServe.DescriptionMetaField))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::DoclingServe.DoclingComponentType), TypeInfoPropertyName = "DoclingComponentType2")]

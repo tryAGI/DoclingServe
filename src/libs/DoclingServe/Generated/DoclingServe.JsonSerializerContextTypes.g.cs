@@ -357,7 +357,7 @@ namespace DoclingServe
         /// <summary>
         ///
         /// </summary>
-        public global::DoclingServe.AnyOf<global::DoclingServe.VlmConvertOptions, object, object>? Type81 { get; set; }
+        public global::DoclingServe.AnyOf<global::DoclingServe.VlmConvertOptions, object>? Type81 { get; set; }
         /// <summary>
         ///
         /// </summary>
@@ -365,7 +365,7 @@ namespace DoclingServe
         /// <summary>
         ///
         /// </summary>
-        public global::DoclingServe.AnyOf<global::DoclingServe.PictureDescriptionVlmEngineOptions, object, object>? Type83 { get; set; }
+        public global::DoclingServe.AnyOf<global::DoclingServe.PictureDescriptionVlmEngineOptions, object>? Type83 { get; set; }
         /// <summary>
         ///
         /// </summary>
@@ -373,7 +373,7 @@ namespace DoclingServe
         /// <summary>
         ///
         /// </summary>
-        public global::DoclingServe.AnyOf<global::DoclingServe.CodeFormulaVlmOptions, object, object>? Type85 { get; set; }
+        public global::DoclingServe.AnyOf<global::DoclingServe.CodeFormulaVlmOptions, object>? Type85 { get; set; }
         /// <summary>
         ///
         /// </summary>
