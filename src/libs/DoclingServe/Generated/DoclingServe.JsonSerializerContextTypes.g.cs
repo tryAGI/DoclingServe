@@ -518,11 +518,11 @@ namespace DoclingServe
         /// <summary>
         ///
         /// </summary>
-        public global::System.Collections.Generic.IList<global::DoclingServe.SourcesItem2>? Type120 { get; set; }
+        public global::System.Collections.Generic.IList<global::DoclingServe.SourcesItem3>? Type120 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::DoclingServe.SourcesItem2? Type121 { get; set; }
+        public global::DoclingServe.SourcesItem3? Type121 { get; set; }
         /// <summary>
         ///
         /// </summary>
@@ -534,7 +534,7 @@ namespace DoclingServe
         /// <summary>
         ///
         /// </summary>
-        public global::DoclingServe.Target2? Type124 { get; set; }
+        public global::DoclingServe.Target3? Type124 { get; set; }
         /// <summary>
         ///
         /// </summary>
@@ -554,11 +554,11 @@ namespace DoclingServe
         /// <summary>
         ///
         /// </summary>
-        public global::System.Collections.Generic.IList<global::DoclingServe.SourcesItem3>? Type129 { get; set; }
+        public global::System.Collections.Generic.IList<global::DoclingServe.SourcesItem2>? Type129 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::DoclingServe.SourcesItem3? Type130 { get; set; }
+        public global::DoclingServe.SourcesItem2? Type130 { get; set; }
         /// <summary>
         ///
         /// </summary>
@@ -570,7 +570,7 @@ namespace DoclingServe
         /// <summary>
         ///
         /// </summary>
-        public global::DoclingServe.Target3? Type133 { get; set; }
+        public global::DoclingServe.Target2? Type133 { get; set; }
         /// <summary>
         ///
         /// </summary>
@@ -895,11 +895,11 @@ namespace DoclingServe
         /// <summary>
         ///
         /// </summary>
-        public global::System.Collections.Generic.List<global::DoclingServe.SourcesItem2>? ListType17 { get; set; }
+        public global::System.Collections.Generic.List<global::DoclingServe.SourcesItem3>? ListType17 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::System.Collections.Generic.List<global::DoclingServe.SourcesItem3>? ListType18 { get; set; }
+        public global::System.Collections.Generic.List<global::DoclingServe.SourcesItem2>? ListType18 { get; set; }
         /// <summary>
         ///
         /// </summary>

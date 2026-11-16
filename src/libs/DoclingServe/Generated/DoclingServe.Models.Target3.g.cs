@@ -13,7 +13,7 @@ namespace DoclingServe
         /// <summary>
         ///
         /// </summary>
-        public global::DoclingServe.HybridChunkerOptionsDocumentsRequestTargetDiscriminatorKind? Kind { get; }
+        public global::DoclingServe.HierarchicalChunkerOptionsDocumentsRequestTargetDiscriminatorKind? Kind { get; }
 
         /// <summary>
         ///
@@ -258,7 +258,7 @@ namespace DoclingServe
         ///
         /// </summary>
         public Target3(
-            global::DoclingServe.HybridChunkerOptionsDocumentsRequestTargetDiscriminatorKind? kind,
+            global::DoclingServe.HierarchicalChunkerOptionsDocumentsRequestTargetDiscriminatorKind? kind,
             global::DoclingServe.InBodyTarget? inbody,
             global::DoclingServe.ZipTarget? zip,
             global::DoclingServe.S3Target? s3,

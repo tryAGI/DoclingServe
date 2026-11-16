@@ -17,33 +17,33 @@ namespace DoclingServe.JsonConverters
 
 
             var readerCopy = reader;
-            var discriminatorTypeInfo = typeInfoResolver.GetTypeInfo(typeof(global::DoclingServe.HierarchicalChunkerOptionsDocumentsRequestTargetDiscriminator), options) as global::System.Text.Json.Serialization.Metadata.JsonTypeInfo<global::DoclingServe.HierarchicalChunkerOptionsDocumentsRequestTargetDiscriminator> ??
-                            throw new global::System.InvalidOperationException($"Cannot get type info for {nameof(global::DoclingServe.HierarchicalChunkerOptionsDocumentsRequestTargetDiscriminator)}");
+            var discriminatorTypeInfo = typeInfoResolver.GetTypeInfo(typeof(global::DoclingServe.HybridChunkerOptionsDocumentsRequestTargetDiscriminator), options) as global::System.Text.Json.Serialization.Metadata.JsonTypeInfo<global::DoclingServe.HybridChunkerOptionsDocumentsRequestTargetDiscriminator> ??
+                            throw new global::System.InvalidOperationException($"Cannot get type info for {nameof(global::DoclingServe.HybridChunkerOptionsDocumentsRequestTargetDiscriminator)}");
             var discriminator = global::System.Text.Json.JsonSerializer.Deserialize(ref readerCopy, discriminatorTypeInfo);
 
             global::DoclingServe.InBodyTarget? inbody = default;
-            if (discriminator?.Kind == global::DoclingServe.HierarchicalChunkerOptionsDocumentsRequestTargetDiscriminatorKind.Inbody)
+            if (discriminator?.Kind == global::DoclingServe.HybridChunkerOptionsDocumentsRequestTargetDiscriminatorKind.Inbody)
             {
                 var typeInfo = typeInfoResolver.GetTypeInfo(typeof(global::DoclingServe.InBodyTarget), options) as global::System.Text.Json.Serialization.Metadata.JsonTypeInfo<global::DoclingServe.InBodyTarget> ??
                                throw new global::System.InvalidOperationException($"Cannot get type info for {nameof(global::DoclingServe.InBodyTarget)}");
                 inbody = global::System.Text.Json.JsonSerializer.Deserialize(ref reader, typeInfo);
             }
             global::DoclingServe.ZipTarget? zip = default;
-            if (discriminator?.Kind == global::DoclingServe.HierarchicalChunkerOptionsDocumentsRequestTargetDiscriminatorKind.Zip)
+            if (discriminator?.Kind == global::DoclingServe.HybridChunkerOptionsDocumentsRequestTargetDiscriminatorKind.Zip)
             {
                 var typeInfo = typeInfoResolver.GetTypeInfo(typeof(global::DoclingServe.ZipTarget), options) as global::System.Text.Json.Serialization.Metadata.JsonTypeInfo<global::DoclingServe.ZipTarget> ??
                                throw new global::System.InvalidOperationException($"Cannot get type info for {nameof(global::DoclingServe.ZipTarget)}");
                 zip = global::System.Text.Json.JsonSerializer.Deserialize(ref reader, typeInfo);
             }
             global::DoclingServe.S3Target? s3 = default;
-            if (discriminator?.Kind == global::DoclingServe.HierarchicalChunkerOptionsDocumentsRequestTargetDiscriminatorKind.S3)
+            if (discriminator?.Kind == global::DoclingServe.HybridChunkerOptionsDocumentsRequestTargetDiscriminatorKind.S3)
             {
                 var typeInfo = typeInfoResolver.GetTypeInfo(typeof(global::DoclingServe.S3Target), options) as global::System.Text.Json.Serialization.Metadata.JsonTypeInfo<global::DoclingServe.S3Target> ??
                                throw new global::System.InvalidOperationException($"Cannot get type info for {nameof(global::DoclingServe.S3Target)}");
                 s3 = global::System.Text.Json.JsonSerializer.Deserialize(ref reader, typeInfo);
             }
             global::DoclingServe.PutTarget? put = default;
-            if (discriminator?.Kind == global::DoclingServe.HierarchicalChunkerOptionsDocumentsRequestTargetDiscriminatorKind.Put)
+            if (discriminator?.Kind == global::DoclingServe.HybridChunkerOptionsDocumentsRequestTargetDiscriminatorKind.Put)
             {
                 var typeInfo = typeInfoResolver.GetTypeInfo(typeof(global::DoclingServe.PutTarget), options) as global::System.Text.Json.Serialization.Metadata.JsonTypeInfo<global::DoclingServe.PutTarget> ??
                                throw new global::System.InvalidOperationException($"Cannot get type info for {nameof(global::DoclingServe.PutTarget)}");

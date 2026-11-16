@@ -139,13 +139,13 @@ namespace DoclingServe
 
             typeof(global::DoclingServe.JsonConverters.TargetJsonConverter),
 
-            typeof(global::DoclingServe.JsonConverters.SourcesItem2JsonConverter),
-
-            typeof(global::DoclingServe.JsonConverters.Target2JsonConverter),
-
             typeof(global::DoclingServe.JsonConverters.SourcesItem3JsonConverter),
 
             typeof(global::DoclingServe.JsonConverters.Target3JsonConverter),
+
+            typeof(global::DoclingServe.JsonConverters.SourcesItem2JsonConverter),
+
+            typeof(global::DoclingServe.JsonConverters.Target2JsonConverter),
 
             typeof(global::DoclingServe.JsonConverters.AnyOfJsonConverter<string, int?>),
 
@@ -299,20 +299,20 @@ namespace DoclingServe
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::DoclingServe.HealthCheckResponse))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::DoclingServe.HierarchicalChunkerOptions))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::DoclingServe.HierarchicalChunkerOptionsDocumentsRequest))]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.IList<global::DoclingServe.SourcesItem2>))]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::DoclingServe.SourcesItem2), TypeInfoPropertyName = "SourcesItem22")]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.IList<global::DoclingServe.SourcesItem3>))]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::DoclingServe.SourcesItem3), TypeInfoPropertyName = "SourcesItem32")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::DoclingServe.HierarchicalChunkerOptionsDocumentsRequestSourceDiscriminator))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::DoclingServe.HierarchicalChunkerOptionsDocumentsRequestSourceDiscriminatorKind), TypeInfoPropertyName = "HierarchicalChunkerOptionsDocumentsRequestSourceDiscriminatorKind2")]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::DoclingServe.Target2), TypeInfoPropertyName = "Target22")]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::DoclingServe.Target3), TypeInfoPropertyName = "Target32")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::DoclingServe.HierarchicalChunkerOptionsDocumentsRequestTargetDiscriminator))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::DoclingServe.HierarchicalChunkerOptionsDocumentsRequestTargetDiscriminatorKind), TypeInfoPropertyName = "HierarchicalChunkerOptionsDocumentsRequestTargetDiscriminatorKind2")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::DoclingServe.HybridChunkerOptions))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::DoclingServe.HybridChunkerOptionsDocumentsRequest))]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.IList<global::DoclingServe.SourcesItem3>))]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::DoclingServe.SourcesItem3), TypeInfoPropertyName = "SourcesItem32")]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.IList<global::DoclingServe.SourcesItem2>))]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::DoclingServe.SourcesItem2), TypeInfoPropertyName = "SourcesItem22")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::DoclingServe.HybridChunkerOptionsDocumentsRequestSourceDiscriminator))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::DoclingServe.HybridChunkerOptionsDocumentsRequestSourceDiscriminatorKind), TypeInfoPropertyName = "HybridChunkerOptionsDocumentsRequestSourceDiscriminatorKind2")]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::DoclingServe.Target3), TypeInfoPropertyName = "Target32")]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::DoclingServe.Target2), TypeInfoPropertyName = "Target22")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::DoclingServe.HybridChunkerOptionsDocumentsRequestTargetDiscriminator))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::DoclingServe.HybridChunkerOptionsDocumentsRequestTargetDiscriminatorKind), TypeInfoPropertyName = "HybridChunkerOptionsDocumentsRequestTargetDiscriminatorKind2")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::DoclingServe.ImageRef))]
@@ -393,8 +393,8 @@ namespace DoclingServe
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.List<global::DoclingServe.GraphLink>))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.List<global::DoclingServe.RefItem>))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.List<global::DoclingServe.ValidationError>))]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.List<global::DoclingServe.SourcesItem2>))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.List<global::DoclingServe.SourcesItem3>))]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.List<global::DoclingServe.SourcesItem2>))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.List<global::DoclingServe.ChartBar>))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.List<global::DoclingServe.PictureClassificationClass>))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.List<global::DoclingServe.PictureClassificationPrediction>))]

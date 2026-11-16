@@ -12,7 +12,7 @@ namespace DoclingServe
         /// <summary>
         ///
         /// </summary>
-        public global::DoclingServe.HierarchicalChunkerOptionsDocumentsRequestSourceDiscriminatorKind? Kind { get; }
+        public global::DoclingServe.HybridChunkerOptionsDocumentsRequestSourceDiscriminatorKind? Kind { get; }
 
         /// <summary>
         ///
@@ -197,7 +197,7 @@ namespace DoclingServe
         ///
         /// </summary>
         public SourcesItem2(
-            global::DoclingServe.HierarchicalChunkerOptionsDocumentsRequestSourceDiscriminatorKind? kind,
+            global::DoclingServe.HybridChunkerOptionsDocumentsRequestSourceDiscriminatorKind? kind,
             global::DoclingServe.FileSourceRequest? file,
             global::DoclingServe.HttpSourceRequest? http,
             global::DoclingServe.S3SourceRequest? s3
