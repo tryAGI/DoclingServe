@@ -20,7 +20,7 @@ namespace DoclingServe
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("sources")]
         [global::System.Text.Json.Serialization.JsonRequired]
-        public required global::System.Collections.Generic.IList<global::DoclingServe.SourcesItem3> Sources { get; set; }
+        public required global::System.Collections.Generic.IList<global::DoclingServe.SourcesItem2> Sources { get; set; }
 
         /// <summary>
         /// If true, the output will include both the chunks and the converted document.<br/>
@@ -34,8 +34,8 @@ namespace DoclingServe
         /// Default Value: {"kind":"inbody"}
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("target")]
-        [global::System.Text.Json.Serialization.JsonConverter(typeof(global::DoclingServe.JsonConverters.Target3JsonConverter))]
-        public global::DoclingServe.Target3? Target { get; set; }
+        [global::System.Text.Json.Serialization.JsonConverter(typeof(global::DoclingServe.JsonConverters.Target2JsonConverter))]
+        public global::DoclingServe.Target2? Target { get; set; }
 
         /// <summary>
         /// Options specific to the chunker.
@@ -74,10 +74,10 @@ namespace DoclingServe
         [global::System.Diagnostics.CodeAnalysis.SetsRequiredMembers]
 #endif
         public HybridChunkerOptionsDocumentsRequest(
-            global::System.Collections.Generic.IList<global::DoclingServe.SourcesItem3> sources,
+            global::System.Collections.Generic.IList<global::DoclingServe.SourcesItem2> sources,
             global::DoclingServe.ConvertDocumentsRequestOptions? convertOptions,
             bool? includeConvertedDoc,
-            global::DoclingServe.Target3? target,
+            global::DoclingServe.Target2? target,
             global::DoclingServe.HybridChunkerOptions? chunkingOptions)
         {
             this.ConvertOptions = convertOptions;

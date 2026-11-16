@@ -78,10 +78,10 @@ namespace DoclingServe
         /// <param name="cancellationToken">The token to cancel the operation with</param>
         /// <exception cref="global::System.InvalidOperationException"></exception>
         global::System.Threading.Tasks.Task<byte[]> ChunkSourcesWithHybridChunkerV1ChunkHybridSourcePostAsBytesAsync(
-            global::System.Collections.Generic.IList<global::DoclingServe.SourcesItem3> sources,
+            global::System.Collections.Generic.IList<global::DoclingServe.SourcesItem2> sources,
             global::DoclingServe.ConvertDocumentsRequestOptions? convertOptions = default,
             bool? includeConvertedDoc = default,
-            global::DoclingServe.Target3? target = default,
+            global::DoclingServe.Target2? target = default,
             global::DoclingServe.HybridChunkerOptions? chunkingOptions = default,
             global::DoclingServe.AutoSDKRequestOptions? requestOptions = default,
             global::System.Threading.CancellationToken cancellationToken = default);
